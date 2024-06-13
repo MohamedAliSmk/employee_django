@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-13 13:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: base/admin.py:23
+msgid "Personal info"
+msgstr "البيانات الشخصية"
+
+#: base/admin.py:24
+msgid "Permissions"
+msgstr ""
+
+#: base/admin.py:25
+msgid "Important dates"
+msgstr ""
+
+#: base/admin.py:27
+msgid "Insurance info"
+msgstr "بيانات التأمين"
+
+#: base/admin.py:28
+msgid "Qualifications"
+msgstr "المؤهلات"
+
+#: base/admin.py:30
+msgid "Employment info"
+msgstr "بيانات التوظيف"
+
+#: base/admin.py:38
+msgid "Financial info"
+msgstr "البيانات المالية"
+
+#: base/admin.py:44
+msgid "Other info"
+msgstr "بيانات أخرى"
+
+#: base/models.py:8
+msgid "Second Name"
+msgstr "الإسم الثانى"
+
+#: base/models.py:9
+msgid "Third Name"
+msgstr "الإسم الثالث"
+
+#: base/models.py:10
+msgid "Nickname"
+msgstr "الشهرة"
+
+#: base/models.py:11
+msgid "Birth Place"
+msgstr "محل الميلاد"
+
+#: base/models.py:12
+msgid "Birth Date"
+msgstr "تاريخ الميلاد"
+
+#: base/models.py:13
+msgid "National ID"
+msgstr "الرقم القومى"
+
+#: base/models.py:15
+msgid "Insurance Number"
+msgstr "الرقم التأمينى"
+
+#: base/models.py:16
+msgid "Health Insurance Number"
+msgstr "رقم التأمين الصحى"
+
+#: base/models.py:18
+msgid "Academic Qualifications"
+msgstr "المؤهلات الدراسية"
+
+#: base/models.py:19
+msgid "Job Family"
+msgstr "المجموعة الوظيفية"
+
+#: base/models.py:20
+msgid "Graduation Year"
+msgstr "سنة التخرج"
+
+#: base/models.py:21
+msgid "Academic Qualifications In Service"
+msgstr "المؤهل أثناء الخدمة"
+
+#: base/models.py:23
+msgid "Employment Date"
+msgstr "تاريخ التعيين"
+
+#: base/models.py:24
+msgid "Decision Number"
+msgstr "رقم القرار"
+
+#: base/models.py:25
+msgid "Military Status"
+msgstr "الموقف من التجنيد"
+
+#: base/models.py:26
+msgid "Job Start Date"
+msgstr "تاريخ إستلام العمل"
+
+#: base/models.py:27
+msgid "Current Rank"
+msgstr "الدرجة الحالية"
+
+#: base/models.py:28
+msgid "Previous Employer"
+msgstr "جهة العمل السابقة"
+
+#: base/models.py:29
+msgid "Current Employer"
+msgstr "جهة العمل الحالية"
+
+#: base/models.py:30
+msgid "Top Employee"
+msgstr "الموظف المثالى"
+
+#: base/models.py:31
+msgid "Police Day Honoring"
+msgstr "تكريم عيد الشرطه"
+
+#: base/models.py:32
+msgid "Periodic Vacations"
+msgstr "الأجازات الدورية"
+
+#: base/models.py:33
+msgid "Casual Vacations"
+msgstr "الأجازات الطارئة"
+
+#: base/models.py:35
+#, fuzzy
+#| msgid "Birth Date"
+msgid "Retirement Date"
+msgstr "تاريخ الميلاد"
+
+#: base/models.py:36
+msgid "Solidarity Fund"
+msgstr "صندوق التكافل"
+
+#: base/models.py:37
+msgid "stakeholder Fund"
+msgstr "صندوق المصلحة"
+
+#: base/models.py:38
+msgid "Insurance Umbrella"
+msgstr "المظلة التأمينية"
+
+#: base/models.py:40
+msgid "Address"
+msgstr "العنوان"
+
+#: base/models.py:41
+msgid "Religion"
+msgstr "الديانة"
+
+#: base/models.py:42
+msgid "Notes"
+msgstr "ملاحظات"
+
+#: base/models.py:43
+msgid "Previous Haj"
+msgstr "سابقة الحج"
+
+#: base/models.py:69 base/models.py:84 base/models.py:99
+msgid "User"
+msgstr "المستخدم"
+
+#: base/models.py:70
+msgid "Type"
+msgstr "النوع"
+
+#: base/models.py:71 base/models.py:85 base/models.py:100
+msgid "Name"
+msgstr "العنوان"
+
+#: base/models.py:72 base/models.py:86 base/models.py:101
+msgid "Description"
+msgstr "الوصف"
+
+#: base/models.py:77
+msgid "Penalty"
+msgstr "الجزاء"
+
+#: base/models.py:78
+msgid "Penalties"
+msgstr "الجزاءات"
+
+#: base/models.py:87
+#, fuzzy
+#| msgid "Birth Date"
+msgid "Report Date"
+msgstr "تاريخ الميلاد"
+
+#: base/models.py:92
+msgid "Secret Report"
+msgstr "التقرير السرى"
+
+#: base/models.py:93
+msgid "Secret Reports"
+msgstr "التقارير السرية"
+
+#: base/models.py:102
+#, fuzzy
+#| msgid "Job Start Date"
+msgid "Start Date"
+msgstr "تاريخ إستلام العمل"
+
+#: base/models.py:103
+#, fuzzy
+#| msgid "Employment Date"
+msgid "End Date"
+msgstr "تاريخ التعيين"
+
+#: base/models.py:108
+msgid "Course"
+msgstr "الدورة التدريبية"
+
+#: base/models.py:109
+msgid "Courses"
+msgstr "الدورات التدريبية"

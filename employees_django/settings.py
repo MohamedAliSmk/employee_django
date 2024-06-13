@@ -119,10 +119,10 @@ LOCALE_PATHS = [
     'base/locale',
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ar-EG'
 LANGUAGES = [
-    ('en', 'English'),
     ('ar', 'Arabic'),
+    ('en', 'English'),
 ]
 TIME_ZONE = 'UTC'
 

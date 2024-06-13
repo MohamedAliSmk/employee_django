@@ -6,6 +6,21 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import Group
 
 # Register your models here.
+class CourseInline(admin.TabularInline):
+    model = Course
+    extra = 0
+    show_change_link = True
+    
+class PenaltyInline(admin.TabularInline):
+    model = Penalty
+    extra = 0
+    show_change_link = True
+    
+class SecretReportInline(admin.TabularInline):
+    model = SecretReport
+    extra = 0
+    show_change_link = True
+
 class CustomUserChangeForm(UserChangeForm):
     class Meta(UserChangeForm.Meta):
         model = CustomUser
@@ -13,6 +28,8 @@ class CustomUserChangeForm(UserChangeForm):
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
     form = CustomUserChangeForm
+    inlines = [CourseInline, PenaltyInline, SecretReportInline]
+    
     # fieldsets = UserAdmin.fieldsets + (
     #     (None, {'fields': ('nickname', 'birthPlace', 'birthDate')}),
     # )
@@ -110,5 +127,5 @@ class CustomUserAdmin(UserAdmin):
 
 # admin.site.unregister(CustomUser)
 admin.site.register(CustomUser, CustomUserAdmin)
-admin.site.register([Penalty, SecretReport, Course])
+# admin.site.register([Penalty, SecretReport, Course])
 admin.site.unregister(Group)

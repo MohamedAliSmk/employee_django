@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-13 13:01+0000\n"
+"POT-Creation-Date: 2024-06-13 14:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,35 +19,35 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: base/admin.py:23
+#: base/admin.py:41
 msgid "Personal info"
 msgstr "البيانات الشخصية"
 
-#: base/admin.py:24
+#: base/admin.py:42
 msgid "Permissions"
 msgstr ""
 
-#: base/admin.py:25
+#: base/admin.py:43
 msgid "Important dates"
 msgstr ""
 
-#: base/admin.py:27
+#: base/admin.py:45
 msgid "Insurance info"
 msgstr "بيانات التأمين"
 
-#: base/admin.py:28
+#: base/admin.py:46
 msgid "Qualifications"
 msgstr "المؤهلات"
 
-#: base/admin.py:30
+#: base/admin.py:48
 msgid "Employment info"
 msgstr "بيانات التوظيف"
 
-#: base/admin.py:38
+#: base/admin.py:56
 msgid "Financial info"
 msgstr "البيانات المالية"
 
-#: base/admin.py:44
+#: base/admin.py:62
 msgid "Other info"
 msgstr "بيانات أخرى"
 
@@ -144,10 +144,8 @@ msgid "Casual Vacations"
 msgstr "الأجازات الطارئة"
 
 #: base/models.py:35
-#, fuzzy
-#| msgid "Birth Date"
 msgid "Retirement Date"
-msgstr "تاريخ الميلاد"
+msgstr "تاريخ الإحالة للمعاش"
 
 #: base/models.py:36
 msgid "Solidarity Fund"
@@ -202,10 +200,8 @@ msgid "Penalties"
 msgstr "الجزاءات"
 
 #: base/models.py:87
-#, fuzzy
-#| msgid "Birth Date"
 msgid "Report Date"
-msgstr "تاريخ الميلاد"
+msgstr "تاريخ التقرير"
 
 #: base/models.py:92
 msgid "Secret Report"
@@ -216,16 +212,12 @@ msgid "Secret Reports"
 msgstr "التقارير السرية"
 
 #: base/models.py:102
-#, fuzzy
-#| msgid "Job Start Date"
 msgid "Start Date"
-msgstr "تاريخ إستلام العمل"
+msgstr "تاريخ البدء"
 
 #: base/models.py:103
-#, fuzzy
-#| msgid "Employment Date"
 msgid "End Date"
-msgstr "تاريخ التعيين"
+msgstr "تاريخ الإنتهاء"
 
 #: base/models.py:108
 msgid "Course"

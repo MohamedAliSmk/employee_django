@@ -1,11 +1,16 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser, Penalty, SecretReport, Course
+from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployeeCandidate
 from django.contrib.auth.forms import UserChangeForm
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import Group
 
 # Register your models here.
+class IdealEmployeeCandidateAdmin(admin.ModelAdmin):
+    list_display = ('user', 'idealEmployee', 'created', 'updated')
+    # list_filter = ('topEmployee', 'created', 'updated')
+    search_fields = ('user__username',)
+
 class CourseInline(admin.TabularInline):
     model = Course
     extra = 0
@@ -47,7 +52,7 @@ class CustomUserAdmin(UserAdmin):
         (
             _('Employment info'), {
                 'fields': (
-                    'employmentDate', 'decisionNumber', 'militaryStatus', 'jobStartDate', 'currentRank', 'previousEmployer', 'currentEmployer', 'topEmployee', 
+                    'employmentDate', 'decisionNumber', 'militaryStatus', 'jobStartDate', 'currentRank', 'previousEmployer', 'currentEmployer', 'idealEmployee', 
                     'policeDayHonoring', 'retirementDate', 'periodicVacations', 'casualVacations'
                 )
             }
@@ -78,7 +83,6 @@ class CustomUserAdmin(UserAdmin):
 
     def get_readonly_fields(self, request, obj=None):
         if request.user.is_superuser:
-            print('is_superuser', request.user.is_superuser)
             return ()  # Return an empty tuple for superusers to have no read-only fields
         if not obj:  # When creating a new user, no fields are read-only
             return self.readonly_fields
@@ -127,5 +131,5 @@ class CustomUserAdmin(UserAdmin):
 
 # admin.site.unregister(CustomUser)
 admin.site.register(CustomUser, CustomUserAdmin)
-# admin.site.register([Penalty, SecretReport, Course])
+admin.site.register(IdealEmployeeCandidate, IdealEmployeeCandidateAdmin)
 admin.site.unregister(Group)

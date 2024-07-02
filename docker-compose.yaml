@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: mysql
+    image: mariadb:10.6.18
+    env_file: ./.env
+    restart: always
+    environment:
+      MYSQL_DATABASE: $MYSQL_DATABASE
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_USER: $MYSQL_USER
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
+    ports:
+      - $MYSQL_PORT:$MYSQL_PORT
+    expose:
+      - $MYSQL_PORT
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  app:
+    depends_on:
+      - db
+    links: 
+      - db
+    build: .
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    env_file: ./.env
+    container_name: employees_django
+    ports:
+      - $APP_PORT:$APP_PORT
+    volumes:
+      - .:/app
+    restart: always
+
+volumes:
+  mysql_data:

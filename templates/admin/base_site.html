@@ -1,6 +1,7 @@
 {% extends "admin/base.html" %}
 
 {% load i18n %}
+{% block title %}شئون العاملين - الإدارة العامة لأمن الموانى{% endblock %}
 
 {% block extrahead %}
 {{ block.super }}
@@ -16,7 +17,59 @@
     .language-select {
       display: inline-block;
     }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-wrapper {
+      flex: 1;
+    }
+
+    /* Custom footer styling */
+    .custom-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px; /* Adjust as needed */
+      background-color: #264B5D; /* Background color */
+      color: #fff; /* Text color */
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+    }
+
+    .custom-footer p {
+      margin: 0;
+      padding: 0;
+    }
+    #content{
+      padding-bottom: 60px !important;
+    }
   </style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+  <a href="{% url 'admin:index' %}">
+    شئون العاملين - الإدارة العامة لأمن الموانى
+  </a>
+</h1>
+{% endblock %}
+<div class="content-wrapper">
+  {% block content %}
+  {% block content_main %}{% endblock %}
+  {% endblock %}
+</div>
+
+{% block footer %}
+<div class="custom-footer">
+    <p>نقيب مهندس - أحمد أيمن نصر</p>
+</div>
 {% endblock %}
 
 {% block userlinks %}

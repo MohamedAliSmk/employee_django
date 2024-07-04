@@ -174,3 +174,36 @@ class IdealEmployeeCandidate(models.Model):
 
         super(IdealEmployeeCandidate, self).save(*args, **kwargs)
     
+class EmployeeAttendance(models.Model):
+    STATUSES =( 
+        ("P", "ح"), # present 
+        ("S", "م"), # sick
+        ("C", "ع"), # casual
+        ("A", "د"), # annual
+        ("M", "غ"), # missing
+    )   
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, verbose_name=_('User'))
+    status = models.CharField(_('Status'), max_length=200, choices=STATUSES, null=False, blank=False)
+    dayDate = models.DateField(
+        _('Day Date'), 
+        default= datetime.now,
+        validators=[validate_date],
+        null=False, blank=False
+    )
+    
+    created = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated = models.DateTimeField(_('Updated At'), auto_now=True)
+    
+    class Meta:
+        verbose_name = _('Employee Attendance')
+        verbose_name_plural = _('Employees Attendance')
+        ordering = ['-updated', '-created']
+    def __str__(self):
+        return (self.user.username)
+    
+    # def save(self, *args, **kwargs):
+    #     user = CustomUser.objects.get(username=self.user)
+    #     user.idealEmployee = self.idealEmployee
+    #     user.save()
+    #     super(IdealEmployeeCandidate, self).save(*args, **kwargs)
+    

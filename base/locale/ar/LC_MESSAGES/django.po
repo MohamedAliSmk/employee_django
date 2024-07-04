@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 12:25+0000\n"
+"POT-Creation-Date: 2024-07-04 14:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,250 +19,302 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: base/admin.py:46
+#: base/admin.py:51
 msgid "Personal info"
 msgstr "البيانات الشخصية"
 
-#: base/admin.py:47
+#: base/admin.py:52
 msgid "Permissions"
 msgstr ""
 
-#: base/admin.py:48
+#: base/admin.py:53
 msgid "Important dates"
 msgstr ""
 
-#: base/admin.py:50
+#: base/admin.py:55
 msgid "Insurance info"
 msgstr "بيانات التأمين"
 
-#: base/admin.py:51
+#: base/admin.py:56
 msgid "Qualifications"
 msgstr "المؤهلات"
 
-#: base/admin.py:53
+#: base/admin.py:58
 msgid "Employment info"
 msgstr "بيانات التوظيف"
 
-#: base/admin.py:61
+#: base/admin.py:66
 msgid "Financial info"
 msgstr "البيانات المالية"
 
-#: base/admin.py:67
+#: base/admin.py:72
 msgid "Other info"
 msgstr "بيانات أخرى"
 
-#: base/models.py:15
+#: base/models.py:14
 msgid "The date cannot be in the future"
 msgstr "لا يمكن ان يكون التاريخ فى المستقبل"
 
-#: base/models.py:17
+#: base/models.py:16
 msgid "Invalid date - it must be in YYYY-MM-DD format."
 msgstr "التاريخ غير صحيح - ادخل تاريخ صحيح"
 
-#: base/models.py:34
+#: base/models.py:33
 msgid "Second Name"
 msgstr "الإسم الثانى"
 
-#: base/models.py:35
+#: base/models.py:34
 msgid "Third Name"
 msgstr "الإسم الثالث"
 
-#: base/models.py:36
+#: base/models.py:35
 msgid "Nickname"
 msgstr "الشهرة"
 
-#: base/models.py:37
+#: base/models.py:36
 msgid "Birth Place"
 msgstr "محل الميلاد"
 
-#: base/models.py:39
+#: base/models.py:38
 msgid "Birth Date"
 msgstr "تاريخ الميلاد"
 
-#: base/models.py:45
+#: base/models.py:44
 msgid "National ID"
 msgstr "الرقم القومى"
 
-#: base/models.py:49
+#: base/models.py:48
 msgid "Enter a valid national id"
 msgstr "ادخل رقم قومى صحيح"
 
-#: base/models.py:50
+#: base/models.py:49
 msgid "invalid_data"
 msgstr "بيانات غير صحيحة"
 
-#: base/models.py:56
+#: base/models.py:55
 msgid "Insurance Number"
 msgstr "الرقم التأمينى"
 
-#: base/models.py:57
+#: base/models.py:56
 msgid "Health Insurance Number"
 msgstr "رقم التأمين الصحى"
 
-#: base/models.py:59
+#: base/models.py:58
 msgid "Academic Qualifications"
 msgstr "المؤهلات الدراسية"
 
-#: base/models.py:60
+#: base/models.py:59
 msgid "Job Family"
 msgstr "المجموعة الوظيفية"
 
-#: base/models.py:61
+#: base/models.py:60
 msgid "Graduation Year"
 msgstr "سنة التخرج"
 
-#: base/models.py:62
+#: base/models.py:61
 msgid "Academic Qualifications In Service"
 msgstr "المؤهل أثناء الخدمة"
 
-#: base/models.py:64
+#: base/models.py:63
 msgid "Employment Date"
 msgstr "تاريخ التعيين"
 
-#: base/models.py:65
+#: base/models.py:64
 msgid "Decision Number"
 msgstr "رقم القرار"
 
-#: base/models.py:66
+#: base/models.py:65
 msgid "Military Status"
 msgstr "الموقف من التجنيد"
 
-#: base/models.py:67
+#: base/models.py:66
 msgid "Job Start Date"
 msgstr "تاريخ إستلام العمل"
 
-#: base/models.py:68
+#: base/models.py:67
 msgid "Current Rank"
 msgstr "الدرجة الحالية"
 
-#: base/models.py:69
+#: base/models.py:68
 msgid "Previous Employer"
 msgstr "جهة العمل السابقة"
 
-#: base/models.py:70
+#: base/models.py:69
 msgid "Current Employer"
 msgstr "جهة العمل الحالية"
 
-#: base/models.py:71 base/models.py:160
+#: base/models.py:70 base/models.py:159
 msgid "Ideal Employee"
 msgstr "الموظف المثالى"
 
-#: base/models.py:72
+#: base/models.py:71
 msgid "Police Day Honoring"
 msgstr "تكريم عيد الشرطه"
 
-#: base/models.py:73
+#: base/models.py:72
 msgid "Periodic Vacations"
 msgstr "الأجازات الدورية"
 
-#: base/models.py:74
+#: base/models.py:73
 msgid "Casual Vacations"
 msgstr "الأجازات الطارئة"
 
-#: base/models.py:76
+#: base/models.py:75
 msgid "Retirement Date"
 msgstr "تاريخ الإحالة للمعاش"
 
-#: base/models.py:77
+#: base/models.py:76
 msgid "Solidarity Fund"
 msgstr "صندوق التكافل"
 
-#: base/models.py:78
+#: base/models.py:77
 msgid "stakeholder Fund"
 msgstr "صندوق المصلحة"
 
-#: base/models.py:79
+#: base/models.py:78
 msgid "Insurance Umbrella"
 msgstr "المظلة التأمينية"
 
-#: base/models.py:81
+#: base/models.py:80
 msgid "Address"
 msgstr "العنوان"
 
-#: base/models.py:82
+#: base/models.py:81
 msgid "Religion"
 msgstr "الديانة"
 
-#: base/models.py:83
+#: base/models.py:82
 msgid "Notes"
 msgstr "ملاحظات"
 
-#: base/models.py:84
+#: base/models.py:83
 msgid "Previous Haj"
 msgstr "سابقة الحج"
 
-#: base/models.py:110 base/models.py:125 base/models.py:140 base/models.py:159
+#: base/models.py:109 base/models.py:124 base/models.py:139 base/models.py:158
+#: base/models.py:185
 msgid "User"
 msgstr "المستخدم"
 
-#: base/models.py:111
+#: base/models.py:110
 msgid "Type"
 msgstr "النوع"
 
-#: base/models.py:112 base/models.py:126 base/models.py:141
+#: base/models.py:111 base/models.py:125 base/models.py:140
 msgid "Name"
 msgstr "العنوان"
 
-#: base/models.py:113 base/models.py:127 base/models.py:142
+#: base/models.py:112 base/models.py:126 base/models.py:141
 msgid "Description"
 msgstr "الوصف"
 
-#: base/models.py:114 base/models.py:129 base/models.py:148 base/models.py:161
+#: base/models.py:113 base/models.py:128 base/models.py:147 base/models.py:160
+#: base/models.py:194
 msgid "Created At"
 msgstr "تاريخ الانشاء"
 
-#: base/models.py:115 base/models.py:130 base/models.py:149 base/models.py:162
+#: base/models.py:114 base/models.py:129 base/models.py:148 base/models.py:161
+#: base/models.py:195
 msgid "Updated At"
 msgstr "تاريخ التعديل"
 
-#: base/models.py:118
+#: base/models.py:117
 msgid "Penalty"
 msgstr "الجزاء"
 
-#: base/models.py:119
+#: base/models.py:118
 msgid "Penalties"
 msgstr "الجزاءات"
 
-#: base/models.py:128
+#: base/models.py:127
 msgid "Report Date"
 msgstr "تاريخ التقرير"
 
-#: base/models.py:133
+#: base/models.py:132
 msgid "Secret Report"
 msgstr "التقرير السرى"
 
-#: base/models.py:134
+#: base/models.py:133
 msgid "Secret Reports"
 msgstr "التقارير السرية"
 
-#: base/models.py:143
+#: base/models.py:142
 msgid "Start Date"
 msgstr "تاريخ البدء"
 
-#: base/models.py:144
+#: base/models.py:143
 msgid "End Date"
 msgstr "تاريخ الإنتهاء"
 
-#: base/models.py:145
+#: base/models.py:144
 msgid "Obtained Certificate"
 msgstr "حصل على شهادة"
 
-#: base/models.py:146
+#: base/models.py:145
 msgid "Grade"
 msgstr "التقدير"
 
-#: base/models.py:152
+#: base/models.py:151
 msgid "Course"
 msgstr "الدورة التدريبية"
 
-#: base/models.py:153
+#: base/models.py:152
 msgid "Courses"
 msgstr "الدورات التدريبية"
 
-#: base/models.py:165
+#: base/models.py:164
 msgid "Ideal Employee Candidate"
 msgstr "مرشح الموظف المثالى"
 
-#: base/models.py:166
+#: base/models.py:165
 msgid "Ideal Employee Candidates"
 msgstr "مرشحين الموظف المثالى"
+
+#: base/models.py:186
+msgid "Status"
+msgstr "الحالة"
+
+#: base/models.py:188
+msgid "Day Date"
+msgstr "التاريخ"
+
+#: base/models.py:198
+msgid "Employee Attendance"
+msgstr "حضور الموظف"
+
+#: base/models.py:199
+msgid "Employees Attendance"
+msgstr "حضور الموظفين"
+
+#: templates/admin/registration/login.html:5
+#: templates/admin/registration/login.html:33
+msgid "Log in"
+msgstr "دخول"
+
+#: templates/admin/registration/login.html:9
+msgid "Django administration"
+msgstr ""
+
+#: templates/admin/registration/login.html:20
+#, fuzzy
+#| msgid "Please correct the errors below."
+msgid "Please correct the error below."
+msgstr "يرجى تصحيح الأخطاء التالية"
+
+#: templates/admin/registration/login.html:20
+msgid "Please correct the errors below."
+msgstr "يرجى تصحيح الأخطاء التالية"
+
+#: templates/admin/registration/login.html:26
+#, fuzzy
+#| msgid "User"
+msgid "Username:"
+msgstr "المستخدم"
+
+#: templates/admin/registration/login.html:29
+msgid "Password:"
+msgstr "كلمة المرور"
+
+#: templates/admin/registration/login.html:42
+msgid "Forgotten your password or username?"
+msgstr "نسيت كلمة المرور او اسم المستخدم؟"

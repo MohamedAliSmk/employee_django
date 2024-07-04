@@ -1,14 +1,20 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployeeCandidate
+from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployeeCandidate, EmployeeAttendance
 from django.contrib.auth.forms import UserChangeForm
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import Group
+from django_apscheduler.models import DjangoJob, DjangoJobExecution
 
 # Register your models here.
 class IdealEmployeeCandidateAdmin(admin.ModelAdmin):
     list_display = ('user', 'idealEmployee', 'created', 'updated')
-    # list_filter = ('topEmployee', 'created', 'updated')
+    # list_filter = ('user', 'created', 'updated')
+    search_fields = ('user__username',)
+    
+class EmployeeAttendanceAdmin(admin.ModelAdmin):
+    list_display = ('user', 'status', 'dayDate')
+    list_filter = ('dayDate',)
     search_fields = ('user__username',)
 
 class CourseInline(admin.TabularInline):
@@ -132,4 +138,5 @@ class CustomUserAdmin(UserAdmin):
 # admin.site.unregister(CustomUser)
 admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(IdealEmployeeCandidate, IdealEmployeeCandidateAdmin)
+admin.site.register(EmployeeAttendance, EmployeeAttendanceAdmin)
 admin.site.unregister(Group)

@@ -39,23 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'base',
     'base.apps.BaseConfig',
-    "django_apscheduler"
+    "django_crontab"
 ]
 
+CRONJOBS = [
+    ('0 0 * * 5', 'base.tasks.add_attendance_records'), # every friday at midnight
+]
 
-# This scheduler config will:
-# - Store jobs in the project database
-# - Execute jobs in threads inside the application process
-SCHEDULER_CONFIG = {
-    "apscheduler.jobstores.default": {
-        "class": "django_apscheduler.jobstores:DjangoJobStore"
-    },
-    'apscheduler.executors.processpool': {
-        "type": "threadpool"
-    },
-}
 SCHEDULER_AUTOSTART = True
 
 MIDDLEWARE = [

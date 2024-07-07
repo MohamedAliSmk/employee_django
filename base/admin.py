@@ -4,7 +4,6 @@ from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployeeCand
 from django.contrib.auth.forms import UserChangeForm
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import Group
-from django_apscheduler.models import DjangoJob, DjangoJobExecution
 
 # Register your models here.
 class IdealEmployeeCandidateAdmin(admin.ModelAdmin):

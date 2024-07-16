@@ -15,7 +15,11 @@ def add_attendance_records():
     for employee in employees:
         for single_date in (start_date + timedelta(n) for n in range((end_date - start_date).days + 1)):
             print('single_date', single_date)
-            EmployeeAttendance.objects.create(user=employee, status='P', dayDate=single_date)
+            status = 'P'
+            if single_date.weekday() in (4, 5):
+                status = 'O'
+                
+            EmployeeAttendance.objects.create(user=employee, status=status, dayDate=single_date)
 
 # def add_attendance_records():
 #     time = timezone.now().strftime('%X')

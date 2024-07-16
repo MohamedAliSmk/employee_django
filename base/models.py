@@ -181,6 +181,7 @@ class EmployeeAttendance(models.Model):
         ("C", "ع"), # casual
         ("A", "د"), # annual
         ("M", "غ"), # missing
+        ("O", "ر"), # missing
     )   
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, verbose_name=_('User'))
     status = models.CharField(_('Status'), max_length=200, choices=STATUSES, null=False, blank=False)

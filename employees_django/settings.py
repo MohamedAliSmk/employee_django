@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
 CRONJOBS = [
     ('0 0 * * 5', 'base.tasks.add_attendance_records'), # every friday at midnight
+    # ('*/2 * * * *', 'base.tasks.add_attendance_records'), # every 5 minutes - for testing
 ]
 
 SCHEDULER_AUTOSTART = True

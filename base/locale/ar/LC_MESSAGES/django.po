@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-04 14:27+0000\n"
+"POT-Creation-Date: 2024-07-28 12:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,37 +19,13 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: base/admin.py:51
+#: base/admin.py:58
 msgid "Personal info"
 msgstr "البيانات الشخصية"
 
-#: base/admin.py:52
-msgid "Permissions"
-msgstr ""
-
-#: base/admin.py:53
-msgid "Important dates"
-msgstr ""
-
-#: base/admin.py:55
-msgid "Insurance info"
-msgstr "بيانات التأمين"
-
-#: base/admin.py:56
-msgid "Qualifications"
-msgstr "المؤهلات"
-
-#: base/admin.py:58
+#: base/admin.py:79
 msgid "Employment info"
 msgstr "بيانات التوظيف"
-
-#: base/admin.py:66
-msgid "Financial info"
-msgstr "البيانات المالية"
-
-#: base/admin.py:72
-msgid "Other info"
-msgstr "بيانات أخرى"
 
 #: base/models.py:14
 msgid "The date cannot be in the future"
@@ -59,232 +35,316 @@ msgstr "لا يمكن ان يكون التاريخ فى المستقبل"
 msgid "Invalid date - it must be in YYYY-MM-DD format."
 msgstr "التاريخ غير صحيح - ادخل تاريخ صحيح"
 
-#: base/models.py:33
+#: base/models.py:50
 msgid "Second Name"
 msgstr "الإسم الثانى"
 
-#: base/models.py:34
+#: base/models.py:51
 msgid "Third Name"
 msgstr "الإسم الثالث"
 
-#: base/models.py:35
+#: base/models.py:52
 msgid "Nickname"
 msgstr "الشهرة"
 
-#: base/models.py:36
-msgid "Birth Place"
-msgstr "محل الميلاد"
+#: base/models.py:55
+msgid "Birth Governorate"
+msgstr "محل الميلاد - المحافظة"
 
-#: base/models.py:38
+#: base/models.py:56
+msgid "Birth Division"
+msgstr "محل الميلاد - القسم"
+
+#: base/models.py:59
 msgid "Birth Date"
 msgstr "تاريخ الميلاد"
 
-#: base/models.py:44
+#: base/models.py:65
 msgid "National ID"
 msgstr "الرقم القومى"
 
-#: base/models.py:48
+#: base/models.py:69
 msgid "Enter a valid national id"
 msgstr "ادخل رقم قومى صحيح"
 
-#: base/models.py:49
+#: base/models.py:70
 msgid "invalid_data"
 msgstr "بيانات غير صحيحة"
 
-#: base/models.py:55
+#: base/models.py:76
 msgid "Insurance Number"
 msgstr "الرقم التأمينى"
 
-#: base/models.py:56
+#: base/models.py:77
 msgid "Health Insurance Number"
 msgstr "رقم التأمين الصحى"
 
-#: base/models.py:58
+#: base/models.py:79 base/models.py:280
 msgid "Academic Qualifications"
 msgstr "المؤهلات الدراسية"
 
-#: base/models.py:59
+#: base/models.py:80
 msgid "Job Family"
 msgstr "المجموعة الوظيفية"
 
-#: base/models.py:60
+#: base/models.py:81
 msgid "Graduation Year"
 msgstr "سنة التخرج"
 
-#: base/models.py:61
-msgid "Academic Qualifications In Service"
-msgstr "المؤهل أثناء الخدمة"
-
-#: base/models.py:63
+#: base/models.py:84
 msgid "Employment Date"
 msgstr "تاريخ التعيين"
 
-#: base/models.py:64
+#: base/models.py:85
 msgid "Decision Number"
 msgstr "رقم القرار"
 
-#: base/models.py:65
+#: base/models.py:86
 msgid "Military Status"
 msgstr "الموقف من التجنيد"
 
-#: base/models.py:66
+#: base/models.py:87
 msgid "Job Start Date"
 msgstr "تاريخ إستلام العمل"
 
-#: base/models.py:67
+#: base/models.py:88
 msgid "Current Rank"
 msgstr "الدرجة الحالية"
 
-#: base/models.py:68
+#: base/models.py:90
 msgid "Previous Employer"
 msgstr "جهة العمل السابقة"
 
-#: base/models.py:69
+#: base/models.py:91
+msgid "Previous Employment Start Date"
+msgstr "تاريخ بداية العمل السابق"
+
+#: base/models.py:92
+msgid "Previous Employment End Date"
+msgstr "تاريخ نهاية العمل السابق"
+
+#: base/models.py:94
 msgid "Current Employer"
 msgstr "جهة العمل الحالية"
 
-#: base/models.py:70 base/models.py:159
-msgid "Ideal Employee"
-msgstr "الموظف المثالى"
+#: base/models.py:95
+msgid "Current Employment Start Date"
+msgstr "تاريخ بداية العمل الحالى"
 
-#: base/models.py:71
-msgid "Police Day Honoring"
-msgstr "تكريم عيد الشرطه"
-
-#: base/models.py:72
+#: base/models.py:99
 msgid "Periodic Vacations"
 msgstr "الأجازات الدورية"
 
-#: base/models.py:73
+#: base/models.py:100
 msgid "Casual Vacations"
 msgstr "الأجازات الطارئة"
 
-#: base/models.py:75
+#: base/models.py:102
 msgid "Retirement Date"
 msgstr "تاريخ الإحالة للمعاش"
 
-#: base/models.py:76
+#: base/models.py:104
 msgid "Solidarity Fund"
 msgstr "صندوق التكافل"
 
-#: base/models.py:77
+#: base/models.py:105 base/models.py:107 base/models.py:109
+msgid "Joining Date"
+msgstr "تاريخ الالتحاق"
+
+#: base/models.py:106
 msgid "stakeholder Fund"
 msgstr "صندوق المصلحة"
 
-#: base/models.py:78
+#: base/models.py:108
 msgid "Insurance Umbrella"
 msgstr "المظلة التأمينية"
 
-#: base/models.py:80
-msgid "Address"
-msgstr "العنوان"
+#: base/models.py:113
+msgid "Address Governorate"
+msgstr "العنوان - المحافظة"
 
-#: base/models.py:81
+#: base/models.py:114
+msgid "Address Division"
+msgstr "العنوان - القسم"
+
+#: base/models.py:116
 msgid "Religion"
 msgstr "الديانة"
 
-#: base/models.py:82
-msgid "Notes"
-msgstr "ملاحظات"
-
-#: base/models.py:83
+#: base/models.py:118
 msgid "Previous Haj"
 msgstr "سابقة الحج"
 
-#: base/models.py:109 base/models.py:124 base/models.py:139 base/models.py:158
-#: base/models.py:185
+#: base/models.py:119
+msgid "Previous Haj Date"
+msgstr "تاريخ الحج"
+
+#: base/models.py:145 base/models.py:162 base/models.py:186 base/models.py:205
+#: base/models.py:226 base/models.py:248 base/models.py:310
 msgid "User"
 msgstr "المستخدم"
 
-#: base/models.py:110
+#: base/models.py:146 base/models.py:311
 msgid "Type"
 msgstr "النوع"
 
-#: base/models.py:111 base/models.py:125 base/models.py:140
+#: base/models.py:147
 msgid "Name"
 msgstr "العنوان"
 
-#: base/models.py:112 base/models.py:126 base/models.py:141
+#: base/models.py:148 base/models.py:164
 msgid "Description"
 msgstr "الوصف"
 
-#: base/models.py:113 base/models.py:128 base/models.py:147 base/models.py:160
-#: base/models.py:194
+#: base/models.py:149
+msgid "Penalty Date"
+msgstr "تاريخ الجزاء"
+
+#: base/models.py:151 base/models.py:167 base/models.py:194 base/models.py:208
+#: base/models.py:229 base/models.py:257 base/models.py:275 base/models.py:318
 msgid "Created At"
 msgstr "تاريخ الانشاء"
 
-#: base/models.py:114 base/models.py:129 base/models.py:148 base/models.py:161
-#: base/models.py:195
+#: base/models.py:152 base/models.py:168 base/models.py:195 base/models.py:209
+#: base/models.py:230 base/models.py:258 base/models.py:276 base/models.py:319
 msgid "Updated At"
 msgstr "تاريخ التعديل"
 
-#: base/models.py:117
+#: base/models.py:155
 msgid "Penalty"
 msgstr "الجزاء"
 
-#: base/models.py:118
+#: base/models.py:156
 msgid "Penalties"
 msgstr "الجزاءات"
 
-#: base/models.py:127
-msgid "Report Date"
-msgstr "تاريخ التقرير"
+#: base/models.py:165
+msgid "Report Date From"
+msgstr "تاريخ التقرير - من"
 
-#: base/models.py:132
+#: base/models.py:166
+msgid "Report Date To"
+msgstr "تاريخ التقرير - الى"
+
+#: base/models.py:171
 msgid "Secret Report"
 msgstr "التقرير السرى"
 
-#: base/models.py:133
+#: base/models.py:172
 msgid "Secret Reports"
 msgstr "التقارير السرية"
 
-#: base/models.py:142
+#: base/models.py:187
+msgid "Course Name"
+msgstr "اسم الدورة التدريبية"
+
+#: base/models.py:188
+msgid "Course Address"
+msgstr "مكان الانعقاد"
+
+#: base/models.py:189
 msgid "Start Date"
 msgstr "تاريخ البدء"
 
-#: base/models.py:143
+#: base/models.py:190
 msgid "End Date"
 msgstr "تاريخ الإنتهاء"
 
-#: base/models.py:144
+#: base/models.py:191
 msgid "Obtained Certificate"
 msgstr "حصل على شهادة"
 
-#: base/models.py:145
+#: base/models.py:192
 msgid "Grade"
 msgstr "التقدير"
 
-#: base/models.py:151
+#: base/models.py:198
 msgid "Course"
 msgstr "الدورة التدريبية"
 
-#: base/models.py:152
+#: base/models.py:199
 msgid "Courses"
 msgstr "الدورات التدريبية"
 
-#: base/models.py:164
-msgid "Ideal Employee Candidate"
-msgstr "مرشح الموظف المثالى"
+#: base/models.py:206 base/models.py:227
+msgid "Date"
+msgstr "التاريخ"
 
-#: base/models.py:165
-msgid "Ideal Employee Candidates"
-msgstr "مرشحين الموظف المثالى"
+#: base/models.py:212
+msgid "Ideal Employee"
+msgstr "الموظف المثالى"
 
-#: base/models.py:186
+#: base/models.py:213
+msgid "Ideal Employees"
+msgstr "الموظفين المثاليين"
+
+#: base/models.py:233 base/models.py:234
+msgid "Police Day Honored Employee"
+msgstr "المكرم فى عيد الشرطة"
+
+#: base/models.py:249
 msgid "Status"
 msgstr "الحالة"
 
-#: base/models.py:188
+#: base/models.py:251
 msgid "Day Date"
 msgstr "التاريخ"
 
-#: base/models.py:198
+#: base/models.py:261
 msgid "Employee Attendance"
 msgstr "حضور الموظف"
 
-#: base/models.py:199
+#: base/models.py:262
 msgid "Employees Attendance"
 msgstr "حضور الموظفين"
+
+#: base/models.py:274
+msgid "Qualification Name"
+msgstr "اسم المؤهل"
+
+#: base/models.py:279
+msgid "Academic Qualification"
+msgstr "المؤهل الدراسى"
+
+#: base/models.py:289
+msgid "Governorate"
+msgstr "المحافظة"
+
+#: base/models.py:290
+msgid "Governorates"
+msgstr "المحافظات"
+
+#: base/models.py:299
+msgid "Division"
+msgstr "القسم"
+
+#: base/models.py:300
+msgid "Divisions"
+msgstr "الأقسام"
+
+#: base/models.py:313
+msgid "From Date"
+msgstr "التاريخ من"
+
+#: base/models.py:314
+msgid "To Date"
+msgstr "التاريخ الى"
+
+#: base/models.py:315
+msgid "Days"
+msgstr "عدد الأيام"
+
+#: base/models.py:316
+msgid "Remaining Balance"
+msgstr "الرصيد المتبقى"
+
+#: base/models.py:322
+msgid "Employee Vacation"
+msgstr "اجازة الموظف"
+
+#: base/models.py:323
+msgid "Employee Vacations"
+msgstr "اجازات الموظفين"
 
 #: templates/admin/registration/login.html:5
 #: templates/admin/registration/login.html:33
@@ -296,8 +356,6 @@ msgid "Django administration"
 msgstr ""
 
 #: templates/admin/registration/login.html:20
-#, fuzzy
-#| msgid "Please correct the errors below."
 msgid "Please correct the error below."
 msgstr "يرجى تصحيح الأخطاء التالية"
 
@@ -306,8 +364,6 @@ msgid "Please correct the errors below."
 msgstr "يرجى تصحيح الأخطاء التالية"
 
 #: templates/admin/registration/login.html:26
-#, fuzzy
-#| msgid "User"
 msgid "Username:"
 msgstr "المستخدم"
 
@@ -318,3 +374,12 @@ msgstr "كلمة المرور"
 #: templates/admin/registration/login.html:42
 msgid "Forgotten your password or username?"
 msgstr "نسيت كلمة المرور او اسم المستخدم؟"
+
+#~ msgid "Police Day Honored Employees"
+#~ msgstr "المكرمين فى عيد الشرطة"
+
+#~ msgid "Ideal Employee Candidate"
+#~ msgstr "مرشح الموظف المثالى"
+
+#~ msgid "Ideal Employee Candidates"
+#~ msgstr "مرشحين الموظف المثالى"

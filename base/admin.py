@@ -1,14 +1,24 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployeeCandidate, EmployeeAttendance
+from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployee, PoliceDayHonoredEmployee, EmployeeAttendance, Division, Governorate, AcademicQualification, EmployeeVacation
 from django.contrib.auth.forms import UserChangeForm
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import Group
 
 # Register your models here.
-class IdealEmployeeCandidateAdmin(admin.ModelAdmin):
-    list_display = ('user', 'idealEmployee', 'created', 'updated')
-    # list_filter = ('user', 'created', 'updated')
+class EmployeeVacationAdmin(admin.ModelAdmin):
+    list_display = ('user', 'type', 'fromDate', 'toDate', 'days', 'remainingBalance')
+    list_filter = ('type', 'fromDate', 'toDate')
+    search_fields = ('user__username',)
+
+class IdealEmployeeAdmin(admin.ModelAdmin):
+    list_display = ('user', 'date')
+    list_filter = ('date',)
+    search_fields = ('user__username',)
+
+class PoliceDayHonoredEmployeeAdmin(admin.ModelAdmin):
+    list_display = ('user', 'date')
+    list_filter = ('date',)
     search_fields = ('user__username',)
     
 class EmployeeAttendanceAdmin(admin.ModelAdmin):
@@ -39,7 +49,14 @@ class CustomUserAdmin(UserAdmin):
     model = CustomUser
     form = CustomUserChangeForm
     inlines = [CourseInline, PenaltyInline, SecretReportInline]
+    readonly_fields = ('periodicVacations', 'casualVacations')
     
+    def number_of_penalties(self, obj):
+        return obj.penalties.count()
+
+    number_of_penalties.short_description = _('Penalties')
+    list_display = UserAdmin.list_display + ('number_of_penalties',)
+
     # fieldsets = UserAdmin.fieldsets + (
     #     (None, {'fields': ('nickname', 'birthPlace', 'birthDate')}),
     # )
@@ -48,28 +65,46 @@ class CustomUserAdmin(UserAdmin):
     # )
     fieldsets = (
         # (None, {'fields': ('username', 'password')}),
-        (_('Personal info'), {'fields': ('username', 'first_name', 'secondName', 'thirdName', 'last_name', 'nationalId', 'nickname', 'birthPlace', 'birthDate', 'email')}),
-        (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
-        (_('Important dates'), {'fields': ('last_login', 'date_joined')}),
+        (
+            _('Personal info'), {
+                'classes': ('main-form',),
+                'fields': (
+                    ('username', 'email', 'first_name', 'secondName', 'thirdName', 'last_name', 'nickname'), 
+                    ('nationalId', 'birthDate', 'birthGovernorate' ,'birthDivision', 'insuranceNumber', 'healthInsuranceNumber'),
+                    ('addressGovernorate', 'addressDivision', 'religion'),
+                    ('previousHaj', 'previousHajDate'),
+                    ('academicQualifications', 'jobFamily', 'graduationYear', 'militaryStatus'),
+                    ('solidarityFund', 'solidarityFundDate'), 
+                    ('stakeholderFund', 'stakeholderFundDate'), 
+                    ('insuranceUmbrella', 'insuranceUmbrellaDate')
+                )
+            }
+        ),
+        # (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        # (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser')}),
+        # (_('Important dates'), {'fields': ('last_login', 'date_joined')}),
         # Add your additional custom fieldsets or modify existing ones as needed
-        (_('Insurance info'), {'fields': ('insuranceNumber', 'healthInsuranceNumber')}),
-        (_('Qualifications'), {'fields': ('academicQualifications', 'jobFamily', 'graduationYear', 'academicQualificationsInService')}),
+        # (_('Insurance info'), {'fields': ('insuranceNumber', 'healthInsuranceNumber')}),
+        # (_('Qualifications'), {'fields': ('academicQualifications', 'jobFamily', 'graduationYear', 'academicQualificationsInService')}),
         (
             _('Employment info'), {
                 'fields': (
-                    'employmentDate', 'decisionNumber', 'militaryStatus', 'jobStartDate', 'currentRank', 'previousEmployer', 'currentEmployer', 'idealEmployee', 
-                    'policeDayHonoring', 'retirementDate', 'periodicVacations', 'casualVacations'
-                )
+                    ('employmentDate', 'decisionNumber', 'jobStartDate', 'currentRank'),
+                    ('previousEmployer', 'previousEmploymentStartDate', 'previousEmploymentEndDate'),
+                    ('currentEmployer', 'currentEmploymentStartDate'),
+                    ('retirementDate', 'periodicVacations', 'casualVacations')
+                ),
+                
             }
         ),
-        (
-            _('Financial info'), {
-                'fields': (
-                    'solidarityFund', 'stakeholderFund', 'insuranceUmbrella'
-                )
-            }
-        ),
-        (_('Other info'), {'fields': ('address', 'religion', 'notes', 'previousHaj')}),
+        # (
+        #     _('Financial info'), {
+        #         'fields': (
+        #             'solidarityFund', 'stakeholderFund', 'insuranceUmbrella'
+        #         )
+        #     }
+        # ),
+        # (_('Other info'), {'fields': ('address', 'religion', 'notes', 'previousHaj')}),
     )
     
 
@@ -88,7 +123,7 @@ class CustomUserAdmin(UserAdmin):
 
     def get_readonly_fields(self, request, obj=None):
         if request.user.is_superuser:
-            return ()  # Return an empty tuple for superusers to have no read-only fields
+            return ('periodicVacations', 'casualVacations')  # Return an empty tuple for superusers to have no read-only fields
         if not obj:  # When creating a new user, no fields are read-only
             return self.readonly_fields
         if request.user == obj:
@@ -133,9 +168,25 @@ class CustomUserAdmin(UserAdmin):
         if request.user.is_superuser:
             return queryset  # Superuser can see all users
         return queryset.filter(pk=request.user.pk)  # Normal user can only see their own record
+    
+    class Media:
+        css = {
+            'all': ('base/custom_admin.css',),
+        }
+
+class DivisionInline(admin.TabularInline):
+    model = Division
+    extra = 1
+
+class GovernorateAdmin(admin.ModelAdmin):
+    inlines = [DivisionInline]
 
 # admin.site.unregister(CustomUser)
 admin.site.register(CustomUser, CustomUserAdmin)
-admin.site.register(IdealEmployeeCandidate, IdealEmployeeCandidateAdmin)
+admin.site.register(IdealEmployee, IdealEmployeeAdmin)
+admin.site.register(PoliceDayHonoredEmployee, PoliceDayHonoredEmployeeAdmin)
 admin.site.register(EmployeeAttendance, EmployeeAttendanceAdmin)
+admin.site.register(Governorate, GovernorateAdmin)
+admin.site.register(AcademicQualification)
+admin.site.register(EmployeeVacation, EmployeeVacationAdmin)
 admin.site.unregister(Group)

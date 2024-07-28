@@ -1,0 +1,11 @@
+fieldset.module.main-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset.module.main-form .form-row div {
+    flex: 1 1 33%;
+    box-sizing: border-box;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+}

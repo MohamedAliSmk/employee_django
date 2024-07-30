@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'base.apps.BaseConfig',
-    "django_crontab"
+    "django_crontab",
+    "rangefilter"
 ]
 
 CRONJOBS = [
@@ -132,7 +133,7 @@ LANGUAGES = [
     ('ar', 'Arabic'),
     ('en', 'English'),
 ]
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Cairo'
 
 USE_I18N = True
 

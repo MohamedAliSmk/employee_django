@@ -107,7 +107,18 @@
       background-color: white; /* Green */
       color: #555555;
     }
+    .calendarbox.module{
+      padding-left: 19px;
+    }
   </style>
+
+  {% if 'employeevacation' in request.path %}
+    <style>
+      .calendarbox.module{
+        left: 228px !important;
+      }
+    </style>
+  {% endif %}
 
   {% if 'change' in request.path %}
     <button onclick="printElementById('content-main')" class="print-btn" style="z-index: 1000;">Print Page</button>

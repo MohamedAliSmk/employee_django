@@ -1,30 +1,51 @@
 from django.contrib import admin
+from django.contrib.admin import DateFieldListFilter
 from django.contrib.auth.admin import UserAdmin
 from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployee, PoliceDayHonoredEmployee, EmployeeAttendance, Division, Governorate, AcademicQualification, EmployeeVacation
 from django.contrib.auth.forms import UserChangeForm
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import Group
 from django import forms
+from rangefilter.filters import (
+    DateRangeFilterBuilder,
+    DateTimeRangeFilterBuilder,
+    NumericRangeFilterBuilder,
+    DateRangeQuickSelectListFilterBuilder,
+)
 
 # Register your models here.
+class AcademicQualificationAdmin(admin.ModelAdmin):
+    search_fields = ('name',)
+
 class EmployeeVacationAdmin(admin.ModelAdmin):
     list_display = ('user', 'type', 'fromDate', 'toDate', 'days', 'remainingBalance')
-    list_filter = ('type', 'fromDate', 'toDate')
+    list_filter = (
+        'type',
+        ("fromDate", DateRangeFilterBuilder()),
+        ("toDate", DateRangeFilterBuilder()),
+    )
     search_fields = ('user__username',)
 
 class IdealEmployeeAdmin(admin.ModelAdmin):
     list_display = ('user', 'date')
-    list_filter = ('date',)
+    list_filter = (
+        ("date", DateRangeFilterBuilder()),
+    )
     search_fields = ('user__username',)
 
 class PoliceDayHonoredEmployeeAdmin(admin.ModelAdmin):
     list_display = ('user', 'date')
     list_filter = ('date',)
     search_fields = ('user__username',)
+    list_filter = (
+        ("date", DateRangeFilterBuilder()),
+    )
     
 class EmployeeAttendanceAdmin(admin.ModelAdmin):
     list_display = ('user', 'status', 'dayDate')
-    list_filter = ('dayDate',)
+    list_filter = (
+        ("dayDate", DateRangeFilterBuilder()),
+    )
     search_fields = ('user__username',)
 
 class CourseInline(admin.TabularInline):
@@ -91,6 +112,8 @@ class CustomUserChangeForm(UserChangeForm):
         return instance
 
 class CustomUserAdmin(UserAdmin):
+    UserAdmin.list_display = ('username', 'email')
+    list_filter = ()
     model = CustomUser
     form = CustomUserChangeForm
     inlines = [CourseInline, PenaltyInline, SecretReportInline]
@@ -228,6 +251,7 @@ class DivisionInline(admin.TabularInline):
     extra = 1
 
 class GovernorateAdmin(admin.ModelAdmin):
+    search_fields = ('name',)
     inlines = [DivisionInline]
 
 # admin.site.unregister(CustomUser)
@@ -236,6 +260,6 @@ admin.site.register(IdealEmployee, IdealEmployeeAdmin)
 admin.site.register(PoliceDayHonoredEmployee, PoliceDayHonoredEmployeeAdmin)
 admin.site.register(EmployeeAttendance, EmployeeAttendanceAdmin)
 admin.site.register(Governorate, GovernorateAdmin)
-admin.site.register(AcademicQualification)
+admin.site.register(AcademicQualification, AcademicQualificationAdmin)
 admin.site.register(EmployeeVacation, EmployeeVacationAdmin)
 admin.site.unregister(Group)

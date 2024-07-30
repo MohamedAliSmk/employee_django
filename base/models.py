@@ -145,8 +145,8 @@ class Penalty(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, verbose_name=_('User'), related_name='penalties')
     type = models.CharField(_('Type'), max_length=200, choices=TYPES, null=False, blank=False)
     name = models.CharField(_('Name'), max_length=200, null=False, blank=False)
-    description = models.TextField(_('Description'), null=False, blank=False)
     penaltyDate = models.DateField(_('Penalty Date'), validators=[validate_date], null=True, blank=True)
+    description = models.TextField(_('Description'), null=False, blank=False)
     
     created = models.DateTimeField(_('Created At'), auto_now_add=True)
     updated = models.DateTimeField(_('Updated At'), auto_now=True)
@@ -161,9 +161,10 @@ class Penalty(models.Model):
 class SecretReport(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, verbose_name=_('User'))
     # name = models.CharField(_('Name'), max_length=200, null=False, blank=False)
-    description = models.TextField(_('Description'), null=False, blank=False)
     reportDateFrom = models.DateField(_('Report Date From'), validators=[validate_date], null=True, blank=True)
     reportDateTo = models.DateField(_('Report Date To'), validators=[validate_date], null=True, blank=True)
+    description = models.TextField(_('Description'), null=False, blank=False)
+    
     created = models.DateTimeField(_('Created At'), auto_now_add=True)
     updated = models.DateTimeField(_('Updated At'), auto_now=True)
     
@@ -185,7 +186,7 @@ class Course(models.Model):
         
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, verbose_name=_('User'))
     name = models.CharField(_('Course Name'), max_length=200, null=False, blank=False)
-    address = models.TextField(_('Course Address'), null=True, blank=True)
+    address = models.CharField(_('Course Address'), max_length=200, null=True, blank=True)
     startDate = models.DateField(_('Start Date'), validators=[validate_date], null=True, blank=True)
     endDate = models.DateField(_('End Date'), validators=[validate_date], null=True, blank=True)
     certificateObtained = models.BooleanField(_('Obtained Certificate'), default=False, null=True, blank=True)
@@ -283,7 +284,7 @@ class AcademicQualification(models.Model):
         return (self.name)
 
 class Governorate(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(_('Name'), max_length=100)
     
     class Meta:
         verbose_name = _('Governorate')
@@ -292,7 +293,7 @@ class Governorate(models.Model):
         return (self.name)
     
 class Division(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(_('Name'), max_length=100)
     governorate = models.ForeignKey(Governorate, related_name='divisions', on_delete=models.CASCADE)
 
     class Meta:

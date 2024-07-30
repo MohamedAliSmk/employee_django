@@ -88,81 +88,35 @@
         {% endfor %}
     </select>
   </form>
+
   <style>
-    /* .vLargeTextField, .vXMLLargeTextField {
-      width: unset;
+    .print-btn{
+      background-color: #555555;
+      border: none;
+      color: white;
+      padding: 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border: 2px solid #555555;
+      border-radius: 4px;
+      transition-duration: 0.4s;
     }
-    @media print {
-      .vLargeTextField, .vXMLLargeTextField {
-        width: unset;
-      } 
-    } */
+    .print-btn:hover{
+      background-color: white; /* Green */
+      color: #555555;
+    }
   </style>
-  <!-- <style>
-    .vLargeTextField, .vXMLLargeTextField{
-      width: 200px !important; 
-      color: red !important;
-
-    }
-    .tabular.inline-related{
-      width: 75%;
-      color: red !important;
-
-    } 
-    @media print {
-      .vLargeTextField, .vXMLLargeTextField{
-        width: 200px !important; 
-        color: red !important;
-
-      }
-      .tabular.inline-related{
-        width: 75% !important;
-        color: red !important;
-
-      } 
-      body, html {
-          width: 100%;
-          overflow: visible;
-      }
-      .content-main {
-          width: 100%;
-          overflow: visible;
-      }
-      .content-main table {
-          width: 50%;
-          border-collapse: collapse;
-          white-space: nowrap;
-          color: red;
-      }
-      .content-main table th, .content-main table td {
-          white-space: nowrap;
-      }
-
-      textarea{
-        width: 200px !important
-      }
-    }
-  </style> -->
 
   {% if 'change' in request.path %}
-    <button onclick="printElementById('content-main')" style="z-index: 1000;">Print Page - Id</button>
+    <button onclick="printElementById('content-main')" class="print-btn" style="z-index: 1000;">Print Page</button>
     <!-- <button onclick="printPage('content-main')" style="z-index: 1000;">Print Page - Id</button> -->
   {% else %}
-    <button onclick="printElementByClassName('results')" style="z-index: 1000;">Print Page - Class</button>
+    <button onclick="printElementByClassName('results')" class="print-btn" style="z-index: 1000;">Print Page</button>
   {% endif %}
 
   <script>
-    //  document.addEventListener('DOMContentLoaded', function() {
-    //     // Select all textarea elements
-    //     var textareas = document.querySelectorAll('textarea');
-
-    //     // Loop through each textarea and set the rows and cols attributes
-    //     textareas.forEach(function(textarea) {
-    //         textarea.setAttribute('rows', '4');
-    //         textarea.setAttribute('cols', '4');
-    //         textarea.style.width = '200px !important';
-    //     });
-    // });
 
     function changeLanguage(languageCode) {
       const form = document.getElementById('languageForm');
@@ -183,24 +137,25 @@
     function printElementById(elementId) {
       var element = document.getElementById(elementId);
       if (!element) {
-          alert("No element found with the ID: " + elementId);
+          // alert("No element found with the ID: " + elementId);
           return;
       }
 
       // Clone the element to avoid modifying the original content
       var clone = element.cloneNode(true);
       
-      debugger
       var elementToRemove = clone.getElementsByClassName('submit-row');
       if(elementToRemove.length > 0){
         elementToRemove[0].parentNode.removeChild(elementToRemove[0]);
       }
 
-      // Remove all buttons from the cloned element
-      // var buttons = clone.querySelectorAll("input[type='submit']");
-      // while (buttons.length > 0) {
-      //     buttons[0].parentNode.removeChild(buttons[0]);
-      // }
+      var addElementToRemove = clone.getElementsByClassName('add-row');
+      console.log(addElementToRemove.length);
+      for (let i = 0; i < addElementToRemove.length; i++) {
+        const element = addElementToRemove[i];
+        element.parentNode.removeChild(element);
+      }
+
 
       var printContents = clone.innerHTML;
       var originalContents = document.body.innerHTML;
@@ -225,29 +180,6 @@
           alert("No elements found with the class name: " + className);
       }
     }
-
-    // function printPage(elementId) {
-    //   var printWindow = window.open('', '', 'height=600,width=800');
-    //   printWindow.document.write('<html><head><title>Print</title>');
-    //   printWindow.document.write('<style>');
-    //   printWindow.document.write('body { direction: rtl; font-family: Arial, sans-serif; margin: 20px; }'); // Set RTL direction and font
-    //   printWindow.document.write('.vLargeTextField { width: 200px !important; }');
-    //   printWindow.document.write('.vXMLLargeTextField { width: 200px !important; }');
-    //   printWindow.document.write('.tabular.inline-related { width: 75% !important; }');
-    //   printWindow.document.write('@media print {');
-    //   printWindow.document.write('body, html { width: 100%; overflow: visible; direction: rtl; }'); // Set RTL for print
-    //   printWindow.document.write('table { width: 100% !important; border-collapse: collapse; }');
-    //   printWindow.document.write('th, td { white-space: nowrap; border: 1px solid #ddd; padding: 8px; }'); // Add borders and padding
-    //   printWindow.document.write('.no-print { display: none; }');
-    //   printWindow.document.write('}');
-    //   printWindow.document.write('</style>');
-    //   printWindow.document.write('</head><body>');
-    //   printWindow.document.write(document.getElementById(elementId).innerHTML);
-    //   printWindow.document.write('</body></html>');
-    //   printWindow.document.close();
-    //   printWindow.focus();
-    //   printWindow.print();
-    // }
 
   </script>
 {% endblock %}

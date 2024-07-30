@@ -4,6 +4,7 @@ from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployee, Po
 from django.contrib.auth.forms import UserChangeForm
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import Group
+from django import forms
 
 # Register your models here.
 class EmployeeVacationAdmin(admin.ModelAdmin):
@@ -42,14 +43,58 @@ class SecretReportInline(admin.TabularInline):
     show_change_link = True
 
 class CustomUserChangeForm(UserChangeForm):
+    birthGovernorateFF = forms.ModelChoiceField(queryset=Governorate.objects.all(), required=False, label=_('Birth Governorate'))
+    birthDivisionFF = forms.ModelChoiceField(queryset=Division.objects.none(), required=False, label=_("Birth Division"))
+    
+    addressGovernorateFF = forms.ModelChoiceField(queryset=Governorate.objects.all(), required=False, label=_('Address Governorate'))
+    addressDivisionFF = forms.ModelChoiceField(queryset=Division.objects.none(), required=False, label=_("Address Division"))
+    
+    academicQualificationsFF = forms.ModelChoiceField(queryset=AcademicQualification.objects.all(), required=False, label=_("Academic Qualifications"))
+    
     class Meta(UserChangeForm.Meta):
         model = CustomUser
+        fields = '__all__'
+        
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if 'birthGovernorateFF' in self.data:
+            try:
+                birthGovernorateFF_id = int(self.data.get('birthGovernorateFF'))
+                self.fields['birthDivisionFF'].queryset = Division.objects.filter(governorate=birthGovernorateFF_id).order_by('name')
+            except (ValueError, TypeError):
+                pass  # invalid input from the client; ignore and fallback to empty Town queryset
+        elif self.instance.pk and self.instance.birthGovernorate:
+            gov = Governorate.objects.filter(name=self.instance.birthGovernorate).first()
+            if gov:
+                self.fields['birthDivisionFF'].queryset = Division.objects.filter(governorate=gov.id).order_by('name')
+                
+        if 'addressGovernorateFF' in self.data:
+            try:
+                addressGovernorateFF_id = int(self.data.get('addressGovernorateFF'))
+                self.fields['addressDivisionFF'].queryset = Division.objects.filter(governorate=addressGovernorateFF_id).order_by('name')
+            except (ValueError, TypeError):
+                pass  # invalid input from the client; ignore and fallback to empty Town queryset
+        elif self.instance.pk and self.instance.addressGovernorate:
+            gov = Governorate.objects.filter(name=self.instance.addressGovernorate).first()
+            if gov:
+                self.fields['addressDivisionFF'].queryset = Division.objects.filter(governorate=gov.id).order_by('name')
+                
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        instance.birthGovernorate = self.cleaned_data['birthGovernorateFF'].name if self.cleaned_data['birthGovernorateFF'] else instance.birthGovernorate
+        instance.birthDivision = self.cleaned_data['birthDivisionFF'].name if self.cleaned_data['birthDivisionFF'] else instance.birthDivision
+        instance.addressGovernorate = self.cleaned_data['addressGovernorateFF'].name if self.cleaned_data['addressGovernorateFF'] else instance.addressGovernorate
+        instance.addressDivision = self.cleaned_data['addressDivisionFF'].name if self.cleaned_data['addressDivisionFF'] else instance.addressDivision
+        instance.academicQualifications = self.cleaned_data['academicQualificationsFF'].name if self.cleaned_data['academicQualificationsFF'] else instance.academicQualifications
+        if commit:
+            instance.save()
+        return instance
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
     form = CustomUserChangeForm
     inlines = [CourseInline, PenaltyInline, SecretReportInline]
-    readonly_fields = ('periodicVacations', 'casualVacations')
+    readonly_fields = ('periodicVacations', 'casualVacations', 'birthGovernorate', 'birthDivision', 'addressGovernorate', 'addressDivision', 'academicQualifications')
     
     def number_of_penalties(self, obj):
         return obj.penalties.count()
@@ -70,10 +115,13 @@ class CustomUserAdmin(UserAdmin):
                 'classes': ('main-form',),
                 'fields': (
                     ('username', 'email', 'first_name', 'secondName', 'thirdName', 'last_name', 'nickname'), 
-                    ('nationalId', 'birthDate', 'birthGovernorate' ,'birthDivision', 'insuranceNumber', 'healthInsuranceNumber'),
-                    ('addressGovernorate', 'addressDivision', 'religion'),
+                    ('birthGovernorateFF', 'birthDivisionFF'),
+                    ('birthGovernorate', 'birthDivision'),
+                    ('nationalId', 'religion', 'birthDate', 'insuranceNumber', 'healthInsuranceNumber'),
+                    ('addressGovernorateFF', 'addressDivisionFF'),
+                    ('addressGovernorate', 'addressDivision'),
                     ('previousHaj', 'previousHajDate'),
-                    ('academicQualifications', 'jobFamily', 'graduationYear', 'militaryStatus'),
+                    ('academicQualificationsFF', 'academicQualifications', 'jobFamily', 'graduationYear', 'militaryStatus'),
                     ('solidarityFund', 'solidarityFundDate'), 
                     ('stakeholderFund', 'stakeholderFundDate'), 
                     ('insuranceUmbrella', 'insuranceUmbrellaDate')
@@ -123,7 +171,7 @@ class CustomUserAdmin(UserAdmin):
 
     def get_readonly_fields(self, request, obj=None):
         if request.user.is_superuser:
-            return ('periodicVacations', 'casualVacations')  # Return an empty tuple for superusers to have no read-only fields
+            return ('periodicVacations', 'casualVacations', 'birthGovernorate', 'birthDivision', 'addressGovernorate', 'addressDivision', 'academicQualifications')  # Return an empty tuple for superusers to have no read-only fields
         if not obj:  # When creating a new user, no fields are read-only
             return self.readonly_fields
         if request.user == obj:
@@ -173,6 +221,7 @@ class CustomUserAdmin(UserAdmin):
         css = {
             'all': ('base/custom_admin.css',),
         }
+        js = ('base/js/admin_custom.js',)
 
 class DivisionInline(admin.TabularInline):
     model = Division

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-28 12:29+0000\n"
+"POT-Creation-Date: 2024-07-30 06:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,35 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: base/admin.py:58
+#: base/admin.py:46 base/models.py:55
+msgid "Birth Governorate"
+msgstr "محل الميلاد - المحافظة"
+
+#: base/admin.py:47 base/models.py:56
+msgid "Birth Division"
+msgstr "محل الميلاد - القسم"
+
+#: base/admin.py:49 base/models.py:113
+msgid "Address Governorate"
+msgstr "العنوان - المحافظة"
+
+#: base/admin.py:50 base/models.py:114
+msgid "Address Division"
+msgstr "العنوان - القسم"
+
+#: base/admin.py:52 base/models.py:79 base/models.py:281
+msgid "Academic Qualifications"
+msgstr "المؤهلات الدراسية"
+
+#: base/admin.py:102 base/models.py:156
+msgid "Penalties"
+msgstr "الجزاءات"
+
+#: base/admin.py:114
 msgid "Personal info"
 msgstr "البيانات الشخصية"
 
-#: base/admin.py:79
+#: base/admin.py:138
 msgid "Employment info"
 msgstr "بيانات التوظيف"
 
@@ -46,14 +70,6 @@ msgstr "الإسم الثالث"
 #: base/models.py:52
 msgid "Nickname"
 msgstr "الشهرة"
-
-#: base/models.py:55
-msgid "Birth Governorate"
-msgstr "محل الميلاد - المحافظة"
-
-#: base/models.py:56
-msgid "Birth Division"
-msgstr "محل الميلاد - القسم"
 
 #: base/models.py:59
 msgid "Birth Date"
@@ -78,10 +94,6 @@ msgstr "الرقم التأمينى"
 #: base/models.py:77
 msgid "Health Insurance Number"
 msgstr "رقم التأمين الصحى"
-
-#: base/models.py:79 base/models.py:280
-msgid "Academic Qualifications"
-msgstr "المؤهلات الدراسية"
 
 #: base/models.py:80
 msgid "Job Family"
@@ -159,14 +171,6 @@ msgstr "صندوق المصلحة"
 msgid "Insurance Umbrella"
 msgstr "المظلة التأمينية"
 
-#: base/models.py:113
-msgid "Address Governorate"
-msgstr "العنوان - المحافظة"
-
-#: base/models.py:114
-msgid "Address Division"
-msgstr "العنوان - القسم"
-
 #: base/models.py:116
 msgid "Religion"
 msgstr "الديانة"
@@ -179,34 +183,34 @@ msgstr "سابقة الحج"
 msgid "Previous Haj Date"
 msgstr "تاريخ الحج"
 
-#: base/models.py:145 base/models.py:162 base/models.py:186 base/models.py:205
-#: base/models.py:226 base/models.py:248 base/models.py:310
+#: base/models.py:145 base/models.py:162 base/models.py:187 base/models.py:206
+#: base/models.py:227 base/models.py:249 base/models.py:311
 msgid "User"
 msgstr "المستخدم"
 
-#: base/models.py:146 base/models.py:311
+#: base/models.py:146 base/models.py:312
 msgid "Type"
 msgstr "النوع"
 
-#: base/models.py:147
+#: base/models.py:147 base/models.py:287 base/models.py:296
 msgid "Name"
-msgstr "العنوان"
+msgstr "الاسم"
 
-#: base/models.py:148 base/models.py:164
-msgid "Description"
-msgstr "الوصف"
-
-#: base/models.py:149
+#: base/models.py:148
 msgid "Penalty Date"
 msgstr "تاريخ الجزاء"
 
-#: base/models.py:151 base/models.py:167 base/models.py:194 base/models.py:208
-#: base/models.py:229 base/models.py:257 base/models.py:275 base/models.py:318
+#: base/models.py:149 base/models.py:166
+msgid "Description"
+msgstr "الوصف"
+
+#: base/models.py:151 base/models.py:168 base/models.py:195 base/models.py:209
+#: base/models.py:230 base/models.py:258 base/models.py:276 base/models.py:319
 msgid "Created At"
 msgstr "تاريخ الانشاء"
 
-#: base/models.py:152 base/models.py:168 base/models.py:195 base/models.py:209
-#: base/models.py:230 base/models.py:258 base/models.py:276 base/models.py:319
+#: base/models.py:152 base/models.py:169 base/models.py:196 base/models.py:210
+#: base/models.py:231 base/models.py:259 base/models.py:277 base/models.py:320
 msgid "Updated At"
 msgstr "تاريخ التعديل"
 
@@ -214,135 +218,131 @@ msgstr "تاريخ التعديل"
 msgid "Penalty"
 msgstr "الجزاء"
 
-#: base/models.py:156
-msgid "Penalties"
-msgstr "الجزاءات"
-
-#: base/models.py:165
+#: base/models.py:164
 msgid "Report Date From"
 msgstr "تاريخ التقرير - من"
 
-#: base/models.py:166
+#: base/models.py:165
 msgid "Report Date To"
 msgstr "تاريخ التقرير - الى"
 
-#: base/models.py:171
+#: base/models.py:172
 msgid "Secret Report"
 msgstr "التقرير السرى"
 
-#: base/models.py:172
+#: base/models.py:173
 msgid "Secret Reports"
 msgstr "التقارير السرية"
 
-#: base/models.py:187
+#: base/models.py:188
 msgid "Course Name"
 msgstr "اسم الدورة التدريبية"
 
-#: base/models.py:188
+#: base/models.py:189
 msgid "Course Address"
 msgstr "مكان الانعقاد"
 
-#: base/models.py:189
+#: base/models.py:190
 msgid "Start Date"
 msgstr "تاريخ البدء"
 
-#: base/models.py:190
+#: base/models.py:191
 msgid "End Date"
 msgstr "تاريخ الإنتهاء"
 
-#: base/models.py:191
+#: base/models.py:192
 msgid "Obtained Certificate"
 msgstr "حصل على شهادة"
 
-#: base/models.py:192
+#: base/models.py:193
 msgid "Grade"
 msgstr "التقدير"
 
-#: base/models.py:198
+#: base/models.py:199
 msgid "Course"
 msgstr "الدورة التدريبية"
 
-#: base/models.py:199
+#: base/models.py:200
 msgid "Courses"
 msgstr "الدورات التدريبية"
 
-#: base/models.py:206 base/models.py:227
+#: base/models.py:207 base/models.py:228
 msgid "Date"
 msgstr "التاريخ"
 
-#: base/models.py:212
+#: base/models.py:213
 msgid "Ideal Employee"
 msgstr "الموظف المثالى"
 
-#: base/models.py:213
+#: base/models.py:214
 msgid "Ideal Employees"
 msgstr "الموظفين المثاليين"
 
-#: base/models.py:233 base/models.py:234
+#: base/models.py:234 base/models.py:235
 msgid "Police Day Honored Employee"
 msgstr "المكرم فى عيد الشرطة"
 
-#: base/models.py:249
+#: base/models.py:250
 msgid "Status"
 msgstr "الحالة"
 
-#: base/models.py:251
+#: base/models.py:252
 msgid "Day Date"
 msgstr "التاريخ"
 
-#: base/models.py:261
+#: base/models.py:262
 msgid "Employee Attendance"
 msgstr "حضور الموظف"
 
-#: base/models.py:262
+#: base/models.py:263
 msgid "Employees Attendance"
 msgstr "حضور الموظفين"
 
-#: base/models.py:274
+#: base/models.py:275
 msgid "Qualification Name"
 msgstr "اسم المؤهل"
 
-#: base/models.py:279
+#: base/models.py:280
 msgid "Academic Qualification"
 msgstr "المؤهل الدراسى"
 
-#: base/models.py:289
+#: base/models.py:290
 msgid "Governorate"
 msgstr "المحافظة"
 
-#: base/models.py:290
+#: base/models.py:291
 msgid "Governorates"
 msgstr "المحافظات"
 
-#: base/models.py:299
+#: base/models.py:300
 msgid "Division"
 msgstr "القسم"
 
-#: base/models.py:300
+#: base/models.py:301
 msgid "Divisions"
 msgstr "الأقسام"
 
-#: base/models.py:313
+#: base/models.py:314
 msgid "From Date"
 msgstr "التاريخ من"
 
-#: base/models.py:314
+#: base/models.py:315
 msgid "To Date"
 msgstr "التاريخ الى"
 
-#: base/models.py:315
+#: base/models.py:316
 msgid "Days"
 msgstr "عدد الأيام"
 
-#: base/models.py:316
+#: base/models.py:317
 msgid "Remaining Balance"
 msgstr "الرصيد المتبقى"
 
-#: base/models.py:322
+#: base/models.py:323
 msgid "Employee Vacation"
 msgstr "اجازة الموظف"
 
-#: base/models.py:323
+#: base/models.py:324
 msgid "Employee Vacations"
 msgstr "اجازات الموظفين"
 

@@ -6,6 +6,7 @@ from django.core.validators import RegexValidator, MinLengthValidator, MinValueV
 from django.utils import timezone
 from django.core.exceptions import ValidationError
 from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 
 def validate_date(value):
     try:
@@ -135,6 +136,22 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
+    
+    def save(self, *args, **kwargs):
+        try:
+            if(self.currentEmploymentStartDate):
+                yearsDateDifference = relativedelta(datetime.today().date(), self.currentEmploymentStartDate).years + 1
+                self.periodicVacations = 45 if yearsDateDifference >= 50 else 30 if yearsDateDifference >= 30 else 15
+        except:
+            self.periodicVacations = 15
+        
+        if(self.periodicVacations is None):
+            self.periodicVacations = 15
+            
+        if(self.casualVacations is None):
+            self.casualVacations = 6
+        
+        super(CustomUser, self).save(*args, **kwargs)
     
 class Penalty(models.Model):
     TYPES =( 

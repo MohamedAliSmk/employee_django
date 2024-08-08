@@ -50,6 +50,9 @@
     #content{
       padding-bottom: 60px !important;
     }
+    .calendarnav-previous{
+      right: unset;
+    }
   </style>
 {% endblock %}
 
@@ -112,7 +115,7 @@
     }
   </style>
 
-  {% if 'employeevacation' in request.path %}
+  {% if 'employeevacation' in request.path or 'employeeattendance' in request.path or 'idealemployee' in request.path or 'policedayhonoredemployee' in request.path  %}
     <style>
       .calendarbox.module{
         left: 228px !important;

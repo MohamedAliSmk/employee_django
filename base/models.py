@@ -98,7 +98,7 @@ class CustomUser(AbstractUser):
     # idealEmployee = models.BooleanField(_('Ideal Employee'), default=False, null=True, blank=True)
     # policeDayHonoring = models.BooleanField(_('Police Day Honoring'), default=False, null=True, blank=True)
     periodicVacations = models.IntegerField(_('Periodic Vacations'), validators=[MinValueValidator(0)], default=15, null=True, blank=True)
-    casualVacations = models.IntegerField(_('Casual Vacations'), validators=[MinValueValidator(0)], default=6, null=True, blank=True)
+    casualVacations = models.IntegerField(_('Casual Vacations'), validators=[MinValueValidator(0)], default=7, null=True, blank=True)
     
     retirementDate = models.DateField(_('Retirement Date'), validators=[validate_date], null=True, blank=True)
     
@@ -139,17 +139,20 @@ class CustomUser(AbstractUser):
     
     def save(self, *args, **kwargs):
         try:
-            if(self.currentEmploymentStartDate):
+            if(self.periodicVacations is None and self.currentEmploymentStartDate):
                 yearsDateDifference = relativedelta(datetime.today().date(), self.currentEmploymentStartDate).years + 1
-                self.periodicVacations = 45 if yearsDateDifference >= 50 else 30 if yearsDateDifference >= 30 else 15
-        except:
-            self.periodicVacations = 15
+                self.periodicVacations = 30 if yearsDateDifference >= 2 else 15
+            if(self.periodicVacations is None and self.birthDate):
+                birthYearsDateDifference = relativedelta(datetime.today().date(), self.birthDate).years + 1
+                self.periodicVacations = 45 if birthYearsDateDifference >= 3 else self.periodicVacations
+        except Exception as e:
+            print(e)
         
         if(self.periodicVacations is None):
             self.periodicVacations = 15
             
         if(self.casualVacations is None):
-            self.casualVacations = 6
+            self.casualVacations = 7
         
         super(CustomUser, self).save(*args, **kwargs)
     

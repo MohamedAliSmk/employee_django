@@ -14,15 +14,19 @@ from pathlib import Path
 import os
 from decouple import config
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
+USE_DJANGO_JQUERY = True
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
@@ -41,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'base.apps.BaseConfig',
     "django_crontab",
-    "rangefilter"
+    "rangefilter",
+    'smart_selects'
 ]
 
 CRONJOBS = [
@@ -143,8 +148,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+BASE_DIR = Path(__file__).resolve().parent.parent
 
+# URL to access static files
+STATIC_URL = '/static/'
+
+# Directory where `collectstatic` will collect static files for production
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Ensure this is NOT in STATICFILES_DIRS
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # This is where admin/js/employee_vacation.js should be
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 

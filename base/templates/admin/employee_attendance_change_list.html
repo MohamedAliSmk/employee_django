@@ -1,0 +1,10 @@
+{% extends "admin/change_list.html" %}
+
+{% block content %}
+    <div class="bulk-action-container" style="margin-bottom: 20px;">
+        <a class="button" href="{% url 'admin:add_attendance' %}" style="background-color: #5cb85c; color: white;">
+            أضافة حضور لكل الموظفين
+        </a>
+    </div>
+    {{ block.super }}
+{% endblock %}

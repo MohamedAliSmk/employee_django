@@ -26,3 +26,6 @@ six==1.16.0
 tzdata==2024.1
 vine==5.1.0
 wcwidth==0.2.13
+APScheduler==3.10.4
+Pillow==11.1.0
+django-smart-selects

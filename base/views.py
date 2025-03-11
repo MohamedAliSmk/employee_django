@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .tasks import add_attendance_records
 from .models import Division, Sections
-# from .helpers.national_id import validateNationalId
 
 # Create your views here.
 def home(request):

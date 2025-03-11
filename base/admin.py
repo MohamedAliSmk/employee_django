@@ -1,33 +1,29 @@
 from django.contrib import admin
-from django.contrib.admin import DateFieldListFilter
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser, Penalty, SecretReport, Course, IdealEmployee, PoliceDayHonoredEmployee, EmployeeAttendance, Division, Governorate, AcademicQualification, EmployeeVacation, CourseName, Employee,DepartmentsAndSections,EmploymentHistory,Sections
+from .models import (
+    CustomUser, Penalty, SecretReport,
+    Course, IdealEmployee, PoliceDayHonoredEmployee,
+    EmployeeAttendance, Division, Governorate,
+    AcademicQualification, EmployeeVacation, CourseName,
+    Employee,DepartmentsAndSections,EmploymentHistory,Sections
+    )
 from django.contrib.auth.forms import UserChangeForm
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import Group
 from django import forms
 from django.utils import timezone
-from django.utils.http import urlencode
-from django.urls import reverse
-from rangefilter.filters import (
-    DateRangeFilterBuilder,
-    DateTimeRangeFilterBuilder,
-    NumericRangeFilterBuilder,
-    DateRangeQuickSelectListFilterBuilder,
-)
+from rangefilter.filters import DateRangeFilterBuilder
 from django.core.exceptions import ValidationError
 import re
 from django.db import models
-from datetime import date, datetime
-from django.db import connection
+from datetime import datetime
 from django.urls import path
 from django.http import HttpResponseRedirect
-from .widgets import AdminImageWidget  # Ensure the widget is correctly imported
+from .widgets import AdminImageWidget
 from django.shortcuts import redirect
 from django.contrib.auth import get_user_model
 from django.contrib import messages
 
-# Register your models here.
 class AcademicQualificationAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 

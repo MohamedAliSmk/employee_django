@@ -1,29 +1,17 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser, Group, Permission
+from django.contrib.auth.models import AbstractUser
 from django.utils.translation import gettext_lazy as _
-from django.conf import settings
-from django.core.validators import RegexValidator, MinLengthValidator, MinValueValidator
+from django.core.validators import RegexValidator, MinValueValidator
 from django.utils import timezone
 from django.core.exceptions import ValidationError
-from datetime import datetime, timedelta
+from datetime import datetime
 from dateutil.relativedelta import relativedelta
-from .helpers.national_id import validateNationalId
-from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 from django.utils.timezone import now
 from django.db import transaction
 from smart_selects.db_fields import ChainedForeignKey
+from .helpers import validate_date
 
-
-def validate_date(value):
-    try:
-        # datetime.strptime(value, '%Y-%m-%d')
-        if value > timezone.now().date():
-            raise ValidationError(_("The date cannot be in the future"))
-    except ValueError:
-        raise ValidationError(_('Invalid date - it must be in YYYY-MM-DD format.'))
-
-# Create your models here.
 class CustomUser(AbstractUser):
     """
     Custom user model extending AbstractUser.
@@ -166,7 +154,6 @@ class DepartmentsAndSections(models.Model):
     def __str__(self):
         return f"{self.name}"
 
-
 class Sections(models.Model):
     name = models.CharField(_('Name'), max_length=100, unique=True)
     department = models.ForeignKey(DepartmentsAndSections, related_name='sections', on_delete=models.CASCADE)  # Updated related_name
@@ -177,7 +164,6 @@ class Sections(models.Model):
 
     def __str__(self):
         return f"{self.name}"
-
 
 class EmployeeAttendance(models.Model):
     STATUSES = (

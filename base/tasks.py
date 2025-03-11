@@ -1,5 +1,4 @@
 # your_app/tasks.py
-from datetime import timedelta
 from django.utils import timezone
 
 def add_attendance_records():

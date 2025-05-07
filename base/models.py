@@ -1,3 +1,4 @@
+import os
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.utils.translation import gettext_lazy as _
@@ -217,12 +218,13 @@ class EmployeeAttendance(models.Model):
         unique_together = ('employee', 'dayDate')  # Database-level constraint
 
     def clean(self):
-        # Model validation for duplicate records
-        if EmployeeAttendance.objects.filter(employee=self.employee, dayDate=self.dayDate).exists():
-            raise ValidationError(_('Attendance record for this employee on this date already exists.'))
+        pass
+        # # Model validation for duplicate records
+        # if EmployeeAttendance.objects.filter(employee=self.employee, dayDate=self.dayDate).exists():
+        #     raise ValidationError(_('Attendance record for this employee on this date already exists.'))
 
     def save(self, *args, **kwargs):
-        self.full_clean()  # Run model validation before saving
+        # self.full_clean()  # Run model validation before saving
         super().save(*args, **kwargs)
 
     def __str__(self):
@@ -334,7 +336,8 @@ class EmployeeVacation(models.Model):
         verbose_name_plural = _('Employee Vacations')
         ordering = ['-updated', '-created']
     def __str__(self):
-        return (self.employee.firstName)
+        return self.employee.firstName if self.employee else "Vacation without Employee"
+
 
     def save(self, *args, **kwargs):
         # Validation logic...
@@ -347,14 +350,15 @@ class EmployeeVacation(models.Model):
         if self.fromDate and self.toDate and self.toDate < self.fromDate:
             raise ValidationError(_('لا يمكن أن يكون تاريخ النهاية قبل تاريخ البداية.'))
 
-        existing_vacation = EmployeeVacation.objects.filter(
-            employee=self.employee,
-            fromDate__lte=self.toDate,
-            toDate__gte=self.fromDate
-        ).exclude(pk=self.pk)
+        if self.employee and self.toDate and self.fromDate:
+            existing_vacation = EmployeeVacation.objects.filter(
+                employee=self.employee,
+                fromDate__lte=self.toDate,
+                toDate__gte=self.fromDate
+            ).exclude(pk=self.pk)
 
-        if existing_vacation.exists():
-            raise ValidationError(_('الموظف لديه إجازة في نفس الفترة ولا يمكن تسجيل إجازة جديدة.'))
+            if existing_vacation.exists():
+                raise ValidationError(_('الموظف لديه إجازة في نفس الفترة ولا يمكن تسجيل إجازة جديدة.'))
 
         # Calculate days
         if self.fromDate and self.toDate:
@@ -425,13 +429,13 @@ class Employee(models.Model):
     )  
     EMPLOYEE_RANKS =( 
         ("First Grade A", "الدرجة الأولى ا"),
-        ("First Grade A", "الدرجة الأولى ب"),
+        ("First Grade B", "الدرجة الأولى ب"),
         ("Second Grade A", "الدرجة الثانية ا"),
-        ("Second Grade A", "الدرجة الثانية ب"),
+        ("Second Grade B", "الدرجة الثانية ب"),
         ("Third Grade A", "الدرجة الثالثة ا"),
-        ("Third Grade A", "الدرجة الثالثة ب"),
+        ("Third Grade B", "الدرجة الثالثة ب"),
         ("Fourth Grade A", "الدرجة الرابعة ا"),
-        ("Fourth Grade A", "الدرجة الرابعة ب"),
+        ("Fourth Grade B", "الدرجة الرابعة ب"),
     )  
     RELIGION =( 
         ("Muslim", "مسلم"),
@@ -452,7 +456,7 @@ class Employee(models.Model):
         ], 
         max_length=200, null=False, blank=False
     )
-        # Image field with custom upload_to function
+    # Image field with custom upload_to function
     def employee_image_path(instance, filename):
         return f"employees/{instance.nationalId}/{filename}"
 
@@ -587,9 +591,6 @@ class Employee(models.Model):
 
     def __str__(self):
         return self.firstName
-    
-    def clean(self):
-        pass
 
     def save(self, *args, **kwargs):
         try:
@@ -619,10 +620,17 @@ class Employee(models.Model):
                             start_date=self.currentEmploymentStartDate
                         )
 
-            super(Employee, self).save(*args, **kwargs)  # Save the new employer
-
         except Exception as e:
             print(f"Error saving employee: {e}")
+        try:
+            old_instance = type(self).objects.get(pk=self.pk)
+            if old_instance.employee_image and old_instance.employee_image.name:
+                if old_instance.employee_image.name != self.employee_image.name:
+                    old_image_path = old_instance.employee_image.path
+                    if os.path.isfile(old_image_path):
+                        os.remove(old_image_path)
+        except type(self).DoesNotExist:
+            pass  # New object, no image to delete
 
         if self.periodicVacations is None:
             self.periodicVacations = 21
@@ -632,6 +640,13 @@ class Employee(models.Model):
 
         super(Employee, self).save(*args, **kwargs)  # Ensure final save
     
+    def delete(self, *args, **kwargs):
+        if self.employee_image and self.employee_image.name:
+            image_path = self.employee_image.path
+            if os.path.isfile(image_path):
+                os.remove(image_path)
+        super().delete(*args, **kwargs)
+
 class EmploymentHistory(models.Model):
     """ Table to store previous employers """
     employee = models.ForeignKey(
@@ -654,8 +669,8 @@ class EmploymentHistory(models.Model):
     start_date = models.DateField(_('تاريخ بداية العمل'))
     # end_date = models.DateField(_('تاريخ نهاية العمل'), null=True, blank=True)
     class Meta:
-        verbose_name = _('بيانات الموظفين')
-        verbose_name_plural = _('بيانات الموظفين')
+        verbose_name = _('جهات العمل السابقة')
+        verbose_name_plural = _('جهات العمل السابقة')
     
     # def save(self, *args, **kwargs):
     #     if self.start_date and self.end_date and self.end_date < self.start_date:

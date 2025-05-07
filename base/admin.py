@@ -34,7 +34,7 @@ class EmployeeVacationAdminForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # self.fields['place_text'].widget.attrs['style'] = 'display: none;'
+        # self.fields[field].widget['place_text'].widget.attrs['style'] = 'display: none;'
         self.fields['place_link'].widget.attrs['style'] = 'display: none;'
         self.fields['section_place_link'].widget.attrs['style'] = 'display: none;'
 
@@ -228,7 +228,6 @@ class CustomUserAdmin(UserAdmin):
     list_display = ('username', 'email', 'is_active', 'is_superuser')
     list_filter = ('is_active', 'is_superuser')
 
-
 class DivisionInline(admin.TabularInline):
     model = Division
     extra = 1
@@ -257,6 +256,7 @@ class EmployeeChangeForm(forms.ModelForm):
     addressDivisionFF = forms.ModelChoiceField(queryset=Division.objects.none(), required=False, label=_("Address Division"))
     
     academicQualificationsFF = forms.ModelChoiceField(queryset=AcademicQualification.objects.all(), required=False, label=_("Academic Qualifications"))
+    
     currentEmployerFF = forms.ModelChoiceField(queryset=DepartmentsAndSections.objects.all(), required=False, label=_("Departments"))
     currentEmployerSectionFF = forms.ModelChoiceField(queryset=Sections.objects.none(), required=False, label=_("Sections"))  # Initially empty
 
@@ -273,132 +273,128 @@ class EmployeeChangeForm(forms.ModelForm):
         }
         
     def __init__(self, *args, **kwargs):
+        self.request = kwargs.pop("request", None)
         super().__init__(*args, **kwargs)
-        self.fields['firstName'].required = True
-        self.fields['secondName'].required = True
-        self.fields['thirdName'].required = True
-        self.fields['lastName'].required = True
-        self.fields['birthDate'].required = True
-        self.fields['insuranceNumber'].required = True
-        self.fields['healthInsuranceNumber'].required = True
-        self.fields['academicQualificationsFF'].required = True
-        self.fields['jobFamily'].required = True
-        self.fields['graduationYear'].required = True
-        self.fields['employmentDate'].required = True
-        self.fields['decisionNumber'].required = True
-        self.fields['militaryStatus'].required = True
-        self.fields['jobStartDate'].required = True
-        self.fields['currentRank'].required = True
-        self.fields['currentEmployer'].required = True
-        self.fields['currentEmployerSection'].required = True
-        self.fields['previousHajDate'].required = True
-        self.fields['retirementDate'].required = True
-        self.fields['solidarityFundDate'].required = True
-        self.fields['stakeholderFundDate'].required = True
-        self.fields['insuranceUmbrellaDate'].required = True
-        self.fields['currentEmploymentStartDate'].required = True
 
-        if 'birthGovernorateFF' in self.data:
-            try:
-                birthGovernorateFF_id = int(self.data.get('birthGovernorateFF'))
-                self.fields['birthDivisionFF'].queryset = Division.objects.filter(governorate=birthGovernorateFF_id).order_by('name')
-            except (ValueError, TypeError):
-                pass  # invalid input from the client; ignore and fallback to empty Town queryset
-        elif self.instance.pk and self.instance.birthGovernorate:
-            gov = Governorate.objects.filter(name=self.instance.birthGovernorate).first()
-            if gov:
-                self.fields['birthDivisionFF'].queryset = Division.objects.filter(governorate=gov.id).order_by('name')
-                
-        if 'addressGovernorateFF' in self.data:
-            try:
-                addressGovernorateFF_id = int(self.data.get('addressGovernorateFF'))
-                self.fields['addressDivisionFF'].queryset = Division.objects.filter(governorate=addressGovernorateFF_id).order_by('name')
-            except (ValueError, TypeError):
-                pass  # invalid input from the client; ignore and fallback to empty Town queryset
-        elif self.instance.pk and self.instance.addressGovernorate:
-            gov = Governorate.objects.filter(name=self.instance.addressGovernorate).first()
-            if gov:
-                self.fields['addressDivisionFF'].queryset = Division.objects.filter(governorate=gov.id).order_by('name')
+        # تحديد الحقول المطلوبة
+        required_fields = [
+            'firstName', 'secondName', 'thirdName', 'lastName',
+            'birthDate', 'insuranceNumber', 'healthInsuranceNumber',
+            'jobFamily', 'graduationYear', 'employmentDate',
+            'decisionNumber', 'militaryStatus', 'jobStartDate',
+            'currentRank', 'currentEmployer', 'currentEmployerSection',
+            'retirementDate', 'currentEmploymentStartDate'
+        ]
+        
+        for field in required_fields:
+            self.fields[field].required = True
+        # checkbox logic - based on initial data or form data
+        data = self.data or self.initial
+        if data.get('previousHaj') in ['True', True, 'on', '1']:
+            self.fields['previousHajDate'].required = True
+        if data.get('solidarityFund') in ['True', True, 'on', '1']:
+            self.fields['solidarityFundDate'].required = True
+        if data.get('stakeholderFund') in ['True', True, 'on', '1']:
+            self.fields['stakeholderFundDate'].required = True
+        if data.get('insuranceUmbrella') in ['True', True, 'on', '1']:
+            self.fields['insuranceUmbrellaDate'].required = True
+        # تجهيز queryset الخاص بالتقسيمات address/birth حسب المحافظات
+        def set_division_queryset(field_name, gov_field_name):
+            gov_obj = None
 
-        # Filtering Sections based on selected currentEmployer
+            # إذا كان هناك قيمة في الـ request (POST)
+            if gov_field_name in self.data:
+                try:
+                    gov_id = int(self.data.get(gov_field_name))
+                    gov_obj = Governorate.objects.get(pk=gov_id)
+                except (ValueError, Governorate.DoesNotExist):
+                    gov_obj = None
+
+            # إذا كان في instance موجود
+            elif self.instance.pk:
+                gov_name = getattr(self.instance, gov_field_name.replace("FF", ""), "")
+                gov_obj = Governorate.objects.filter(name=gov_name).first()
+
+            # ضبط الـ queryset
+            if gov_obj:
+                self.fields[field_name].queryset = Division.objects.filter(governorate=gov_obj).order_by("name")
+            else:
+                self.fields[field_name].queryset = Division.objects.none()
+
+        set_division_queryset('birthDivisionFF', 'birthGovernorateFF')
+        set_division_queryset('addressDivisionFF', 'addressGovernorateFF')
+
+        # تجهيز الأقسام الخاصة بالجهة الحالية
         if 'currentEmployerFF' in self.data:
             try:
-                currentEmployer_id = int(self.data.get('currentEmployerFF'))
-                self.fields['currentEmployerSectionFF'].queryset = Sections.objects.filter(currentEmployer=currentEmployer_id)
+                employer_id = int(self.data.get('currentEmployerFF'))
+                self.fields['currentEmployerSectionFF'].queryset = Sections.objects.filter(currentEmployer=employer_id)
             except (ValueError, TypeError):
-                pass  
+                self.fields['currentEmployerSectionFF'].queryset = Sections.objects.none()
         elif self.instance.pk and self.instance.currentEmployer:
             self.fields['currentEmployerSectionFF'].queryset = Sections.objects.filter(department_id=self.instance.currentEmployer)
-    
-    def save_model(self, request, obj, form, change):
+    def save(self, commit=True):
         instance = super().save(commit=False)
-
-        # Required field checks
+        request = self.request
+        # تحقق من الحقول المطلوبة
         missing_fields = []
 
-        if not instance.birthGovernorate:
+        if not self.cleaned_data.get('birthGovernorateFF'):
             missing_fields.append(str(_('Birth Governorate')))
-        
-        if not instance.addressGovernorate:
+        if not self.cleaned_data.get('addressGovernorateFF'):
             missing_fields.append(str(_('Address Governorate')))
-        
-        if not instance.addressDivision:
+        if not self.cleaned_data.get('addressDivisionFF'):
             missing_fields.append(str(_('Address Division')))
-        
-        if not instance.birthDivision:
+        if not self.cleaned_data.get('birthDivisionFF'):
             missing_fields.append(str(_('Birth Division')))
 
-        # Show popup message if any required field is missing
-        if missing_fields:
-            msg= f"Please fill in the missing fields: {', '.join(missing_fields)}"
-            messages.warning(message=msg,request=request)
+        # if missing_fields and self.request:
+        #     messages.warning(self.request, f"يرجى ملء الحقول التالية: {', '.join(missing_fields)}")
+        #     raise ValidationError("الرجاء استكمال البيانات المطلوبة.")
 
-        address_governorate_ff = self.cleaned_data.get('addressGovernorateFF')
-        if address_governorate_ff:
-            instance.addressGovernorate = address_governorate_ff.name  # Ensure it's saved
+        # ✅ اسناد الأسماء بدل الـ object الكامل
+        gov = self.cleaned_data.get('addressGovernorateFF')
+        instance.addressGovernorate = gov.name if gov else instance.addressGovernorate
 
-        addressDivision_ff = self.cleaned_data.get('addressDivisionFF')
-        if address_governorate_ff:
-            instance.addressDivision = addressDivision_ff.name  # Ensure it's saved
-        
-        BirthDivision_ff = self.cleaned_data.get('academicQualificationsFF')
-        if BirthDivision_ff:
-            instance.academicQualifications = BirthDivision_ff.name  # Ensure it's saved
-        # Handle governorate assignment safely
-        birth_governorate_ff = self.cleaned_data.get('birthGovernorateFF')
+        gov2 = self.cleaned_data.get('birthGovernorateFF')
+        instance.birthGovernorate = gov2 if gov2 else instance.birthGovernorate
 
-        academicQualificationsFF = self.cleaned_data.get('birthDivisionFF')
-        if academicQualificationsFF:
-            instance.birthDivision = academicQualificationsFF.name  # Ensure it's saved
-        # Handle governorate assignment safely
-        birth_governorate_ff = self.cleaned_data.get('birthGovernorateFF')
+        division = self.cleaned_data.get('addressDivisionFF')
+        instance.addressDivision = division.name if division else instance.addressDivision
 
-        if birth_governorate_ff:
-            instance.birthGovernorate = birth_governorate_ff
-            governorate_name = birth_governorate_ff.name
-        else:
-            governorate_name = instance.birthGovernorate.name if instance.birthGovernorate else None
+        birth_div = self.cleaned_data.get('birthDivisionFF')
+        instance.birthDivision = birth_div.name if birth_div else instance.birthDivision
 
-        # Validate National ID
+        qual = self.cleaned_data.get('academicQualificationsFF')
+        instance.academicQualifications = qual.name if qual else instance.academicQualifications
+
+        # التحقق من الرقم القومي
         nationalId = self.cleaned_data.get('nationalId', '')
         birthDate = self.cleaned_data.get('birthDate')
         gender = self.cleaned_data.get('gender')
+        governorate = gov2.name if gov2 else None
 
-        validation_result = self._validate_national_id(nationalId, birthDate, gender, governorate_name)
+        # print(f"nationalId:{nationalId}, birthDate:{birthDate}, gender:{gender}, governorate:{governorate}")
+        validation_result = self._validate_national_id(nationalId, birthDate, gender, governorate)
+        # print(f"validation_result: {validation_result}")
 
         if validation_result == 6:
-            raise ValidationError({'nationalId': 'المحافظة غير مطابقة للرقم القومي'})
+            messages.error(request, 'المحافظة غير مطابقة للرقم القومي')
+            return instance
         elif validation_result == 7:
-            raise ValidationError({'nationalId': 'المحافظة غير موجودة في قاعدة البيانات'})
+            messages.error(request, 'المحافظة غير موجودة في قاعدة البيانات')
+            return instance
         elif validation_result == 5:
-            raise ValidationError({'nationalId': 'النوع غير مطايق لرقم البطاقة'})
+            messages.error(request, 'النوع غير مطابق لرقم البطاقة')
+            return instance
         elif validation_result != True:
-            raise ValidationError({'nationalId': 'الرقم القومي غير صحيح'})
+            messages.error(request, 'الرقم القومي غير صحيح')
+            return instance
 
-        super().save_model(request, obj, form, change)
+        if commit and not self.errors:
+            instance.save()
 
         return instance
-
 
     def _validate_national_id(self, nationalId, birthDate, gender, governorate):
         """
@@ -431,7 +427,7 @@ class EmployeeChangeForm(forms.ModelForm):
             governoratePare = int(nationalId[7:9])
 
             if not governorate:
-                print("Skipping governorate validation because it's missing.")
+                # print("Skipping governorate validation because it's missing.")
                 return True  # Don't fail validation if governorate is missing
 
             governorate_instance = Governorate.objects.filter(national_governorate_id=governoratePare).first()
@@ -456,19 +452,132 @@ class EmploymentHistoryInline(admin.TabularInline):
     # can_delete = False  # Prevent deletion from the admin panel
     # max_num = 0  # Prevent adding new records manually from the admin panel
 
+class EmployeeVacationInlineForm(forms.ModelForm):
+    class Meta:
+        model = EmployeeVacation
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        print(f"📌 Initializing form for: {self.instance} (PK: {self.instance.pk})")
+        if self.instance.pk:
+            # Existing row — make all fields read-only
+            print("👉 Existing record detected, making fields read-only...")
+            readonly_fields = [
+                'fromDate', 'toDate', 'type', 'days', 'remainingBalance',
+                'place_text', 'place_link', 'section_place_link'
+            ]
+            for field in readonly_fields:
+                if field in self.fields:
+                    print(f"🔒 Making '{field}' read-only")
+                    self.fields[field].disabled = True
+
+                    # Add a hidden field to preserve value for saving
+                    value = self.initial.get(field) or getattr(self.instance, field)
+                    if isinstance(self.fields[field], forms.ModelChoiceField):
+                        self.fields[f'{field}_hidden'] = forms.ModelChoiceField(
+                            queryset=self.fields[field].queryset,
+                            initial=value,
+                            widget=forms.HiddenInput(),
+                            required=False
+                        )
+                    else:
+                        self.fields[f'{field}_hidden'] = forms.CharField(
+                            initial=value,
+                            widget=forms.HiddenInput(),
+                            required=False
+                        )
+
+
+    def clean(self):
+        cleaned_data = super().clean()
+
+        # Copy values from hidden fields back to readonly fields
+        readonly_fields = [
+            'fromDate', 'toDate', 'type', 'days', 'remainingBalance',
+            'place_text', 'place_link', 'section_place_link'
+        ]
+        for field in readonly_fields:
+            hidden_field = f'{field}_hidden'
+            if hidden_field in self.cleaned_data:
+                cleaned_data[field] = self.cleaned_data[hidden_field]
+
+        return cleaned_data
+
+class EmployeeVacationInline(admin.TabularInline):
+    model = EmployeeVacation
+    form = EmployeeVacationInlineForm
+    extra = 1
+    can_delete = False
+
+    def has_add_permission(self, request, obj=None):
+        return True
+
+    def get_formset(self, request, obj=None, **kwargs):
+        formset = super().get_formset(request, obj, **kwargs)
+
+        def is_new(instance):
+            return not instance.pk
+
+        original_form_init = formset.form.__init__
+
+        def custom_form_init(form_self, *args, **kwargs):
+            original_form_init(form_self, *args, **kwargs)
+            if not form_self.instance.pk:
+                # Remove disabled attribute from all fields for new rows
+                for field in form_self.fields.values():
+                    field.widget.attrs.pop('disabled', None)
+                    field.widget.attrs.pop('readonly', None)
+
+        formset.form.__init__ = custom_form_init
+        return formset
+
+
+class EmployeeAttendanceInline(admin.TabularInline):
+    model = EmployeeAttendance
+    extra = 0
+    can_delete = False
+    def get_formset(self, request, obj=None, **kwargs):
+        formset = super().get_formset(request, obj, **kwargs)
+
+        class CustomFormset(formset):
+            def __init__(self, *args, **kwargs):
+                super().__init__(*args, **kwargs)
+                for form in self.forms:
+                    if form.instance.pk:
+                        for field_name in ('status', 'dayDate', 'place_text', 'place_link', 'section_place_link'):
+                            if field_name in form.fields:
+                                form.fields[field_name].widget.attrs['disabled'] = True
+                        for field_name in ('status', 'dayDate'):
+                            if field_name in form.fields:
+                                form.fields[field_name].required = False
+        return CustomFormset
+    
+    def has_add_permission(self, request, obj=None):
+        return True  # ✅ Allow adding attendance manually
+    
 class EmployeeAdmin(admin.ModelAdmin):
     list_filter = ()
     model = Employee
     form = EmployeeChangeForm
-    inlines = [EmploymentHistoryInline,CourseInline, PenaltyInline, SecretReportInline]
-    readonly_fields = (
-    'periodicVacations', 'casualVacations', 'birthGovernorate',
-    'birthDivision', 'academicQualifications',
-    )
+    inlines = [EmploymentHistoryInline, CourseInline, PenaltyInline, SecretReportInline,EmployeeVacationInline,EmployeeAttendanceInline]  # Keep inlines here
+    readonly_fields = ('periodicVacations', 'casualVacations', 'birthGovernorate', 'birthDivision', 'academicQualifications')
 
     formfield_overrides = {
         models.ImageField: {'widget': AdminImageWidget},
     }
+
+    def get_form(self, request, obj=None, **kwargs):
+        form_class = super().get_form(request, obj, **kwargs)
+
+        class WrappedForm(form_class):
+            def __new__(cls, *args, **form_kwargs):
+                form_kwargs['request'] = request
+                return form_class(*args, **form_kwargs)
+
+        return WrappedForm
+
+
     def number_of_penalties(self, obj):
         return obj.penalties.count()
 
@@ -476,36 +585,37 @@ class EmployeeAdmin(admin.ModelAdmin):
     list_display = ('firstName', 'secondName', 'number_of_penalties',)
 
     fieldsets = (
-        (
-            _('Personal info'), {
-                'classes': ('main-form',),
-                'fields': (
-                    ('employee_image'),
-                    ('firstName', 'secondName', 'thirdName', 'lastName'), 
-                    ('birthGovernorateFF', 'birthDivisionFF'),
-                    ('birthGovernorate', 'birthDivision'),
-                    ('nationalId', 'religion', 'birthDate', 'insuranceNumber', 'healthInsuranceNumber','gender'),
-                    ('addressGovernorateFF', 'addressDivisionFF'),
-                    ('addressGovernorate', 'addressDivision'),
-                    ('previousHaj', 'previousHajDate'),
-                    ('academicQualificationsFF', 'academicQualifications', 'jobFamily', 'graduationYear', 'militaryStatus'),
-                    ('solidarityFund', 'solidarityFundDate'), 
-                    ('stakeholderFund', 'stakeholderFundDate'), 
-                    ('insuranceUmbrella', 'insuranceUmbrellaDate')
-                )
-            }
-        ),
-        (
-            _('Employment info'), {
-                'fields': (
-                    ('employmentDate', 'decisionNumber', 'jobStartDate', 'currentRank'),
-                    # ('previousEmployer', 'previousEmploymentStartDate', 'previousEmploymentEndDate'),
-                    ('currentEmployer','currentEmployerSection','currentEmploymentStartDate'),
-                    ('retirementDate', 'periodicVacations', 'casualVacations')
-                ),
-                
-            }
-        ),
+        (_('البيانات الشخصية'), {
+            'classes': ('tab', 'personal-info'),
+            'fields': (
+                ('employee_image',),
+                ('firstName', 'secondName', 'thirdName', 'lastName'),
+                ('nationalId', 'birthDate'),
+                ('gender', 'religion'),
+                ('birthGovernorateFF','birthGovernorate'),
+                ('birthDivisionFF', 'birthDivision'),
+                ('addressGovernorateFF', 'addressGovernorate'),
+                ('addressDivisionFF','addressDivision'),
+            )
+        }),
+        (_('البيانات الوظيفية'), {
+            'classes': ('tab', 'employment-info'),
+            'fields': (
+                ('employmentDate', 'decisionNumber', 'jobStartDate', 'currentRank'),
+                ('insuranceNumber', 'healthInsuranceNumber'),
+                ('previousHaj', 'previousHajDate'),
+                ('retirementDate'),
+                ('jobFamily', 'graduationYear', 'militaryStatus'),
+                ('solidarityFund', 'solidarityFundDate'),
+                ('stakeholderFund', 'stakeholderFundDate'),
+                ('insuranceUmbrella', 'insuranceUmbrellaDate'),
+                ('academicQualificationsFF', 'academicQualifications'),
+            ),
+        }),
+        (_('جهات العمل'), {
+            'classes': ('tab', 'employer-info'),
+            'fields': ('currentEmployer', 'currentEmployerSection', 'currentEmploymentStartDate'),
+        }),
     )
     
 
@@ -542,13 +652,71 @@ class EmployeeAdmin(admin.ModelAdmin):
             return queryset  # Superuser can see all users
         return queryset.filter(pk=request.user.pk)  # Normal user can only see their own record
     
-    class Media:
-        css = {
-            'all': ('base/custom_admin.css',),
-        }
-        js = ('base/js/admin_custom.js','base/js/admin_dynamic_filters.js',)
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        request = self.request
+        print("save model in EmployeeAdmin!!!")
+        # تحقق من الحقول المطلوبة
+        missing_fields = []
 
-# admin.site.unregister(CustomUser)
+        if not self.cleaned_data.get('birthGovernorateFF'):
+            missing_fields.append(str(_('Birth Governorate')))
+        if not self.cleaned_data.get('addressGovernorateFF'):
+            missing_fields.append(str(_('Address Governorate')))
+        if not self.cleaned_data.get('addressDivisionFF'):
+            missing_fields.append(str(_('Address Division')))
+        if not self.cleaned_data.get('birthDivisionFF'):
+            missing_fields.append(str(_('Birth Division')))
+
+        # if missing_fields and self.request:
+        #     messages.warning(self.request, f"يرجى ملء الحقول التالية: {', '.join(missing_fields)}")
+        #     raise ValidationError("الرجاء استكمال البيانات المطلوبة.")
+
+        # حفظ البيانات الإضافية
+        instance.birthGovernorate = self.cleaned_data.get('birthGovernorateFF')
+        gov = self.cleaned_data.get('addressGovernorateFF')
+        instance.addressGovernorate = gov if gov else instance.addressGovernorate
+        instance.birthDivision = self.cleaned_data.get('birthDivisionFF').name if self.cleaned_data.get('birthDivisionFF') else instance.birthDivision
+        instance.addressDivision = self.cleaned_data.get('addressDivisionFF').name if self.cleaned_data.get('addressDivisionFF') else instance.addressDivision
+        instance.academicQualifications = self.cleaned_data.get('academicQualificationsFF').name if self.cleaned_data.get('academicQualificationsFF') else instance.academicQualifications
+
+        # تحقق من الرقم القومي
+        nationalId = self.cleaned_data.get('nationalId', '')
+        birthDate = self.cleaned_data.get('birthDate')
+        gender = self.cleaned_data.get('gender')
+        governorate = instance.birthGovernorate.name if instance.birthGovernorate else None
+        # print(f"nationalId:{nationalId}, birthDate:{birthDate}, gender:{gender}, governorate:{governorate}")
+        validation_result = self._validate_national_id(nationalId, birthDate, gender, governorate)
+        # print(f"validation_result: {validation_result}")
+        
+        if validation_result == 6:
+            messages.error(request, 'المحافظة غير مطابقة للرقم القومي')
+            return instance
+        elif validation_result == 7:
+            messages.error(request, 'المحافظة غير موجودة في قاعدة البيانات')
+            return instance
+        elif validation_result == 5:
+            messages.error(request, 'النوع غير مطابق لرقم البطاقة')
+            return instance
+        elif validation_result != True:
+            messages.error(request, 'الرقم القومي غير صحيح')
+            return instance
+        if commit and not self.errors:
+            instance.save()
+
+        return instance
+
+    class Media:
+        css = {'all': ('base/custom_admin.css',)}
+        js = (
+            'base/js/admin_tabs.js',
+            'admin/js/vendor/jquery/jquery.js',
+            'admin/js/jquery.init.js',
+            'admin/js/inlines.js',
+            'base/js/admin_custom.js',
+            'base/js/disable_today.js'
+            )
+
 admin.site.register(Employee, EmployeeAdmin)
 admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(IdealEmployee, IdealEmployeeAdmin)

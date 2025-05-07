@@ -9,3 +9,41 @@ fieldset.module.main-form .form-row div {
     padding-inline: 10px;
     padding-bottom: 10px;
 }
+.admin-tabs-container {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-tabs {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 3px solid #007bff;
+    background: #1a1a1a; /* Slightly lighter for better contrast */
+}
+
+.admin-tabs .tab-link {
+    padding: 12px 20px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background: #222; /* Darker background for visibility */
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.admin-tabs .tab-link a {
+    text-decoration: none; /* Remove underlines */
+    color: #007bff;
+    display: block;
+}
+
+.inline-group {
+    padding: 10px;
+    margin-top: 10px;
+}

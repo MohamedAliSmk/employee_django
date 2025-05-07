@@ -8,6 +8,7 @@ class BaseConfig(AppConfig):
 
     def ready(self):
         # Import within the method to avoid issues with app registry
+        import base.signals
         from .scheduler import start
 
         # Connect to the signal to start the scheduler after the first database connection is made

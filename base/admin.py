@@ -34,13 +34,10 @@ class EmployeeVacationAdminForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # self.fields[field].widget['place_text'].widget.attrs['style'] = 'display: none;'
-        self.fields['place_link'].widget.attrs['style'] = 'display: none;'
-        self.fields['section_place_link'].widget.attrs['style'] = 'display: none;'
 
 class EmployeeVacationAdmin(admin.ModelAdmin):
     form = EmployeeVacationAdminForm
-    list_display = ('employee', 'type', 'fromDate', 'toDate', 'days', 'remainingBalance', 'place_text', 'place_link','section_place_link')
+    list_display = ('employee', 'type', 'fromDate', 'toDate', 'days', 'remainingBalance')
     list_filter = (
         'type',
         ("fromDate", DateRangeFilterBuilder()),
@@ -141,13 +138,13 @@ class EmployeeAttendanceAdmin(admin.ModelAdmin):
                             print(f"Unmapped vacation type: {vacation_type} for employee {employee}")
                             skipped_count += 1
                             continue
-                        if vacation_status== "OMS":
-                            place_text = getattr(vacation, "place_text", None)
-                            defaults= {'status': vacation_status,'place_text':place_text}
-                        elif vacation_status== "IMS":
-                            place_link = getattr(vacation, "place_link", None)
-                            section_place_link = getattr(vacation, "section_place_link", None)
-                            defaults= {'status': vacation_status,'place_link':place_link,'section_place_link':section_place_link}
+                        # if vacation_status== "OMS":
+                        #     place_text = getattr(vacation, "place_text", None)
+                        #     defaults= {'status': vacation_status,'place_text':place_text}
+                        # elif vacation_status== "IMS":
+                        #     place_link = getattr(vacation, "place_link", None)
+                        #     section_place_link = getattr(vacation, "section_place_link", None)
+                        #     defaults= {'status': vacation_status,'place_link':place_link,'section_place_link':section_place_link}
                         else:
                             defaults= {'status': vacation_status}
                         # print(defaults)
@@ -459,17 +456,14 @@ class EmployeeVacationInlineForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        print(f"📌 Initializing form for: {self.instance} (PK: {self.instance.pk})")
+        # Make all fields not required
+        for field_name, field in self.fields.items():
+            field.required = False
         if self.instance.pk:
             # Existing row — make all fields read-only
-            print("👉 Existing record detected, making fields read-only...")
-            readonly_fields = [
-                'fromDate', 'toDate', 'type', 'days', 'remainingBalance',
-                'place_text', 'place_link', 'section_place_link'
-            ]
+            readonly_fields = ['fromDate', 'toDate', 'type', 'days', 'remainingBalance']
             for field in readonly_fields:
                 if field in self.fields:
-                    print(f"🔒 Making '{field}' read-only")
                     self.fields[field].disabled = True
 
                     # Add a hidden field to preserve value for saving
@@ -493,10 +487,7 @@ class EmployeeVacationInlineForm(forms.ModelForm):
         cleaned_data = super().clean()
 
         # Copy values from hidden fields back to readonly fields
-        readonly_fields = [
-            'fromDate', 'toDate', 'type', 'days', 'remainingBalance',
-            'place_text', 'place_link', 'section_place_link'
-        ]
+        readonly_fields = ['fromDate', 'toDate', 'type', 'days', 'remainingBalance']
         for field in readonly_fields:
             hidden_field = f'{field}_hidden'
             if hidden_field in self.cleaned_data:
@@ -531,7 +522,6 @@ class EmployeeVacationInline(admin.TabularInline):
 
         formset.form.__init__ = custom_form_init
         return formset
-
 
 class EmployeeAttendanceInline(admin.TabularInline):
     model = EmployeeAttendance
@@ -655,7 +645,6 @@ class EmployeeAdmin(admin.ModelAdmin):
     def save(self, commit=True):
         instance = super().save(commit=False)
         request = self.request
-        print("save model in EmployeeAdmin!!!")
         # تحقق من الحقول المطلوبة
         missing_fields = []
 

@@ -296,9 +296,9 @@ class EmployeeVacation(models.Model):
         ("Sick", "مرضى"),
         ("Rest", "راحة"),
         ("Course", "دورة تدريبية"),
-        ("Inside Mission", "مأمورية داخلية"),
-        ("Outside Mission", "مأمورية خارجية"),
-        ("P65%", "بالعمل خمسة وستون"),
+        # ("Inside Mission", "مأمورية داخلية"),
+        # ("Outside Mission", "مأمورية خارجية"),
+        # ("P65%", "بالعمل خمسة وستون"),
         ("Leave Without Pay", "اجازة بدون مرتب"),
     )   
     # user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, verbose_name=_('User'))
@@ -306,8 +306,8 @@ class EmployeeVacation(models.Model):
 
     type = models.CharField(_('Type'), max_length=200, choices=TYPES, null=False, blank=False)
     
-    fromDate = models.DateField(_('From Date'), null=True, blank=True)
-    toDate = models.DateField(_('To Date'), null=True, blank=True)
+    fromDate = models.DateField(_('From Date'), null=False, blank=True)
+    toDate = models.DateField(_('To Date'), null=False, blank=True)
     days = models.IntegerField(_('Days'), editable=False, null=True, blank=True)
     remainingBalance = models.IntegerField(_('Remaining Balance'), editable=False, null=True, blank=True)
     
@@ -318,19 +318,19 @@ class EmployeeVacation(models.Model):
         message=_('الإدخال باللغة العربية فقط')
     )
     # New field for place selection
-    place_text = models.CharField(_('مكان المأمورية الخارجية'), max_length=255,validators=[arabic_validator], blank=True, null=True)
-    place_link = models.ForeignKey(DepartmentsAndSections, on_delete=models.SET_NULL, null=True, blank=True, verbose_name=_("الإدارة - القسم"))
-    section_place_link =  ChainedForeignKey(
-        Sections,
-        chained_field="place_link",         # field in this model that is the parent
-        chained_model_field="department",     # field in the Sections model that relates to DepartmentsAndSections
-        show_all=False,
-        auto_choose=True,
-        sort=True,
-        null=True,
-        blank=True,
-        verbose_name=_("القسم")
-    )
+    # place_text = models.CharField(_('مكان المأمورية الخارجية'), max_length=255,validators=[arabic_validator], blank=True, null=True)
+    # place_link = models.ForeignKey(DepartmentsAndSections, on_delete=models.SET_NULL, null=True, blank=True, verbose_name=_("الإدارة - القسم"))
+    # section_place_link =  ChainedForeignKey(
+    #     Sections,
+    #     chained_field="place_link",         # field in this model that is the parent
+    #     chained_model_field="department",     # field in the Sections model that relates to DepartmentsAndSections
+    #     show_all=False,
+    #     auto_choose=True,
+    #     sort=True,
+    #     null=True,
+    #     blank=True,
+    #     verbose_name=_("القسم")
+    # )
     class Meta:
         verbose_name = _('Employee Vacation')
         verbose_name_plural = _('Employee Vacations')
@@ -340,6 +340,10 @@ class EmployeeVacation(models.Model):
 
 
     def save(self, *args, **kwargs):
+        # Skip validation if dates are empty
+        # if not self.fromDate or not self.toDate:
+        #     super(EmployeeVacation, self).save(*args, **kwargs)
+        #     return
         # Validation logic...
         if self.fromDate and self.fromDate < timezone.now().date():
             raise ValidationError(_('لا يمكن أن يكون تاريخ البداية في الماضي.'))

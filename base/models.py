@@ -306,8 +306,8 @@ class EmployeeVacation(models.Model):
 
     type = models.CharField(_('Type'), max_length=200, choices=TYPES, null=False, blank=False)
     
-    fromDate = models.DateField(_('From Date'), null=False, blank=True)
-    toDate = models.DateField(_('To Date'), null=False, blank=True)
+    fromDate = models.DateField(_('From Date'), null=True, blank=True)
+    toDate = models.DateField(_('To Date'), null=True, blank=True)
     days = models.IntegerField(_('Days'), editable=False, null=True, blank=True)
     remainingBalance = models.IntegerField(_('Remaining Balance'), editable=False, null=True, blank=True)
     
@@ -345,10 +345,12 @@ class EmployeeVacation(models.Model):
         #     super(EmployeeVacation, self).save(*args, **kwargs)
         #     return
         # Validation logic...
-        if self.fromDate and self.fromDate < timezone.now().date():
+        if self.type is None:
+            raise ValueError("Vacation type cannot be NULL")
+        if not self.pk and self.fromDate and self.fromDate < timezone.now().date():
             raise ValidationError(_('لا يمكن أن يكون تاريخ البداية في الماضي.'))
 
-        if self.toDate and self.toDate < timezone.now().date():
+        if not self.pk and self.toDate and self.toDate < timezone.now().date():
             raise ValidationError(_('لا يمكن أن يكون تاريخ النهاية في الماضي.'))
 
         if self.fromDate and self.toDate and self.toDate < self.fromDate:
@@ -369,7 +371,15 @@ class EmployeeVacation(models.Model):
             daysDiff = self.toDate - self.fromDate
             days = daysDiff.days + 1
             self.days = days
-
+            try:
+                attendance_records = EmployeeAttendance.objects.filter(
+                    dayDate__range=(self.fromDate, self.toDate),
+                    employee=self.employee
+                )
+                # يمكنك استخدام attendance_records حسب الحاجة
+            except Exception as e:
+                # log أو تجاهل حسب الحاجة
+                print(f"Error in attendance query: {e}")
         # Update vacation balances and status
         employee = self.employee
         status_map = {
@@ -400,10 +410,14 @@ class EmployeeVacation(models.Model):
             employee.save()
 
         # Update attendance records within vacation range
-        attendance_records = EmployeeAttendance.objects.filter(
-            dayDate__range=(self.fromDate, self.toDate),
-            employee=self.employee
-        )
+        if self.fromDate and self.toDate:
+            attendance_records = EmployeeAttendance.objects.filter(
+                dayDate__range=(self.fromDate, self.toDate),
+                employee=self.employee
+            )
+        else:
+            attendance_records = EmployeeAttendance.objects.none()  # أو تجاهل التنفيذ
+
 
         attendance_update_fields = {'status': status}
 

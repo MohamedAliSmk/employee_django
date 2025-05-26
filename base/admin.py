@@ -456,21 +456,96 @@ class EmployeeVacationInlineForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # Make all fields not required
+
         for field_name, field in self.fields.items():
             field.required = False
+
         if self.instance.pk:
-            # Existing row — make all fields read-only
             readonly_fields = ['fromDate', 'toDate', 'type', 'days', 'remainingBalance']
             for field in readonly_fields:
                 if field in self.fields:
                     self.fields[field].disabled = True
+                    value = self.initial.get(field) or getattr(self.instance, field, None)
+                    # add hidden version of the field
+                    self.fields[f'{field}_hidden'] = forms.CharField(
+                        initial=value.pk if hasattr(value, 'pk') else value,
+                        widget=forms.HiddenInput(),
+                        required=False
+                    )
 
-                    # Add a hidden field to preserve value for saving
-                    value = self.initial.get(field) or getattr(self.instance, field)
+    def clean(self):
+        cleaned_data = super().clean()
+
+        # Restore hidden values for disabled fields
+        readonly_fields = ['fromDate', 'toDate', 'type', 'days', 'remainingBalance']
+        for field in readonly_fields:
+            hidden_name = f'{field}_hidden'
+            if hidden_name in self.data:
+                val = self.data.get(self.add_prefix(hidden_name))
+                if field == 'type' and val:
+                    try:
+                        # Convert ID to actual object
+                        val = self.fields['type'].queryset.get(pk=val)
+                    except:
+                        val = None
+                cleaned_data[field] = val
+
+        return cleaned_data
+
+
+
+
+
+class EmployeeVacationInline(admin.TabularInline):
+    model = EmployeeVacation
+    form = EmployeeVacationInlineForm
+    extra = 0
+    can_delete = False
+
+    def has_add_permission(self, request, obj=None):
+        return True
+
+    def get_formset(self, request, obj=None, **kwargs):
+        formset = super().get_formset(request, obj, **kwargs)
+        original_form_init = formset.form.__init__
+
+        def custom_form_init(form_self, *args, **kwargs):
+            original_form_init(form_self, *args, **kwargs)
+            if not form_self.instance.pk:
+                for field in form_self.fields.values():
+                    field.disabled = False
+                    field.widget.attrs.pop('disabled', None)
+
+        formset.form.__init__ = custom_form_init
+        return formset
+
+class EmployeeAttendanceInlineForm(forms.ModelForm):
+    class Meta:
+        model = EmployeeAttendance
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        # ✅ اجعل كل الحقول غير مطلوبة لتفادي خطأ "قيمة '' ليست من بُنية تاريخ صحيحة"
+        for field in self.fields.values():
+            field.required = False
+
+        if self.instance.pk:
+            readonly_fields = ['status', 'dayDate', 'place_text', 'place_link', 'section_place_link']
+            for field in readonly_fields:
+                if field in self.fields:
+                    self.fields[field].disabled = True
+                    value = self.initial.get(field) or getattr(self.instance, field, None)
                     if isinstance(self.fields[field], forms.ModelChoiceField):
                         self.fields[f'{field}_hidden'] = forms.ModelChoiceField(
                             queryset=self.fields[field].queryset,
+                            initial=value,
+                            widget=forms.HiddenInput(),
+                            required=False
+                        )
+                    elif isinstance(self.fields[field], forms.DateField):
+                        self.fields[f'{field}_hidden'] = forms.DateField(
                             initial=value,
                             widget=forms.HiddenInput(),
                             required=False
@@ -483,68 +558,46 @@ class EmployeeVacationInlineForm(forms.ModelForm):
                         )
 
 
+
     def clean(self):
         cleaned_data = super().clean()
+        employee = cleaned_data.get('employee')
+        dayDate = cleaned_data.get('dayDate')
 
-        # Copy values from hidden fields back to readonly fields
-        readonly_fields = ['fromDate', 'toDate', 'type', 'days', 'remainingBalance']
-        for field in readonly_fields:
-            hidden_field = f'{field}_hidden'
-            if hidden_field in self.cleaned_data:
-                cleaned_data[field] = self.cleaned_data[hidden_field]
+        if employee and dayDate:
+            qs = EmployeeAttendance.objects.filter(employee=employee, dayDate=dayDate)
+            if self.instance.pk:
+                qs = qs.exclude(pk=self.instance.pk)
+            if qs.exists():
+                raise ValidationError("Attendance for this employee on this date already exists.")
 
-        return cleaned_data
-
-class EmployeeVacationInline(admin.TabularInline):
-    model = EmployeeVacation
-    form = EmployeeVacationInlineForm
-    extra = 1
+class EmployeeAttendanceInline(admin.TabularInline):
+    model = EmployeeAttendance
+    form = EmployeeAttendanceInlineForm
+    extra = 0
     can_delete = False
+
+    def get_extra(self, request, obj=None, **kwargs):
+        # Show 1 empty row if no attendance exists, else 0
+        return 1 if not obj or not obj.employeeattendance_set.exists() else 0
 
     def has_add_permission(self, request, obj=None):
         return True
 
     def get_formset(self, request, obj=None, **kwargs):
         formset = super().get_formset(request, obj, **kwargs)
-
-        def is_new(instance):
-            return not instance.pk
-
         original_form_init = formset.form.__init__
 
         def custom_form_init(form_self, *args, **kwargs):
             original_form_init(form_self, *args, **kwargs)
             if not form_self.instance.pk:
-                # Remove disabled attribute from all fields for new rows
+                # Enable all fields for new blank row
                 for field in form_self.fields.values():
+                    field.disabled = False
                     field.widget.attrs.pop('disabled', None)
-                    field.widget.attrs.pop('readonly', None)
 
         formset.form.__init__ = custom_form_init
         return formset
-
-class EmployeeAttendanceInline(admin.TabularInline):
-    model = EmployeeAttendance
-    extra = 0
-    can_delete = False
-    def get_formset(self, request, obj=None, **kwargs):
-        formset = super().get_formset(request, obj, **kwargs)
-
-        class CustomFormset(formset):
-            def __init__(self, *args, **kwargs):
-                super().__init__(*args, **kwargs)
-                for form in self.forms:
-                    if form.instance.pk:
-                        for field_name in ('status', 'dayDate', 'place_text', 'place_link', 'section_place_link'):
-                            if field_name in form.fields:
-                                form.fields[field_name].widget.attrs['disabled'] = True
-                        for field_name in ('status', 'dayDate'):
-                            if field_name in form.fields:
-                                form.fields[field_name].required = False
-        return CustomFormset
-    
-    def has_add_permission(self, request, obj=None):
-        return True  # ✅ Allow adding attendance manually
     
 class EmployeeAdmin(admin.ModelAdmin):
     list_filter = ()

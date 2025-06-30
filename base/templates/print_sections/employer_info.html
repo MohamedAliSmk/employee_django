@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>جهات العمل</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 40%;
+        }
+
+        .value {
+            width: 58%;
+            text-align: right;
+        }
+
+        @media print {
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.print()">🖨️ اطبع الصفحة</button>
+
+    <div class="section">
+
+        <!-- صورة واسم الموظف -->
+        <div class="row" style="align-items: center; margin-bottom: 20px;">
+            <div class="value" style="width: 65%; font-size: 1.2em; font-weight: bold; text-align: right;">
+                أسم الموظف: {{ employee.firstName }} {{ employee.secondName }} {{ employee.thirdName }} {{ employee.lastName }}
+            </div>
+            <div class="label" style="width: 30%;">
+                <img src="{{ employee.employee_image.url }}" alt="صورة الموظف" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 1px solid #ccc;">
+            </div>
+        </div>
+
+        <h2>جهات العمل</h2>
+
+        <div class="row"><div class="label">الجهة الحالية:</div><div class="value">{{ employee.currentEmployer|default_if_none:"" }}</div></div>
+        <div class="row"><div class="label">الإدارة / القسم:</div><div class="value">{{ employee.currentEmployerSection|default_if_none:"" }}</div></div>
+        <div class="row"><div class="label">تاريخ بدء العمل:</div><div class="value">{{ employee.currentEmploymentStartDate|default_if_none:"" }}</div></div>
+        <h2>جهات العمل السابقة</h2>
+
+        {% if employee.employment_history.exists %}
+            <div style="margin-top: 15px;">
+                {% for employer in employee.employment_history.all %}
+                    <div class="row">
+                        <div class="label">الجهة:</div>
+                        <div class="value">{{ employer.employer_name|default_if_none:"" }}</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">الإدارة / القسم:</div>
+                        <div class="value">{{ employer.employer_section_name|default_if_none:"" }}</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">من تاريخ:</div>
+                        <div class="value">{{ employer.start_date|default_if_none:"" }}</div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="label">إلى تاريخ:</div>
+                        <div class="value">{{ employer.end_date|default_if_none:"" }}</div>
+                    </div> -->
+                    <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
+                {% endfor %}
+            </div>
+        {% else %}
+            <p style="text-align: center;">لا توجد بيانات لجهات العمل السابقة.</p>
+        {% endif %}
+        
+    
+    
+    </div>
+
+    <script>
+        window.onload = function () {
+            window.print();
+        };
+    </script>
+</body>
+</html>

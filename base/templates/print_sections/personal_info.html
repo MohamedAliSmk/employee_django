@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>البيانات الشخصية</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 6px;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 40%;
+        }
+
+        .value {
+            width: 60%;
+            text-align: right;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            object-fit: cover;
+        }
+
+        @media print {
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.print()">🖨️ طباعة</button>
+
+    <h2>البيانات الشخصية للموظف</h2>
+    <div class="section">
+
+        {% if employee.employee_image %}
+        <div class="image-container">
+            <img src="{{ employee.employee_image.url }}" alt="صورة الموظف">
+        </div>
+        {% endif %}
+
+        <div class="row"><span class="label">الاسم الكامل:</span><span class="value">{{ employee.firstName }} {{ employee.secondName }} {{ employee.thirdName }} {{ employee.lastName }}</span></div>
+        <!-- <div class="row"><span class="label">الاسم الأول:</span><span class="value">{{ employee.firstName }}</span></div>
+        <div class="row"><span class="label">الاسم الثاني:</span><span class="value">{{ employee.secondName }}</span></div>
+        <div class="row"><span class="label">الاسم الثالث:</span><span class="value">{{ employee.thirdName }}</span></div>
+        <div class="row"><span class="label">الاسم الأخير:</span><span class="value">{{ employee.lastName }}</span></div> -->
+
+        <div class="row"><span class="label">الرقم القومي:</span><span class="value">{{ employee.nationalId }}</span></div>
+        <div class="row"><span class="label">تاريخ الميلاد:</span><span class="value">{{ employee.birthDate }}</span></div>
+        <div class="row"><span class="label">النوع:</span><span class="value">{{ employee.get_gender_display }}</span></div>
+        <div class="row"><span class="label">الديانة:</span><span class="value">{{ employee.get_religion_display }}</span></div>
+
+        <div class="row"><span class="label">محافظة الميلاد:</span><span class="value">{{ employee.birthGovernorate.name }}</span></div>
+        <div class="row"><span class="label">قسم الميلاد:</span><span class="value">{{ employee.birthDivision }}</span></div>
+
+        <div class="row"><span class="label">محافظة السكن:</span><span class="value">{{ employee.addressGovernorate }}</span></div>
+        <div class="row"><span class="label">قسم السكن:</span><span class="value">{{ employee.addressDivision }}</span></div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            window.print();
+        };
+    </script>
+</body>
+</html>

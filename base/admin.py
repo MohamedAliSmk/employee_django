@@ -756,7 +756,8 @@ class EmployeeAdmin(admin.ModelAdmin):
             'admin/js/jquery.init.js',
             'admin/js/inlines.js',
             'base/js/admin_custom.js',
-            'base/js/disable_today.js'
+            'base/js/disable_today.js',
+            'base/js/employee_print.js',
             )
 
 admin.site.register(Employee, EmployeeAdmin)

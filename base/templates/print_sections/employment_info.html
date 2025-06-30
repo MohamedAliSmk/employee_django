@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>البيانات الوظيفية</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 35%;
+        }
+
+        .value {
+            width: 60%;
+            text-align: right;
+        }
+
+        @media print {
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.print()">🖨️ اطبع الصفحة</button>
+
+    <style>
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            flex: 0 0 48%; /* نصف المساحة تقريبا */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 40%;
+        }
+
+        .value {
+            width: 58%;
+            text-align: right;
+        }
+
+        @media print {
+            button {
+                display: none;
+            }
+        }
+    </style>
+    
+    <!-- داخل الـ body -->
+    <div class="section">
+        <div class="row" style="align-items: center; margin-bottom: 20px;">
+            <div class="value" style="width: 65%; font-size: 1.2em; font-weight: bold; text-align: right;">
+                أسم الموظف: {{ employee.firstName }} {{ employee.secondName }} {{ employee.thirdName }} {{ employee.lastName }}
+            </div>
+            <div class="label" style="width: 30%;">
+                <img src="{{ employee.employee_image.url }}" alt="صورة الموظف" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 1px solid #ccc;">
+            </div>
+        </div>
+    
+        <h2>البيانات الوظيفية</h2>
+    
+        <div class="grid">
+    
+            <div class="item"><div class="label">تاريخ التعيين:</div><div class="value">{{ employee.employmentDate|default:"" }}</div></div>
+            <div class="item"><div class="label">رقم القرار:</div><div class="value">{{ employee.decisionNumber|default:"" }}</div></div>
+    
+            <div class="item"><div class="label">تاريخ مباشرة العمل:</div><div class="value">{{ employee.jobStartDate|default:"" }}</div></div>
+            <div class="item"><div class="label">الدرجة الحالية:</div><div class="value">{{ employee.get_currentRank_display|default:"" }}</div></div>
+    
+            <div class="item"><div class="label">رقم التأمين الاجتماعي:</div><div class="value">{{ employee.insuranceNumber|default:"" }}</div></div>
+            <div class="item"><div class="label">رقم التأمين الصحي:</div><div class="value">{{ employee.healthInsuranceNumber|default:"" }}</div></div>
+    
+            <div class="item"><div class="label">أدى الحج سابقاً:</div><div class="value">{{ employee.previousHaj|yesno:"نعم,لا"|default:"" }}</div></div>
+            <div class="item"><div class="label">تاريخ آخر حج:</div><div class="value">{{ employee.previousHajDate|default:"" }}</div></div>
+    
+            <div class="item"><div class="label">تاريخ التقاعد:</div><div class="value">{{ employee.retirementDate|default:"" }}</div></div>
+            <div class="item"><div class="label">الأسرة الوظيفية:</div><div class="value">{{ employee.jobFamily|default:"" }}</div></div>
+    
+            <div class="item"><div class="label">سنة التخرج:</div><div class="value">{{ employee.graduationYear|default:"" }}</div></div>
+            <div class="item"><div class="label">الموقف من التجنيد:</div><div class="value">{{ employee.get_militaryStatus_display|default:"" }}</div></div>
+    
+            <div class="item"><div class="label">صندوق التكافل:</div><div class="value">{{ employee.solidarityFund|yesno:"نعم,لا"|default:"" }}</div></div>
+            <div class="item"><div class="label">تاريخ الانضمام للتكافل:</div><div class="value">{{ employee.solidarityFundDate|default:"" }}</div></div>
+    
+            <div class="item"><div class="label">صندوق المساهمين:</div><div class="value">{{ employee.stakeholderFund|yesno:"نعم,لا"|default:"" }}</div></div>
+            <div class="item"><div class="label">تاريخ الانضمام للمساهمين:</div><div class="value">{{ employee.stakeholderFundDate|default:"" }}</div></div>
+    
+            <div class="item"><div class="label">مظلة التأمين:</div><div class="value">{{ employee.insuranceUmbrella|yesno:"نعم,لا"|default:"" }}</div></div>
+            <div class="item"><div class="label">تاريخ الانضمام لمظلة التأمين:</div><div class="value">{{ employee.insuranceUmbrellaDate|default:"" }}</div></div>
+    
+            <div class="item" style="flex: 0 0 100%;"><div class="label">المؤهلات الدراسية:</div><div class="value">{{ employee.academicQualifications|default:"" }}</div></div>
+        </div>
+    </div>
+    
+
+    <script>
+        window.onload = function () {
+            window.print();
+        };
+    </script>
+</body>
+</html>

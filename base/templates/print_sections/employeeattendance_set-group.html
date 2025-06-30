@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تقرير الحضور</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 40%;
+        }
+
+        .value {
+            width: 58%;
+            text-align: right;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #e9ecef;
+        }
+
+        @media print {
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.print()">🖨️ اطبع الصفحة</button>
+
+    <div class="section">
+        <!-- بيانات الموظف -->
+        <div class="row" style="align-items: center; margin-bottom: 20px;">
+            <div class="value" style="width: 65%; font-size: 1.2em; font-weight: bold;">
+                اسم الموظف: {{ employee.firstName }} {{ employee.secondName }} {{ employee.thirdName }} {{ employee.lastName }}
+            </div>
+            <div class="label" style="width: 30%;">
+                <img src="{{ employee.employee_image.url }}" alt="صورة الموظف" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 1px solid #ccc;">
+            </div>
+        </div>
+
+        <!-- جدول الحضور -->
+        {% if employee.employeeattendance_set.exists %}
+        <h2>سجل الحضور</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>الحالة</th>
+                    <th>التاريخ</th>
+                    <th>مكان المأمورية الخارجية</th>
+                    <th>الإدارة</th>
+                    <th>القسم</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for attendance in attendances %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>
+                        {% if attendance.status == "P" %} بالعمل
+                        {% elif attendance.status == "S" %} مرضي
+                        {% elif attendance.status == "C" %} عارضة
+                        {% elif attendance.status == "A" %} دوري
+                        {% elif attendance.status == "M" %} غياب
+                        {% elif attendance.status == "O" %} راحة
+                        {% elif attendance.status == "F" %} دورة تدريبية
+                        {% elif attendance.status == "IMS" %} مأمورية داخلية
+                        {% elif attendance.status == "OMS" %} مأمورية خارجية
+                        {% elif attendance.status == "P65%" %} بالعمل ٦٥٪
+                        {% elif attendance.status == "l" %} إجازة بدون مرتب
+                        {% else %} -
+                        {% endif %}
+                    </td>
+                    <td>{{ attendance.dayDate|date:"Y-m-d" }}</td>
+                    <td>{{ attendance.place_text|default:"-" }}</td>
+                    <td>{{ attendance.place_link.name|default:"-" }}</td>
+                    <td>{{ attendance.section_place_link.name|default:"-" }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p style="text-align: center; margin-top: 20px;">لا توجد سجلات حضور.</p>
+        {% endif %}
+    </div>
+
+    <script>
+        window.onload = function () {
+            window.print();
+        };
+    </script>
+</body>
+</html>

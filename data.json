@@ -1,0 +1,6708 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "0484rhbzui2kmt18uj0jcycqwcpguayu",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1tuSvZ:Cw0AOYFhzUgb_oX_AXI5dS0MgNcGxw10fxC8NgF1mpM",
+    "expire_date": "2025-04-01T09:08:01.901Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4d0qbqjaqhjg85cau5wbusieipv5dtd0",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1uHdcX:vXgC5Y0Lo2Hd3fzczo-rIVSAXmBxSpRBKS_fSDrO5qA",
+    "expire_date": "2025-06-04T07:12:09.420Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ae9nkoai02jdzcdljvwhguggcyll1mnq",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1tXL6P:6zmZ30QSaWSSEE46_5zoB1e8wgm0bkSuZPzm85q-7wQ",
+    "expire_date": "2025-01-27T14:07:37.209Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gj64b8co1rw94x80rr1y08y35rkpgrox",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1tkO3F:fCBUHfuc2dksN6fsEmBYmYd0t3g4VNdMwyOQjfdIbYQ",
+    "expire_date": "2025-03-04T13:54:17.361Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mr8p697z8r4jki8k94mhcccq0jhq2hhz",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1tuSxg:J31Fa5CoCreocRiV7fAQDtzFp4FXPpbgg-cOBEi7qcg",
+    "expire_date": "2025-04-01T09:10:12.240Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "s8ihu3w3zpwwz1akwefu8afetgnvnhxe",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1u1iQN:cILkGK6dgLdZEeDpLAqn9xuAPTKM_U7a10tIAMQDHRo",
+    "expire_date": "2025-04-21T09:05:47.070Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "umro0lvp2j0d16v1nzgnj5z6626r43l4",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1uMmcP:LG4cjpjR1XS1iv15gCcf5YJcG9-h8eOh8o-ZCib4W1I",
+    "expire_date": "2025-06-18T11:49:17.520Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "up7w72eph4y84dd2y3a963edhnkzxd5r",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1tda9P:avXtYXs2A4BFy2SoSEtZbexWnzBByYZsVvYIARDDe6E",
+    "expire_date": "2025-02-13T19:24:31.030Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "z8yog3od2m3zqlkyvbxoi75wc2dh9tpi",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-YpuSPmewdtcbHECOFCcV4u4QKQW0b2beS2TY1pq3zkueirgII06_GwI9uO2g3KHdZklzW5cJ5a7Ig3Y5zIWf18P9O6jQ67eGYEevjCGtgaMOgBYLYTE2JKfQxBRJuUjsNZCzSbszO6-oRBwZgxXvD-EUN_A:1uC20n:E94B3YUFiV4ZPe7zaU-zLtwEp_JA73SGu9rU0sXsJx0",
+    "expire_date": "2025-05-19T20:02:01.202Z"
+  }
+},
+{
+  "model": "base.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$j6bVAhmwLGboNWp9bIVP3M$bebzzmxSVvzGGTnOS+4icEZEG1uNBw9TENdYANcMmdo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "testuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_active": true,
+    "date_joined": "2024-12-09T08:02:58.258Z",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "base.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$LOmeYLEGyHMq83ClVngnCp$XGcfOyH5nbQjdAwbo3TRUaKAhJ+zwDKwc8tSGe2eVoA=",
+    "last_login": "2025-06-04T11:49:17.511Z",
+    "is_superuser": true,
+    "username": "محمد",
+    "first_name": "qdqwd",
+    "last_name": "",
+    "email": "test@admin.com",
+    "is_active": true,
+    "date_joined": "2024-12-09T08:03:54Z",
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "base.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$OUMGA9j9siq78fzE5iGQj4$Kx4RD1KSiys4+L/cf151j+kkBe2Ia05i7o5KZ1+rQGg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "مصطفي",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_active": true,
+    "date_joined": "2024-12-09T08:10:30.661Z",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "base.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$bWFLd5RXO3kKK0PTYJbact$nbl+f3RnqIIgmQm8Z1vn3uaiH1sYh/0yNsy39K2qUOM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "حمدي",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_active": true,
+    "date_joined": "2024-12-09T08:47:07.012Z",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "base.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$cHlKrG2mCcHD5KXlvLHdRl$d/F+eRPcoetGKON+Q9edBjnst16oRTwYiV5D6eO3MyI=",
+    "last_login": "2025-01-13T14:07:26.641Z",
+    "is_superuser": false,
+    "username": "test_pass",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_active": true,
+    "date_joined": "2025-01-13T14:06:22Z",
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": [
+      [
+        "add_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "change_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "delete_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "view_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "add_group",
+        "auth",
+        "group"
+      ],
+      [
+        "change_group",
+        "auth",
+        "group"
+      ],
+      [
+        "delete_group",
+        "auth",
+        "group"
+      ],
+      [
+        "view_group",
+        "auth",
+        "group"
+      ],
+      [
+        "add_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "change_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "delete_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "view_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "add_academicqualification",
+        "base",
+        "academicqualification"
+      ],
+      [
+        "change_academicqualification",
+        "base",
+        "academicqualification"
+      ],
+      [
+        "delete_academicqualification",
+        "base",
+        "academicqualification"
+      ],
+      [
+        "view_academicqualification",
+        "base",
+        "academicqualification"
+      ],
+      [
+        "add_course",
+        "base",
+        "course"
+      ],
+      [
+        "change_course",
+        "base",
+        "course"
+      ],
+      [
+        "delete_course",
+        "base",
+        "course"
+      ],
+      [
+        "view_course",
+        "base",
+        "course"
+      ],
+      [
+        "add_coursename",
+        "base",
+        "coursename"
+      ],
+      [
+        "change_coursename",
+        "base",
+        "coursename"
+      ],
+      [
+        "delete_coursename",
+        "base",
+        "coursename"
+      ],
+      [
+        "view_coursename",
+        "base",
+        "coursename"
+      ],
+      [
+        "add_customuser",
+        "base",
+        "customuser"
+      ],
+      [
+        "change_customuser",
+        "base",
+        "customuser"
+      ],
+      [
+        "delete_customuser",
+        "base",
+        "customuser"
+      ],
+      [
+        "view_customuser",
+        "base",
+        "customuser"
+      ],
+      [
+        "add_division",
+        "base",
+        "division"
+      ],
+      [
+        "change_division",
+        "base",
+        "division"
+      ],
+      [
+        "delete_division",
+        "base",
+        "division"
+      ],
+      [
+        "view_division",
+        "base",
+        "division"
+      ],
+      [
+        "add_employee",
+        "base",
+        "employee"
+      ],
+      [
+        "change_employee",
+        "base",
+        "employee"
+      ],
+      [
+        "delete_employee",
+        "base",
+        "employee"
+      ],
+      [
+        "view_employee",
+        "base",
+        "employee"
+      ],
+      [
+        "add_employeeattendance",
+        "base",
+        "employeeattendance"
+      ],
+      [
+        "change_employeeattendance",
+        "base",
+        "employeeattendance"
+      ],
+      [
+        "delete_employeeattendance",
+        "base",
+        "employeeattendance"
+      ],
+      [
+        "view_employeeattendance",
+        "base",
+        "employeeattendance"
+      ],
+      [
+        "add_employeevacation",
+        "base",
+        "employeevacation"
+      ],
+      [
+        "change_employeevacation",
+        "base",
+        "employeevacation"
+      ],
+      [
+        "delete_employeevacation",
+        "base",
+        "employeevacation"
+      ],
+      [
+        "view_employeevacation",
+        "base",
+        "employeevacation"
+      ],
+      [
+        "add_governorate",
+        "base",
+        "governorate"
+      ],
+      [
+        "change_governorate",
+        "base",
+        "governorate"
+      ],
+      [
+        "delete_governorate",
+        "base",
+        "governorate"
+      ],
+      [
+        "view_governorate",
+        "base",
+        "governorate"
+      ],
+      [
+        "add_idealemployee",
+        "base",
+        "idealemployee"
+      ],
+      [
+        "change_idealemployee",
+        "base",
+        "idealemployee"
+      ],
+      [
+        "delete_idealemployee",
+        "base",
+        "idealemployee"
+      ],
+      [
+        "view_idealemployee",
+        "base",
+        "idealemployee"
+      ],
+      [
+        "add_penalty",
+        "base",
+        "penalty"
+      ],
+      [
+        "change_penalty",
+        "base",
+        "penalty"
+      ],
+      [
+        "delete_penalty",
+        "base",
+        "penalty"
+      ],
+      [
+        "view_penalty",
+        "base",
+        "penalty"
+      ],
+      [
+        "add_policedayhonoredemployee",
+        "base",
+        "policedayhonoredemployee"
+      ],
+      [
+        "change_policedayhonoredemployee",
+        "base",
+        "policedayhonoredemployee"
+      ],
+      [
+        "delete_policedayhonoredemployee",
+        "base",
+        "policedayhonoredemployee"
+      ],
+      [
+        "view_policedayhonoredemployee",
+        "base",
+        "policedayhonoredemployee"
+      ],
+      [
+        "add_secretreport",
+        "base",
+        "secretreport"
+      ],
+      [
+        "change_secretreport",
+        "base",
+        "secretreport"
+      ],
+      [
+        "delete_secretreport",
+        "base",
+        "secretreport"
+      ],
+      [
+        "view_secretreport",
+        "base",
+        "secretreport"
+      ],
+      [
+        "add_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "change_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "delete_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "view_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "add_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "change_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "delete_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "view_session",
+        "sessions",
+        "session"
+      ]
+    ]
+  }
+},
+{
+  "model": "base.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$gkUmSsP3kDnr8a2nvtwmFx$9zXk7WJ1vamM6j/E+qtn+c5bCKmUfGR2F0fYGYYdPHE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "احمد",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_active": true,
+    "date_joined": "2025-01-27T09:01:26.745Z",
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "base.penalty",
+  "pk": 3,
+  "fields": {
+    "employee": 1,
+    "type": "disciplinary",
+    "penaltyDate": "2025-02-20",
+    "description": "جيد",
+    "created": "2025-02-20T08:23:02.258Z",
+    "updated": "2025-02-20T08:23:02.258Z"
+  }
+},
+{
+  "model": "base.secretreport",
+  "pk": 1,
+  "fields": {
+    "employee": 1,
+    "reportDateFrom": "2025-02-20",
+    "reportDateTo": "2025-02-20",
+    "description": "سر",
+    "created": "2025-02-20T08:23:02.260Z",
+    "updated": "2025-02-20T08:23:02.260Z"
+  }
+},
+{
+  "model": "base.course",
+  "pk": 1,
+  "fields": {
+    "employee": 1,
+    "name": "كورس",
+    "address": "مصر",
+    "grade": "Excellent",
+    "certificateObtained": true,
+    "CertDate": "2025-02-20",
+    "created": "2025-02-01T18:55:12.303Z",
+    "updated": "2025-02-20T08:23:02.257Z"
+  }
+},
+{
+  "model": "base.departmentsandsections",
+  "pk": 5,
+  "fields": {
+    "name": "الادارة العامة لامداد الشرطة",
+    "DepartmentsAndSections_id": 2
+  }
+},
+{
+  "model": "base.departmentsandsections",
+  "pk": 6,
+  "fields": {
+    "name": "الادارة العامة للمركبات",
+    "DepartmentsAndSections_id": 3
+  }
+},
+{
+  "model": "base.sections",
+  "pk": 3,
+  "fields": {
+    "name": "االقاهرة",
+    "department": 5
+  }
+},
+{
+  "model": "base.sections",
+  "pk": 4,
+  "fields": {
+    "name": "السويس",
+    "department": 5
+  }
+},
+{
+  "model": "base.sections",
+  "pk": 5,
+  "fields": {
+    "name": "قسم القاهرة",
+    "department": 6
+  }
+},
+{
+  "model": "base.sections",
+  "pk": 6,
+  "fields": {
+    "name": "قسم السويس",
+    "department": 6
+  }
+},
+{
+  "model": "base.sections",
+  "pk": 9,
+  "fields": {
+    "name": "القاهرة",
+    "department": 6
+  }
+},
+{
+  "model": "base.employeeattendance",
+  "pk": 35,
+  "fields": {
+    "employee": 1,
+    "status": "P",
+    "dayDate": "2025-05-26",
+    "created": "2025-05-26T06:45:32.185Z",
+    "updated": "2025-05-26T13:37:53.910Z",
+    "place_text": null,
+    "place_link": null,
+    "section_place_link": null
+  }
+},
+{
+  "model": "base.employeeattendance",
+  "pk": 36,
+  "fields": {
+    "employee": 2,
+    "status": "P",
+    "dayDate": "2025-05-26",
+    "created": "2025-05-26T06:45:32.201Z",
+    "updated": "2025-05-26T07:04:26.262Z",
+    "place_text": null,
+    "place_link": null,
+    "section_place_link": null
+  }
+},
+{
+  "model": "base.employeeattendance",
+  "pk": 39,
+  "fields": {
+    "employee": 1,
+    "status": "P",
+    "dayDate": "2025-05-22",
+    "created": "2025-05-26T06:58:23.117Z",
+    "updated": "2025-05-26T13:37:53.910Z",
+    "place_text": null,
+    "place_link": null,
+    "section_place_link": null
+  }
+},
+{
+  "model": "base.employeeattendance",
+  "pk": 40,
+  "fields": {
+    "employee": 2,
+    "status": "P",
+    "dayDate": "2025-05-22",
+    "created": "2025-05-26T07:04:26.262Z",
+    "updated": "2025-05-26T07:04:26.262Z",
+    "place_text": null,
+    "place_link": null,
+    "section_place_link": null
+  }
+},
+{
+  "model": "base.employeeattendance",
+  "pk": 41,
+  "fields": {
+    "employee": 1,
+    "status": "P",
+    "dayDate": "2025-05-02",
+    "created": "2025-05-26T13:34:53.019Z",
+    "updated": "2025-05-26T13:37:53.910Z",
+    "place_text": null,
+    "place_link": null,
+    "section_place_link": null
+  }
+},
+{
+  "model": "base.academicqualification",
+  "pk": 1,
+  "fields": {
+    "name": "ثانوية عامة",
+    "created": "2025-01-27T08:54:47.309Z",
+    "updated": "2025-01-27T08:54:47.309Z"
+  }
+},
+{
+  "model": "base.academicqualification",
+  "pk": 2,
+  "fields": {
+    "name": "بكالريوس هندسة",
+    "created": "2025-05-18T10:37:55.369Z",
+    "updated": "2025-05-18T10:37:55.369Z"
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 32,
+  "fields": {
+    "name": "محافظة القاهرة",
+    "national_governorate_id": 1
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 33,
+  "fields": {
+    "name": "محافظة دمياط",
+    "national_governorate_id": 11
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 34,
+  "fields": {
+    "name": "محافظة الدقهلية",
+    "national_governorate_id": 12
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 35,
+  "fields": {
+    "name": "محافظة الشرقية",
+    "national_governorate_id": 13
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 36,
+  "fields": {
+    "name": "محافظة القليوبية",
+    "national_governorate_id": 14
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 37,
+  "fields": {
+    "name": "محافظة كفر الشيخ",
+    "national_governorate_id": 15
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 38,
+  "fields": {
+    "name": "محافظة الغربية",
+    "national_governorate_id": 16
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 39,
+  "fields": {
+    "name": "محافظة المنوفية",
+    "national_governorate_id": 17
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 40,
+  "fields": {
+    "name": "محافظة البحيرة",
+    "national_governorate_id": 18
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 41,
+  "fields": {
+    "name": "محافظة الإسماعلية",
+    "national_governorate_id": 19
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 42,
+  "fields": {
+    "name": "محافظة الأسكندرية",
+    "national_governorate_id": 2
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 43,
+  "fields": {
+    "name": "محافظة الجيزة",
+    "national_governorate_id": 21
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 44,
+  "fields": {
+    "name": "محافظة بني سويف",
+    "national_governorate_id": 22
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 45,
+  "fields": {
+    "name": "محافظة الفيوم",
+    "national_governorate_id": 23
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 46,
+  "fields": {
+    "name": "محافظة المنيا",
+    "national_governorate_id": 24
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 47,
+  "fields": {
+    "name": "محافظة أسيوط",
+    "national_governorate_id": 25
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 48,
+  "fields": {
+    "name": "محافظة سوهاج",
+    "national_governorate_id": 26
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 49,
+  "fields": {
+    "name": "محافظة قنا",
+    "national_governorate_id": 27
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 50,
+  "fields": {
+    "name": "محافظة أسوان",
+    "national_governorate_id": 28
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 51,
+  "fields": {
+    "name": "محافظة الأقصر",
+    "national_governorate_id": 29
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 52,
+  "fields": {
+    "name": "محافظة بورسعيد",
+    "national_governorate_id": 3
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 53,
+  "fields": {
+    "name": "محافظة البحر الأحمر",
+    "national_governorate_id": 31
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 54,
+  "fields": {
+    "name": "محافظة الوادي الجديد",
+    "national_governorate_id": 32
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 55,
+  "fields": {
+    "name": "محافظة مطروح",
+    "national_governorate_id": 33
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 56,
+  "fields": {
+    "name": "محافظة شمال سيناء",
+    "national_governorate_id": 34
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 57,
+  "fields": {
+    "name": "محافظة جنوب سيناء",
+    "national_governorate_id": 35
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 58,
+  "fields": {
+    "name": "محافظة السويس",
+    "national_governorate_id": 4
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 59,
+  "fields": {
+    "name": "محافظة حلوان",
+    "national_governorate_id": 5
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 60,
+  "fields": {
+    "name": "محافظة السادس من أكتوبر",
+    "national_governorate_id": 6
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 61,
+  "fields": {
+    "name": "خارج الجمهورية",
+    "national_governorate_id": 88
+  }
+},
+{
+  "model": "base.governorate",
+  "pk": 62,
+  "fields": {
+    "name": "خارج الجمهورية ",
+    "national_governorate_id": 99
+  }
+},
+{
+  "model": "base.division",
+  "pk": 1,
+  "fields": {
+    "name": "السويس",
+    "governorate": 58
+  }
+},
+{
+  "model": "base.division",
+  "pk": 2,
+  "fields": {
+    "name": "الاربعين",
+    "governorate": 58
+  }
+},
+{
+  "model": "base.division",
+  "pk": 3,
+  "fields": {
+    "name": "حلوان",
+    "governorate": 59
+  }
+},
+{
+  "model": "base.division",
+  "pk": 4,
+  "fields": {
+    "name": "التجمع الخامس",
+    "governorate": 32
+  }
+},
+{
+  "model": "base.division",
+  "pk": 5,
+  "fields": {
+    "name": "دمياط الجديدة",
+    "governorate": 33
+  }
+},
+{
+  "model": "base.coursename",
+  "pk": 1,
+  "fields": {
+    "name": "كورس"
+  }
+},
+{
+  "model": "base.employeevacation",
+  "pk": 18,
+  "fields": {
+    "employee": 2,
+    "type": "Periodic",
+    "fromDate": "2025-05-07",
+    "toDate": "2025-05-07",
+    "days": 1,
+    "remainingBalance": 18,
+    "created": "2025-05-07T11:06:01.016Z",
+    "updated": "2025-05-26T07:04:26.262Z"
+  }
+},
+{
+  "model": "base.employeevacation",
+  "pk": 19,
+  "fields": {
+    "employee": 2,
+    "type": "Casual",
+    "fromDate": "2025-05-21",
+    "toDate": "2025-05-21",
+    "days": 1,
+    "remainingBalance": 4,
+    "created": "2025-05-21T07:19:35.468Z",
+    "updated": "2025-05-26T07:04:26.260Z"
+  }
+},
+{
+  "model": "base.employeevacation",
+  "pk": 20,
+  "fields": {
+    "employee": 1,
+    "type": "Casual",
+    "fromDate": "2025-05-27",
+    "toDate": "2025-05-27",
+    "days": 1,
+    "remainingBalance": -7,
+    "created": "2025-05-26T06:46:38.097Z",
+    "updated": "2025-05-26T13:37:53.899Z"
+  }
+},
+{
+  "model": "base.employeevacation",
+  "pk": 21,
+  "fields": {
+    "employee": 1,
+    "type": "Periodic",
+    "fromDate": "2025-05-30",
+    "toDate": "2025-05-30",
+    "days": 1,
+    "remainingBalance": 14,
+    "created": "2025-05-26T06:54:51.701Z",
+    "updated": "2025-05-26T13:37:53.890Z"
+  }
+},
+{
+  "model": "base.employeevacation",
+  "pk": 22,
+  "fields": {
+    "employee": 1,
+    "type": "Casual",
+    "fromDate": "2025-05-28",
+    "toDate": "2025-05-28",
+    "days": 1,
+    "remainingBalance": -6,
+    "created": "2025-05-26T13:31:58.759Z",
+    "updated": "2025-05-26T13:37:53.879Z"
+  }
+},
+{
+  "model": "base.employeevacation",
+  "pk": 23,
+  "fields": {
+    "employee": 1,
+    "type": "Rest",
+    "fromDate": "2025-05-26",
+    "toDate": "2025-05-26",
+    "days": 1,
+    "remainingBalance": null,
+    "created": "2025-05-26T13:33:01.719Z",
+    "updated": "2025-05-26T13:37:53.910Z"
+  }
+},
+{
+  "model": "base.employee",
+  "pk": 1,
+  "fields": {
+    "nationalId": "30006080400058",
+    "employee_image": "employees/30006080400058/WhatsApp_Image_2025-02-25_at_3.09.32_PM.jpeg",
+    "firstName": "محمد",
+    "secondName": "علي",
+    "thirdName": "حسن",
+    "lastName": "علي",
+    "birthGovernorate": 58,
+    "birthDivision": "السويس",
+    "birthDate": "2000-06-08",
+    "full_name": null,
+    "gender": "Male",
+    "insuranceNumber": "45365363",
+    "healthInsuranceNumber": "5512312412",
+    "academicQualifications": "ثانوية عامة",
+    "jobFamily": "1",
+    "graduationYear": "2025-02-20",
+    "employmentDate": "2025-02-20",
+    "decisionNumber": "13412",
+    "militaryStatus": "Permanently Exempted",
+    "jobStartDate": "2025-02-20",
+    "currentRank": "Third Grade A",
+    "currentEmployer": 6,
+    "currentEmployerSection": 9,
+    "currentEmploymentStartDate": "2025-08-28",
+    "periodicVacations": 14,
+    "casualVacations": -7,
+    "retirementDate": "2025-02-20",
+    "solidarityFund": false,
+    "solidarityFundDate": null,
+    "stakeholderFund": true,
+    "stakeholderFundDate": "2025-02-20",
+    "insuranceUmbrella": true,
+    "insuranceUmbrellaDate": "2025-02-20",
+    "addressGovernorate": "محافظة القاهرة",
+    "addressDivision": "التجمع الخامس",
+    "religion": "Muslim",
+    "previousHaj": false,
+    "previousHajDate": null
+  }
+},
+{
+  "model": "base.employee",
+  "pk": 2,
+  "fields": {
+    "nationalId": "30008080400058",
+    "employee_image": "",
+    "firstName": "حسام",
+    "secondName": "محمد",
+    "thirdName": "محمد",
+    "lastName": "علي",
+    "birthGovernorate": 47,
+    "birthDivision": "السويس",
+    "birthDate": "2025-03-11",
+    "full_name": null,
+    "gender": "Male",
+    "insuranceNumber": "678664634345",
+    "healthInsuranceNumber": "2352345132345",
+    "academicQualifications": "ثانوية عامة",
+    "jobFamily": "1",
+    "graduationYear": "2025-03-11",
+    "employmentDate": "2025-03-11",
+    "decisionNumber": "1341234",
+    "militaryStatus": "Completed",
+    "jobStartDate": "2025-03-11",
+    "currentRank": "First Grade A",
+    "currentEmployer": 5,
+    "currentEmployerSection": 3,
+    "currentEmploymentStartDate": "2025-03-11",
+    "periodicVacations": 18,
+    "casualVacations": 4,
+    "retirementDate": "2025-03-11",
+    "solidarityFund": true,
+    "solidarityFundDate": "2025-03-11",
+    "stakeholderFund": true,
+    "stakeholderFundDate": "2025-03-11",
+    "insuranceUmbrella": true,
+    "insuranceUmbrellaDate": "2025-03-11",
+    "addressGovernorate": "محافظة السويس",
+    "addressDivision": "الاربعين",
+    "religion": "Muslim",
+    "previousHaj": false,
+    "previousHajDate": null
+  }
+},
+{
+  "model": "base.employmenthistory",
+  "pk": 21,
+  "fields": {
+    "employee": 1,
+    "employer_name": 5,
+    "employer_section_name": 3,
+    "start_date": "2025-02-28"
+  }
+},
+{
+  "model": "base.employmenthistory",
+  "pk": 22,
+  "fields": {
+    "employee": 1,
+    "employer_name": 6,
+    "employer_section_name": 5,
+    "start_date": "2025-02-28"
+  }
+},
+{
+  "model": "base.employmenthistory",
+  "pk": 23,
+  "fields": {
+    "employee": 2,
+    "employer_name": 5,
+    "employer_section_name": 3,
+    "start_date": "2025-03-11"
+  }
+},
+{
+  "model": "base.employmenthistory",
+  "pk": 24,
+  "fields": {
+    "employee": 1,
+    "employer_name": 5,
+    "employer_section_name": 3,
+    "start_date": "2025-03-28"
+  }
+},
+{
+  "model": "base.employmenthistory",
+  "pk": 29,
+  "fields": {
+    "employee": 1,
+    "employer_name": 6,
+    "employer_section_name": 9,
+    "start_date": "2025-08-28"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-12-09T08:10:31.399Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "customuser"
+    ],
+    "object_id": "3",
+    "object_repr": "مصطفي",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-12-09T08:47:07.756Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "customuser"
+    ],
+    "object_id": "5",
+    "object_repr": "حمدي",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-01-13T11:50:15.285Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-01-13T11:50:29.284Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-01-13T14:06:23.442Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "customuser"
+    ],
+    "object_id": "6",
+    "object_repr": "test_pass",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-01-13T14:07:17.864Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "customuser"
+    ],
+    "object_id": "6",
+    "object_repr": "test_pass",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-01-27T08:51:13.103Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "coursename"
+    ],
+    "object_id": "1",
+    "object_repr": "كورس",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-01-27T08:54:47.310Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "academicqualification"
+    ],
+    "object_id": "1",
+    "object_repr": "ثانوية عامة",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-01-27T09:01:27.545Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "customuser"
+    ],
+    "object_id": "7",
+    "object_repr": "احمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-01-30T19:24:51.735Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "2",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-01-30T19:24:59.293Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "3",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-01-30T21:10:01.955Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Second Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-01-30T21:10:26.606Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Third Name\", \"Last Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-01-30T21:14:03.556Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-01-30T21:15:20.440Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-01-30T21:16:32.563Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-01-30T21:18:27.566Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-02-01T18:47:28.875Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Insurance Number\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-02-01T18:50:58.362Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "4",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-02-01T18:51:13.867Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "3",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-02-01T18:52:13.517Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "4",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-02-01T18:52:27.086Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "5",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-02-01T18:55:12.304Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}, {\"added\": {\"name\": \"Course\", \"object\": \"\\u0643\\u0648\\u0631\\u0633\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-02-02T06:24:43.574Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "6",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-02-02T06:24:59.424Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "5",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-02-02T06:25:12.372Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "6",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-02-02T06:25:23.816Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "7",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-02-04T16:09:06.455Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "8",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-02-04T16:10:08.923Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "8",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0645\\u0643\\u0627\\u0646 \\u0627\\u0644\\u0645\\u0623\\u0645\\u0648\\u0631\\u064a\\u0629 \\u0627\\u0644\\u062e\\u0627\\u0631\\u062c\\u064a\\u0629\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-02-04T16:10:24.597Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "8",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-02-04T16:13:05.157Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "1",
+    "object_repr": "إدارة أمن المؤانئ قسم القاهرة",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-02-04T16:13:43.180Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "9",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-02-04T16:29:05.483Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "7",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-02-06T12:55:57.679Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "10",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-02-06T13:12:56.250Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "9",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-02-06T13:19:41.701Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "10",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-02-06T13:32:38.012Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "11",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-02-06T14:15:57.706Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employer Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-02-06T14:16:07.413Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-02-06T14:24:45.099Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-02-06T14:24:53.460Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-02-06T14:31:04.025Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employer Name\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-02-06T14:31:19.716Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employer Name\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-02-06T14:31:44.065Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "2",
+    "object_repr": "إدارة أمن المؤانئ قسم السويس",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-02-06T14:32:03.943Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employer Name\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-02-06T14:53:01.533Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employer Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-02-06T14:54:07.290Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "1",
+    "object_repr": "إدارة أمن المؤانئ قسم القاهرة",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-02-06T14:54:32.346Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employer Name\"]}}, {\"deleted\": {\"name\": \"Employment History\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633 (2025-02-06 - 2025-02-06)\"}}, {\"deleted\": {\"name\": \"Employment History\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633 (2025-02-06 - 2025-02-06)\"}}, {\"deleted\": {\"name\": \"Employment History\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633 (2025-02-10 - 2025-02-06)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-02-06T14:54:42.247Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-02-06T14:55:13.888Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "3",
+    "object_repr": "إدارة أمن المؤانئ قسم القاهرة",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-02-06T14:55:29.104Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employer Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-02-06T15:10:26.036Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-02-06T15:12:00.062Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "10",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-02-06T15:12:06.904Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "11",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-02-06T15:20:23.424Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u062c\\u0647\\u0627\\u062a \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642\\u0629\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-10 - 2025-02-06)\"}}, {\"deleted\": {\"name\": \"\\u062c\\u0647\\u0627\\u062a \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642\\u0629\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633 (2025-02-16 - 2025-02-06)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2025-02-06T15:20:34.422Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2025-02-06T15:20:46.231Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2025-02-06T15:20:56.307Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2025-02-06T15:21:45.459Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2025-02-06T15:22:07.182Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2025-02-06T15:22:13.322Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Last Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2025-02-06T15:22:22.688Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2025-02-06T15:22:51.162Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2025-02-06T15:23:27.320Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2025-02-06T15:23:38.567Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2025-02-06T15:25:29.723Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2025-02-06T15:25:43.150Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2025-02-06T15:27:33.247Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u062c\\u0647\\u0627\\u062a \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642\\u0629\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-10 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2025-02-06T15:27:45.438Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}, {\"deleted\": {\"name\": \"\\u062c\\u0647\\u0627\\u062a \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642\\u0629\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-10 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2025-02-06T15:27:53.845Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2025-02-06T15:28:05.581Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u062c\\u0647\\u0627\\u062a \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642\\u0629\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-06 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2025-02-06T15:28:34.235Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2025-02-06T20:56:54.469Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "11",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2025-02-06T20:57:11.084Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "12",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2025-02-06T20:57:20.001Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "12",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2025-02-09T15:55:21.184Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "customuser"
+    ],
+    "object_id": "2",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2025-02-09T16:37:54.186Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}, {\"deleted\": {\"name\": \"\\u062c\\u0647\\u0627\\u062a \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642\\u0629\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-06 - None)\"}}, {\"deleted\": {\"name\": \"\\u062c\\u0647\\u0627\\u062a \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642\\u0629\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633 (2025-02-10 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2025-02-09T16:38:06.834Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2025-02-09T16:39:11.775Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2025-02-09T16:39:45.621Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2025-02-09T16:41:22.949Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2025-02-09T16:41:58.813Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2025-02-09T16:42:12.191Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}, {\"deleted\": {\"name\": \"employment history\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-01 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2025-02-09T16:42:24.240Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2025-02-09T16:42:31.888Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"employment history\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633 (2025-02-09 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2025-02-09T16:42:43.918Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2025-02-09T16:42:55.883Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2025-02-09T16:43:09.020Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2025-02-09T16:43:15.191Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2025-02-09T16:43:27.782Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"employment history\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633 (2025-02-09 - 2025-02-09)\"}}, {\"deleted\": {\"name\": \"employment history\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-09 - 2025-02-09)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2025-02-09T16:43:37.739Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2025-02-09T16:43:43.882Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"employment history\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633 (2025-02-09 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2025-02-09T16:43:55.996Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2025-02-09T16:46:15.374Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2025-02-09T16:48:22.243Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2025-02-09T16:49:24.052Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"employment history\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-09 - 2025-02-09)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2025-02-09T16:49:30.407Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2025-02-09T16:50:17.422Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2025-02-09T16:50:30.269Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2025-02-09T16:52:41.952Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2025-02-09T16:52:53.575Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"employment history\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - \\u0625\\u062f\\u0627\\u0631\\u0629 \\u0623\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0624\\u0627\\u0646\\u0626 \\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629 (2025-02-09 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2025-02-09T16:52:59.962Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2025-02-10T06:50:51.073Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2025-02-10T06:51:01.343Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2025-02-10T06:51:25.497Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2025-02-10T06:57:06.029Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2025-02-10T06:58:02.795Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2025-02-10T06:58:27.085Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"Current Employment Start Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2025-02-18T13:59:55.570Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2025-02-18T14:00:43.909Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Penalty\", \"object\": \"\\u0625\\u0646\\u0636\\u0628\\u0627\\u0637\\u064a\\u0629 - \\u0634\\u0633\\u064a\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2025-02-18T14:00:53.940Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"Penalty\", \"object\": \"\\u0625\\u0646\\u0636\\u0628\\u0627\\u0637\\u064a\\u0629 - \\u0634\\u0633\\u064a\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2025-02-18T14:17:06.997Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "13",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2025-02-18T14:17:07.001Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "8",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2025-02-18T14:17:07.005Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "6",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2025-02-18T14:17:07.010Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2025-02-20T07:36:25.642Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "governorate"
+    ],
+    "object_id": "58",
+    "object_repr": "محافظة السويس",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Division\", \"object\": \"\\u0627\\u0644\\u0633\\u0648\\u064a\\u0633\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2025-02-20T07:36:47.784Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "governorate"
+    ],
+    "object_id": "58",
+    "object_repr": "محافظة السويس",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Division\", \"object\": \"\\u0627\\u0644\\u0627\\u0631\\u0628\\u0639\\u064a\\u0646\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2025-02-20T07:37:27.125Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "governorate"
+    ],
+    "object_id": "59",
+    "object_repr": "محافظة حلوان",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Division\", \"object\": \"\\u062d\\u0644\\u0648\\u0627\\u0646\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2025-02-20T07:37:48.287Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address Governorate\", \"Address Division\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2025-02-20T07:38:03.773Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Last Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2025-02-20T07:49:00.665Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address Governorate\", \"Address Division\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2025-02-20T07:51:16.065Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address Governorate\", \"Address Division\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2025-02-20T07:51:30.034Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address Governorate\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2025-02-20T07:53:10.808Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address Governorate\", \"Address Division\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2025-02-20T07:53:22.481Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Health Insurance Number\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2025-02-20T07:53:54.285Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2025-02-20T08:16:00.478Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2025-02-20T08:16:34.753Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2025-02-20T08:16:49.395Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Previous Haj\", \"Previous Haj Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2025-02-20T08:20:34.295Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\", \"Job Family\", \"Graduation Year\", \"Military Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2025-02-20T08:20:55.971Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Solidarity Fund\", \"Joining Date\", \"Stakeholder Fund\", \"Joining Date\", \"Insurance Umbrella\", \"Joining Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2025-02-20T08:21:18.615Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employment Date\", \"Decision Number\", \"Job Start Date\", \"Current Rank\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2025-02-20T08:21:53.381Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0628\\u064a\\u0627\\u0646\\u0627\\u062a \\u0627\\u0644\\u0645\\u0648\\u0638\\u0641\\u064a\\u0646\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - None (2025-02-10 - 2025-02-10)\"}}, {\"deleted\": {\"name\": \"\\u0628\\u064a\\u0627\\u0646\\u0627\\u062a \\u0627\\u0644\\u0645\\u0648\\u0638\\u0641\\u064a\\u0646\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - None (2025-02-20 - None)\"}}, {\"deleted\": {\"name\": \"\\u0628\\u064a\\u0627\\u0646\\u0627\\u062a \\u0627\\u0644\\u0645\\u0648\\u0638\\u0641\\u064a\\u0646\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - None (2025-02-28 - None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2025-02-20T08:22:21.266Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Retirement Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2025-02-20T08:23:02.262Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Course\", \"object\": \"\\u0643\\u0648\\u0631\\u0633\", \"fields\": [\"Course Address\", \"Obtained Certificate\", \"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0627\\u0644\\u062d\\u0635\\u0648\\u0644 \\u0639\\u0644\\u064a \\u0627\\u0644\\u0634\\u0647\\u0627\\u062f\\u0629\"]}}, {\"added\": {\"name\": \"Penalty\", \"object\": \"\\u0625\\u0646\\u0636\\u0628\\u0627\\u0637\\u064a\\u0629 - \\u062c\\u064a\\u062f\"}}, {\"added\": {\"name\": \"Secret Report\", \"object\": \"\\u0633\\u0631\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2025-02-20T10:14:52.549Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "4",
+    "object_repr": "إدارة أمن المؤانئ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"Sections\", \"object\": \"\\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2025-02-20T10:15:00.894Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "4",
+    "object_repr": "إدارة أمن المؤانئ",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Sections\", \"object\": \"\\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2025-02-20T10:36:38.934Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "5",
+    "object_repr": "الادارة العامة لامداد الشرطة",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"Sections\", \"object\": \"\\u0627\\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2025-02-20T10:36:44.729Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "5",
+    "object_repr": "الادارة العامة لامداد الشرطة",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Sections\", \"object\": \"\\u0627\\u0644\\u0633\\u0648\\u064a\\u0633\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2025-02-20T13:35:40.006Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"\\u0627\\u0644\\u0642\\u0633\\u0645\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2025-02-20T13:35:49.694Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0628\\u064a\\u0627\\u0646\\u0627\\u062a \\u0627\\u0644\\u0645\\u0648\\u0638\\u0641\\u064a\\u0646\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - None (2025-02-28\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2025-02-20T13:59:36.492Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "4",
+    "object_repr": "إدارة أمن المؤانئ",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"Sections\", \"object\": \"\\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629\"}}, {\"deleted\": {\"name\": \"Sections\", \"object\": \"\\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2025-02-20T13:59:52.860Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "4",
+    "object_repr": "إدارة أمن المؤانئ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2025-02-23T07:31:18.579Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2025-02-23T07:33:11.217Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2025-02-23T07:33:19.250Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2025-02-23T14:15:58.438Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "13",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2025-02-23T14:17:23.299Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "6",
+    "object_repr": "الادارة العامة للمركبات",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"Sections\", \"object\": \"\\u0642\\u0633\\u0645 \\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629\"}}, {\"added\": {\"name\": \"Sections\", \"object\": \"\\u0642\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0648\\u064a\\u0633\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2025-02-23T14:17:28.062Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "6",
+    "object_repr": "الادارة العامة للمركبات",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2025-02-23T18:16:12.171Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "14",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2025-02-23T18:16:18.566Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "13",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2025-02-23T18:17:05.849Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "6",
+    "object_repr": "الادارة العامة للمركبات",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2025-02-23T18:17:09.962Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "6",
+    "object_repr": "الادارة العامة للمركبات",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Sections\", \"object\": \"\\u0627\\u0644\\u0627\\u062f\\u0627\\u0631\\u0629 \\u0627\\u0644\\u0639\\u0627\\u0645\\u0629 \\u0644\\u0644\\u0645\\u0631\\u0643\\u0628\\u0627\\u062a\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2025-02-23T18:17:15.669Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "6",
+    "object_repr": "الادارة العامة للمركبات",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"Sections\", \"object\": \"\\u0627\\u0644\\u0627\\u062f\\u0627\\u0631\\u0629 \\u0627\\u0644\\u0639\\u0627\\u0645\\u0629 \\u0644\\u0644\\u0645\\u0631\\u0643\\u0628\\u0627\\u062a\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2025-02-23T18:17:32.321Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "14",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2025-02-23T18:20:13.730Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "14",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2025-02-23T18:20:19.346Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "15",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2025-02-23T18:20:32.223Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "15",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2025-02-23T18:24:35.109Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "16",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2025-02-23T18:24:41.874Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "15",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2025-02-23T18:24:56.394Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "16",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 162,
+  "fields": {
+    "action_time": "2025-03-10T09:52:09.968Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\", \"Academic Qualifications\", \"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"\\u0627\\u0644\\u0642\\u0633\\u0645\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 163,
+  "fields": {
+    "action_time": "2025-03-10T10:00:01.411Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\", \"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"\\u0627\\u0644\\u0642\\u0633\\u0645\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 164,
+  "fields": {
+    "action_time": "2025-03-11T07:04:03.533Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 165,
+  "fields": {
+    "action_time": "2025-03-11T07:19:01.332Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 166,
+  "fields": {
+    "action_time": "2025-03-11T09:22:56.755Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Last Name\", \"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 167,
+  "fields": {
+    "action_time": "2025-03-11T09:26:19.559Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 168,
+  "fields": {
+    "action_time": "2025-03-11T09:26:33.491Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 169,
+  "fields": {
+    "action_time": "2025-03-13T09:30:24.894Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 170,
+  "fields": {
+    "action_time": "2025-03-13T09:37:54.240Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\", \"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 171,
+  "fields": {
+    "action_time": "2025-03-17T07:24:38.340Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 172,
+  "fields": {
+    "action_time": "2025-03-18T10:59:50.182Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Health Insurance Number\", \"Academic Qualifications\"]}}, {\"deleted\": {\"name\": \"\\u062c\\u0647\\u0627\\u062a \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642\\u0629\", \"object\": \"\\u0645\\u062d\\u0645\\u062f - None (2025-02-28\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 173,
+  "fields": {
+    "action_time": "2025-03-18T11:00:18.910Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 174,
+  "fields": {
+    "action_time": "2025-03-18T11:01:16.347Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 175,
+  "fields": {
+    "action_time": "2025-03-18T11:01:22.006Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 176,
+  "fields": {
+    "action_time": "2025-03-18T11:05:09.259Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address Governorate\", \"Address Division\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 177,
+  "fields": {
+    "action_time": "2025-03-18T11:05:27.302Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 178,
+  "fields": {
+    "action_time": "2025-03-18T11:05:34.110Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 179,
+  "fields": {
+    "action_time": "2025-03-18T11:16:02.330Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 180,
+  "fields": {
+    "action_time": "2025-03-18T11:16:07.298Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 181,
+  "fields": {
+    "action_time": "2025-03-18T11:16:37.538Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 182,
+  "fields": {
+    "action_time": "2025-03-18T11:22:41.918Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 183,
+  "fields": {
+    "action_time": "2025-03-18T11:23:03.857Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 184,
+  "fields": {
+    "action_time": "2025-03-18T11:23:36.047Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 185,
+  "fields": {
+    "action_time": "2025-03-18T11:23:45.780Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 186,
+  "fields": {
+    "action_time": "2025-03-18T11:24:14.301Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Religion\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 187,
+  "fields": {
+    "action_time": "2025-03-18T11:24:31.795Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\", \"Religion\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 188,
+  "fields": {
+    "action_time": "2025-03-18T11:27:36.514Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\", \"Religion\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 189,
+  "fields": {
+    "action_time": "2025-03-18T11:29:58.425Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Religion\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 190,
+  "fields": {
+    "action_time": "2025-03-18T11:30:59.682Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "governorate"
+    ],
+    "object_id": "32",
+    "object_repr": "محافظة القاهرة",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Division\", \"object\": \"\\u0627\\u0644\\u062a\\u062c\\u0645\\u0639 \\u0627\\u0644\\u062e\\u0627\\u0645\\u0633\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 191,
+  "fields": {
+    "action_time": "2025-03-18T12:22:42.851Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Academic Qualifications\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 192,
+  "fields": {
+    "action_time": "2025-04-07T10:36:53.885Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 193,
+  "fields": {
+    "action_time": "2025-04-07T10:37:38.840Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 194,
+  "fields": {
+    "action_time": "2025-04-07T10:37:48.311Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 195,
+  "fields": {
+    "action_time": "2025-04-07T10:45:52.312Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 196,
+  "fields": {
+    "action_time": "2025-04-07T10:49:04.352Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 197,
+  "fields": {
+    "action_time": "2025-04-07T10:54:37.242Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 198,
+  "fields": {
+    "action_time": "2025-04-07T10:55:43.647Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 199,
+  "fields": {
+    "action_time": "2025-04-07T11:37:46.103Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 200,
+  "fields": {
+    "action_time": "2025-04-07T11:38:25.434Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 201,
+  "fields": {
+    "action_time": "2025-04-07T11:48:54.145Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 202,
+  "fields": {
+    "action_time": "2025-04-07T11:49:33.308Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 203,
+  "fields": {
+    "action_time": "2025-04-07T11:49:37.697Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 204,
+  "fields": {
+    "action_time": "2025-04-07T12:04:05.575Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 205,
+  "fields": {
+    "action_time": "2025-04-07T12:04:23.242Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 206,
+  "fields": {
+    "action_time": "2025-04-07T12:04:40.475Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 207,
+  "fields": {
+    "action_time": "2025-04-07T12:04:47.947Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 208,
+  "fields": {
+    "action_time": "2025-04-07T13:13:02.427Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 209,
+  "fields": {
+    "action_time": "2025-04-08T07:52:16.105Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "governorate"
+    ],
+    "object_id": "58",
+    "object_repr": "محافظة السويس",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 210,
+  "fields": {
+    "action_time": "2025-04-08T08:07:31.609Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Type\", \"From Date\", \"To Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Status\", \"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Status\", \"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Status\", \"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Status\", \"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Status\", \"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 211,
+  "fields": {
+    "action_time": "2025-04-08T08:07:38.205Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 212,
+  "fields": {
+    "action_time": "2025-04-08T08:08:32.988Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 213,
+  "fields": {
+    "action_time": "2025-04-08T08:52:40.637Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 214,
+  "fields": {
+    "action_time": "2025-04-08T09:30:58.862Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 215,
+  "fields": {
+    "action_time": "2025-04-08T09:31:22.432Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 216,
+  "fields": {
+    "action_time": "2025-04-08T09:37:46.738Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "23",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 217,
+  "fields": {
+    "action_time": "2025-04-08T09:38:26.082Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "21",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 218,
+  "fields": {
+    "action_time": "2025-04-08T13:27:18.329Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\", \"Address Governorate\", \"Address Division\", \"Academic Qualifications\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Status\", \"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 219,
+  "fields": {
+    "action_time": "2025-04-08T13:38:15.463Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"\\u0627\\u0644\\u0642\\u0633\\u0645\", \"Current Employment Start Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 220,
+  "fields": {
+    "action_time": "2025-04-09T06:53:39.684Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "governorate"
+    ],
+    "object_id": "33",
+    "object_repr": "محافظة دمياط",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Division\", \"object\": \"\\u062f\\u0645\\u064a\\u0627\\u0637 \\u0627\\u0644\\u062c\\u062f\\u064a\\u062f\\u0629\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 221,
+  "fields": {
+    "action_time": "2025-04-09T06:53:54.590Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 222,
+  "fields": {
+    "action_time": "2025-04-09T06:54:11.079Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address Governorate\", \"Address Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 223,
+  "fields": {
+    "action_time": "2025-04-09T07:16:42.963Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 224,
+  "fields": {
+    "action_time": "2025-04-09T07:16:55.794Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 225,
+  "fields": {
+    "action_time": "2025-04-09T07:22:01.024Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 226,
+  "fields": {
+    "action_time": "2025-04-09T07:22:14.270Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Religion\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 227,
+  "fields": {
+    "action_time": "2025-04-09T07:22:29.874Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\", \"Religion\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 228,
+  "fields": {
+    "action_time": "2025-04-09T07:24:42.871Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\", \"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 229,
+  "fields": {
+    "action_time": "2025-04-09T07:24:56.509Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 230,
+  "fields": {
+    "action_time": "2025-04-09T07:46:52.124Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 231,
+  "fields": {
+    "action_time": "2025-04-09T08:03:29.897Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\", \"Address Governorate\", \"Address Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 232,
+  "fields": {
+    "action_time": "2025-04-09T08:03:58.270Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 233,
+  "fields": {
+    "action_time": "2025-04-09T08:04:07.391Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 234,
+  "fields": {
+    "action_time": "2025-04-09T08:07:51.368Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 235,
+  "fields": {
+    "action_time": "2025-04-09T08:09:05.864Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 236,
+  "fields": {
+    "action_time": "2025-04-09T08:31:09.572Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 237,
+  "fields": {
+    "action_time": "2025-04-09T08:31:30.001Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 238,
+  "fields": {
+    "action_time": "2025-04-09T08:31:36.163Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 239,
+  "fields": {
+    "action_time": "2025-04-09T08:46:00.854Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Previous Haj\", \"Previous Haj Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 240,
+  "fields": {
+    "action_time": "2025-04-09T08:46:07.159Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gender\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 241,
+  "fields": {
+    "action_time": "2025-04-09T08:48:06.270Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 242,
+  "fields": {
+    "action_time": "2025-04-09T08:48:12.535Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Previous Haj\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 243,
+  "fields": {
+    "action_time": "2025-04-09T08:49:57.065Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 244,
+  "fields": {
+    "action_time": "2025-04-09T08:50:51.919Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 245,
+  "fields": {
+    "action_time": "2025-04-09T08:51:22.914Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 246,
+  "fields": {
+    "action_time": "2025-04-09T08:53:00.315Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Previous Haj\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 247,
+  "fields": {
+    "action_time": "2025-04-09T09:18:28.539Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 248,
+  "fields": {
+    "action_time": "2025-04-09T09:26:39.044Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "24",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 249,
+  "fields": {
+    "action_time": "2025-04-09T09:26:39.050Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "18",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 250,
+  "fields": {
+    "action_time": "2025-04-09T09:26:39.055Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "17",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 251,
+  "fields": {
+    "action_time": "2025-04-09T09:26:39.061Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "4",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 252,
+  "fields": {
+    "action_time": "2025-04-09T09:26:39.065Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "2",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 253,
+  "fields": {
+    "action_time": "2025-04-09T09:26:39.067Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "22",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 254,
+  "fields": {
+    "action_time": "2025-04-09T09:26:39.067Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "20",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 255,
+  "fields": {
+    "action_time": "2025-04-09T09:27:34.377Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Status\", \"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 256,
+  "fields": {
+    "action_time": "2025-04-20T11:08:18.602Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "6",
+    "object_repr": "الادارة العامة للمركبات",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Sections\", \"object\": \"GFS\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 257,
+  "fields": {
+    "action_time": "2025-04-20T11:08:29.168Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "6",
+    "object_repr": "الادارة العامة للمركبات",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"Sections\", \"object\": \"GFS\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 258,
+  "fields": {
+    "action_time": "2025-04-20T11:09:04.668Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "departmentsandsections"
+    ],
+    "object_id": "6",
+    "object_repr": "الادارة العامة للمركبات",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Sections\", \"object\": \"\\u0627\\u0644\\u0642\\u0627\\u0647\\u0631\\u0629\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 259,
+  "fields": {
+    "action_time": "2025-04-20T13:03:19.798Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Status\", \"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Status\", \"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Status\", \"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 260,
+  "fields": {
+    "action_time": "2025-04-20T13:26:52.079Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address Governorate\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 261,
+  "fields": {
+    "action_time": "2025-04-20T14:50:15.350Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 262,
+  "fields": {
+    "action_time": "2025-05-05T20:05:12.785Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\", \"Address Governorate\", \"Address Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 263,
+  "fields": {
+    "action_time": "2025-05-05T20:05:31.703Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\", \"Birth Division\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 264,
+  "fields": {
+    "action_time": "2025-05-05T20:06:32.604Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 265,
+  "fields": {
+    "action_time": "2025-05-05T20:07:50.928Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 266,
+  "fields": {
+    "action_time": "2025-05-05T20:07:58.642Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Employee Image\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 267,
+  "fields": {
+    "action_time": "2025-05-05T20:08:54.198Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Previous Haj\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 268,
+  "fields": {
+    "action_time": "2025-05-05T20:09:01.896Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Previous Haj\", \"Previous Haj Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 269,
+  "fields": {
+    "action_time": "2025-05-05T20:13:15.345Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "17",
+    "object_repr": "حسام",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 270,
+  "fields": {
+    "action_time": "2025-05-05T20:13:51.429Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "17",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Type\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 271,
+  "fields": {
+    "action_time": "2025-05-07T07:21:25.334Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "17",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 272,
+  "fields": {
+    "action_time": "2025-05-07T10:08:22.702Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Status\", \"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 273,
+  "fields": {
+    "action_time": "2025-05-07T10:11:54.663Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birth Governorate\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 274,
+  "fields": {
+    "action_time": "2025-05-07T11:01:01.223Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "16",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 275,
+  "fields": {
+    "action_time": "2025-05-07T11:04:41.372Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 276,
+  "fields": {
+    "action_time": "2025-05-07T11:05:06.859Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "30",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 277,
+  "fields": {
+    "action_time": "2025-05-07T11:05:06.859Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "28",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 278,
+  "fields": {
+    "action_time": "2025-05-07T11:05:06.867Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "25",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 279,
+  "fields": {
+    "action_time": "2025-05-07T11:05:06.875Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "19",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 280,
+  "fields": {
+    "action_time": "2025-05-07T11:05:06.877Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "29",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 281,
+  "fields": {
+    "action_time": "2025-05-07T11:05:06.877Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "27",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 282,
+  "fields": {
+    "action_time": "2025-05-07T11:05:06.877Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "26",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 283,
+  "fields": {
+    "action_time": "2025-05-07T11:05:22.771Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 284,
+  "fields": {
+    "action_time": "2025-05-07T11:06:01.016Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "18",
+    "object_repr": "حسام",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 285,
+  "fields": {
+    "action_time": "2025-05-07T11:30:03.758Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "18",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 286,
+  "fields": {
+    "action_time": "2025-05-18T10:37:55.381Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "academicqualification"
+    ],
+    "object_id": "2",
+    "object_repr": "بكالريوس هندسة",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 287,
+  "fields": {
+    "action_time": "2025-05-18T10:38:02.386Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"Status\", \"Day Date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 288,
+  "fields": {
+    "action_time": "2025-05-21T07:19:35.469Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "19",
+    "object_repr": "حسام",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 289,
+  "fields": {
+    "action_time": "2025-05-21T07:25:38.746Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "32",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 290,
+  "fields": {
+    "action_time": "2025-05-26T06:40:13.776Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u062c\\u0647\\u0629 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u0627\\u0644\\u062d\\u0627\\u0644\\u064a\\u0629\", \"\\u0627\\u0644\\u0642\\u0633\\u0645\", \"Current Employment Start Date\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 291,
+  "fields": {
+    "action_time": "2025-05-26T06:45:30.589Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "33",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 292,
+  "fields": {
+    "action_time": "2025-05-26T06:45:30.604Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "31",
+    "object_repr": "محمد",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 293,
+  "fields": {
+    "action_time": "2025-05-26T06:45:30.621Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeeattendance"
+    ],
+    "object_id": "34",
+    "object_repr": "حسام",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 294,
+  "fields": {
+    "action_time": "2025-05-26T06:45:50.486Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 295,
+  "fields": {
+    "action_time": "2025-05-26T06:46:38.097Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employeevacation"
+    ],
+    "object_id": "20",
+    "object_repr": "محمد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 296,
+  "fields": {
+    "action_time": "2025-05-26T06:54:02.042Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 297,
+  "fields": {
+    "action_time": "2025-05-26T06:54:16.806Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Academic Qualifications\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 298,
+  "fields": {
+    "action_time": "2025-05-26T06:54:51.701Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\"}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 299,
+  "fields": {
+    "action_time": "2025-05-26T06:58:23.118Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"added\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\"}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 300,
+  "fields": {
+    "action_time": "2025-05-26T07:04:26.262Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "حسام",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"added\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\"}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u062d\\u0633\\u0627\\u0645\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 301,
+  "fields": {
+    "action_time": "2025-05-26T13:31:58.764Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\"}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 302,
+  "fields": {
+    "action_time": "2025-05-26T13:33:01.719Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\"}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 303,
+  "fields": {
+    "action_time": "2025-05-26T13:34:53.029Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"added\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\"}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 304,
+  "fields": {
+    "action_time": "2025-05-26T13:37:53.910Z",
+    "user": [
+      "محمد"
+    ],
+    "content_type": [
+      "base",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "محمد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Solidarity Fund\", \"Joining Date\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Vacation\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"fromDate_hidden\", \"toDate_hidden\", \"type_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}, {\"changed\": {\"name\": \"Employee Attendance\", \"object\": \"\\u0645\\u062d\\u0645\\u062f\", \"fields\": [\"status_hidden\", \"dayDate_hidden\"]}}]"
+  }
+}
+]

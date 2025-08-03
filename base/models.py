@@ -21,6 +21,11 @@ class CustomUser(AbstractUser):
     is_staff = models.BooleanField(
         default=True,
     )
+    is_active = models.BooleanField(
+        _('active'),
+        default=True,
+        help_text='حدد ما إذا كان هذا المستخدم نشط أم لا. قم بإلغاء التحديد بدلاً من حذف الحسابات.',
+    )
 
 class Penalty(models.Model):
     TYPES =( 
@@ -224,7 +229,6 @@ class EmployeeAttendance(models.Model):
         #     raise ValidationError(_('Attendance record for this employee on this date already exists.'))
 
     def save(self, *args, **kwargs):
-        # self.full_clean()  # Run model validation before saving
         super().save(*args, **kwargs)
 
     def __str__(self):
@@ -341,100 +345,28 @@ class EmployeeVacation(models.Model):
 
     def save(self, *args, **kwargs):
         # Skip validation if dates are empty
-        # if not self.fromDate or not self.toDate:
-        #     super(EmployeeVacation, self).save(*args, **kwargs)
-        #     return
-        # Validation logic...
-        if self.type is None:
-            raise ValueError("Vacation type cannot be NULL")
-        if not self.pk and self.fromDate and self.fromDate < timezone.now().date():
-            raise ValidationError(_('لا يمكن أن يكون تاريخ البداية في الماضي.'))
-
-        if not self.pk and self.toDate and self.toDate < timezone.now().date():
-            raise ValidationError(_('لا يمكن أن يكون تاريخ النهاية في الماضي.'))
-
-        if self.fromDate and self.toDate and self.toDate < self.fromDate:
-            raise ValidationError(_('لا يمكن أن يكون تاريخ النهاية قبل تاريخ البداية.'))
-
-        if self.employee and self.toDate and self.fromDate:
-            existing_vacation = EmployeeVacation.objects.filter(
-                employee=self.employee,
-                fromDate__lte=self.toDate,
-                toDate__gte=self.fromDate
-            ).exclude(pk=self.pk)
-
-            if existing_vacation.exists():
-                raise ValidationError(_('الموظف لديه إجازة في نفس الفترة ولا يمكن تسجيل إجازة جديدة.'))
+        if not self.fromDate or not self.toDate:
+            super().save(*args, **kwargs)
+            return
 
         # Calculate days
-        if self.fromDate and self.toDate:
-            daysDiff = self.toDate - self.fromDate
-            days = daysDiff.days + 1
-            self.days = days
-            try:
-                attendance_records = EmployeeAttendance.objects.filter(
-                    dayDate__range=(self.fromDate, self.toDate),
-                    employee=self.employee
-                )
-                # يمكنك استخدام attendance_records حسب الحاجة
-            except Exception as e:
-                # log أو تجاهل حسب الحاجة
-                print(f"Error in attendance query: {e}")
-        # Update vacation balances and status
-        employee = self.employee
-        status_map = {
-            'Periodic': 'A',
-            'Casual': 'C',
-            'Sick': 'S',
-            'Course': 'F',
-            'Inside Mission': 'IMS',
-            'Outside Mission': 'OMS',
-            'Rest': 'O',
-            'Leave Without Pay': 'l',
-            'P65%': 'P65%'
-        }
+        delta = self.toDate - self.fromDate
+        self.days = delta.days + 1  # Include both start and end dates
 
-        status = status_map.get(self.type, 'P')
-
+        # Validate vacation balance
         if self.type == 'Periodic':
-            employee.periodicVacations -= days
-            self.remainingBalance = employee.periodicVacations
-            employee.save()
+            # Get current periodic vacation balance
+            current_balance = self.employee.periodicVacations if self.employee else 0
+            if self.days > current_balance:
+                raise ValidationError('رصيد الإجازة الدورية غير كافي.')
 
-        if self.type == 'Casual':
-            employee.casualVacations -= days
-            self.remainingBalance = employee.casualVacations
-            employee.save()
+        elif self.type == 'Casual':
+            # Get current casual vacation balance
+            current_balance = self.employee.casualVacations if self.employee else 0
+            if self.days > current_balance:
+                raise ValidationError('رصيد الإجازة العرضية غير كافي.')
 
-        if self.type in ['Sick', 'Course', 'Inside Mission', 'Outside Mission', 'Rest', 'Leave Without Pay', 'P65%']:
-            employee.save()
-
-        # Update attendance records within vacation range
-        if self.fromDate and self.toDate:
-            attendance_records = EmployeeAttendance.objects.filter(
-                dayDate__range=(self.fromDate, self.toDate),
-                employee=self.employee
-            )
-        else:
-            attendance_records = EmployeeAttendance.objects.none()  # أو تجاهل التنفيذ
-
-
-        attendance_update_fields = {'status': status}
-
-        # Special case for IMS: Update attendance place fields
-        if self.type == 'Inside Mission':
-            attendance_update_fields.update({
-                'place_link': self.place_link,
-                'section_place_link': self.section_place_link
-            })
-        elif self.type == 'Outside Mission':
-            attendance_update_fields.update({
-                'place_text': self.place_text,
-            })
-
-        attendance_records.update(**attendance_update_fields)
-
-        super(EmployeeVacation, self).save(*args, **kwargs)
+        super().save(*args, **kwargs)
 
 class Employee(models.Model):
     MILITARY_STATUSES =( 
@@ -602,7 +534,11 @@ class Employee(models.Model):
     religion = models.CharField(_('Religion'), max_length=200, choices=RELIGION, null=False, blank=False, default='Muslim')
     previousHaj = models.BooleanField(_('Previous Haj'), default=False, null=False, blank=False)
     previousHajDate = models.DateField(_('Previous Haj Date'), null=True, blank=True)
-
+    is_active = models.BooleanField(
+        _('active'),
+        default=True,
+        help_text='حدد ما إذا كان هذا الموظف نشط أم لا. قم بإلغاء التحديد بدلاً من حذف الحسابات.',
+    )
     class Meta:
         verbose_name = _('Employee')
         verbose_name_plural = _('Employees')

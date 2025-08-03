@@ -1,6 +1,6 @@
 {% extends "admin/base.html" %}
-
 {% load i18n %}
+
 {% block title %}شئون العاملين - الإدارة العامة لأمن الموانى{% endblock %}
 
 {% block extrahead %}
@@ -52,6 +52,21 @@
     }
     .calendarnav-previous{
       right: unset;
+    }
+    
+    /* Arabic error message styling */
+    .errornote {
+        background: #ba2121;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .errornote:before {
+        content: "يرجى تصحيح الأخطاء أدناه.";
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
     }
   </style>
 {% endblock %}
@@ -137,6 +152,51 @@
       form.elements.language.value = languageCode;
       form.submit();
     }
+    
+    // Replace English error messages with Arabic
+    function replaceErrorMessages() {
+      // Replace "Please correct the error below." with Arabic
+      const errorNotes = document.querySelectorAll('.errornote');
+      errorNotes.forEach(function(errorNote) {
+        if (errorNote.textContent.includes('Please correct the error below.')) {
+          errorNote.innerHTML = errorNote.innerHTML.replace(
+            'Please correct the error below.',
+            'يرجى تصحيح الأخطاء أدناه.'
+          );
+        }
+        if (errorNote.textContent.includes('Please correct the errors below.')) {
+          errorNote.innerHTML = errorNote.innerHTML.replace(
+            'Please correct the errors below.',
+            'يرجى تصحيح الأخطاء أدناه.'
+          );
+        }
+      });
+      
+      // Replace other common error messages
+      const errorElements = document.querySelectorAll('.errorlist li');
+      errorElements.forEach(function(errorElement) {
+        const text = errorElement.textContent;
+        if (text.includes('This field is required.')) {
+          errorElement.textContent = text.replace('This field is required.', 'هذا الحقل مطلوب.');
+        }
+        if (text.includes('Enter a valid date.')) {
+          errorElement.textContent = text.replace('Enter a valid date.', 'أدخل تاريخاً صحيحاً.');
+        }
+        if (text.includes('Enter a valid email address.')) {
+          errorElement.textContent = text.replace('Enter a valid email address.', 'أدخل عنوان بريد إلكتروني صحيح.');
+        }
+      });
+    }
+    
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      replaceErrorMessages();
+    });
+    
+    // Run after AJAX content loads
+    document.addEventListener('load', function() {
+      replaceErrorMessages();
+    });
     
     // function printElementById(elementId) {
     //   var printContents = document.getElementById(elementId).innerHTML;

@@ -32,7 +32,17 @@ class EmployeeVacationAdminForm(forms.ModelForm):
         model = EmployeeVacation
         fields = '__all__'
 
+    def clean(self):
+        cleaned_data = super().clean()
+        employee = cleaned_data.get('employee')
+        
+        if employee and not employee.is_active:
+            raise ValidationError('لا يمكن إضافة إجازة لموظف غير نشط.')
+        
+        return cleaned_data
+
     def __init__(self, *args, **kwargs):
+        self.request = kwargs.pop('request', None)
         super().__init__(*args, **kwargs)
 
 class EmployeeVacationAdmin(admin.ModelAdmin):
@@ -44,6 +54,18 @@ class EmployeeVacationAdmin(admin.ModelAdmin):
         ("toDate", DateRangeFilterBuilder()),
     )
     search_fields = ('employee__firstName',)
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.request = request
+        return form
+
+    def save_model(self, request, obj, form, change):
+        if obj.employee and not obj.employee.is_active:
+            from django.contrib import messages
+            messages.error(request, 'لا يمكن إضافة إجازة لموظف غير نشط.')
+            return  # Don't save
+        super().save_model(request, obj, form, change)
 
     class Media:
         js = ('admin/js/employee_vacation.js',)  # Add this JavaScript file to control field visibility
@@ -68,11 +90,18 @@ class EmployeeAttendanceAdminForm(forms.ModelForm):
         model = EmployeeAttendance
         fields = '__all__'
 
+    def clean(self):
+        cleaned_data = super().clean()
+        employee = cleaned_data.get('employee')
+        
+        if employee and not employee.is_active:
+            raise ValidationError('لا يمكن إضافة حضور لموظف غير نشط.')
+        
+        return cleaned_data
+
     def __init__(self, *args, **kwargs):
+        self.request = kwargs.pop('request', None)
         super().__init__(*args, **kwargs)
-        # self.fields['place_text'].widget.attrs['style'] = 'display: none;'
-        self.fields['place_link'].widget.attrs['style'] = 'display: none;'
-        self.fields['section_place_link'].widget.attrs['style'] = 'display: none;'
 
 class EmployeeAttendanceAdmin(admin.ModelAdmin):
     form = EmployeeAttendanceAdminForm
@@ -81,6 +110,19 @@ class EmployeeAttendanceAdmin(admin.ModelAdmin):
     search_fields = ('employee__firstName',)
     change_list_template = "admin/employee_attendance_change_list.html"  # Custom template
     list_filter = (("dayDate", DateRangeFilterBuilder()),)  # Standard date filter
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.request = request
+        return form
+
+    def save_model(self, request, obj, form, change):
+        if obj.employee and not obj.employee.is_active:
+            from django.contrib import messages
+            messages.error(request, 'لا يمكن إضافة حضور لموظف غير نشط.')
+            return  # Don't save
+        super().save_model(request, obj, form, change)
+
     class Media:
         js = ('admin/js/employee_vacation.js',)  # Add this JavaScript file to control field visibility
 
@@ -603,12 +645,45 @@ class EmployeeAdmin(admin.ModelAdmin):
     list_filter = ()
     model = Employee
     form = EmployeeChangeForm
+    change_form_template = 'admin/employee_change_form.html'
     inlines = [EmploymentHistoryInline, CourseInline, PenaltyInline, SecretReportInline,EmployeeVacationInline,EmployeeAttendanceInline]  # Keep inlines here
     readonly_fields = ('periodicVacations', 'casualVacations', 'birthGovernorate', 'birthDivision', 'academicQualifications')
 
     formfield_overrides = {
         models.ImageField: {'widget': AdminImageWidget},
     }
+
+    def get_urls(self):
+        from django.urls import path
+        urls = super().get_urls()
+        custom_urls = [
+            path(
+                '<int:employee_id>/toggle-active/',
+                self.admin_site.admin_view(self.toggle_active_view),
+                name='employee-toggle-active',
+            ),
+        ]
+        return custom_urls + urls
+
+    def toggle_active_view(self, request, employee_id):
+        from django.shortcuts import get_object_or_404, redirect
+        from django.contrib import messages
+        
+        employee = get_object_or_404(Employee, pk=employee_id)
+        employee.is_active = not employee.is_active
+        employee.save()
+        
+        if employee.is_active:
+            messages.success(request, f'تم تفعيل الموظف {employee.firstName}.')
+        else:
+            messages.success(request, f'تم إلغاء تفعيل الموظف {employee.firstName}.')
+        
+        return redirect('admin:base_employee_change', employee_id)
+
+    def change_view(self, request, object_id, form_url='', extra_context=None):
+        extra_context = extra_context or {}
+        extra_context['show_toggle_button'] = True
+        return super().change_view(request, object_id, form_url, extra_context)
 
     def get_form(self, request, obj=None, **kwargs):
         form_class = super().get_form(request, obj, **kwargs)
@@ -625,7 +700,7 @@ class EmployeeAdmin(admin.ModelAdmin):
         return obj.penalties.count()
 
     number_of_penalties.short_description = _('Penalties')
-    list_display = ('firstName', 'secondName', 'number_of_penalties',)
+    list_display = ('firstName', 'secondName', 'number_of_penalties', 'is_active')
 
     fieldsets = (
         (_('البيانات الشخصية'), {
